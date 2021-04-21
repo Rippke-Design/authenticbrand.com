@@ -4,7 +4,7 @@
 -   Create your own empty github repo
 -   Navigate to this repo in terminal
 -   `git remote -v` should show `origin git@github.com:nikibrown/starter-project.git (fetch) origin git@github.com:nikibrown/starter-project.git (push)`
--   Update the remote with your own github repo: `git temote set-url origin git@github.com:yourusername/your-repo.git`
+-   Update the remote with your own github repo: `git remote set-url origin git@github.com:yourusername/your-repo.git`
 
 -   `npm install` to install dependencies
 -   `gulp` to run site & build tasks
