@@ -18,13 +18,14 @@
 	"homepage": "https://github.com/nikibrown/XYZ",
 	"devDependencies": {
 		"bootstrap": "^4.6.0",
-		"browser-sync": "^2.26.13",
-		"gulp-file-include": "^2.3.0",
 		"gulp-postcss": "^8.0.0",
-		"gulp-sass": "^4.1.0",
 		"node-sass": "^4.13.0"
 	},
 	"dependencies": {
-		"gulp": "^4.0.2"
+		"browser-sync": "^2.26.14",
+		"gulp": "^4.0.2",
+		"gulp-file-include": "^2.3.0",
+		"gulp-sass": "^4.1.0"
 	}
 }
+
