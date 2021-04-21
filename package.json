@@ -1,10 +1,11 @@
 {
-	"name": "Starter Project",
+	"name": "StarterProject",
 	"version": "1.0.0",
 	"description": "Starter Project site",
 	"main": "index.html",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"gulp": "gulp"
 	},
 	"repository": {
 		"type": "git",
