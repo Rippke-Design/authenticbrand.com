@@ -3,13 +3,9 @@
 @import "components/structure";
 @import "components/typography";
 @import "components/header";
+@import "components/nav";
 @import "components/footer";
 @import "components/main";
 @import "components/breadcrumbs";
 @import "components/sidebar";
 @import "components/buttons";
-
-body {
-	background: salmon !important;
-	padding: 40px;
-}
