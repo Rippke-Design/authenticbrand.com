@@ -4,7 +4,7 @@
 	"description": "Starter Project site",
 	"main": "index.html",
 	"scripts": {
-		"gulp": "gulp"
+		"dev": "gulp"
 	},
 	"repository": {
 		"type": "git",
