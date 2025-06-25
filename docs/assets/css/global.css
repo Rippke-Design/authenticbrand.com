@@ -11881,7 +11881,7 @@ body {
 }
 
 header {
-  background: #ccc;
+  background: white;
   padding: 10px 0;
 }
 
@@ -11893,6 +11893,31 @@ header {
   .navbar .nav-item:hover .dropdown-menu {
     display: block;
   }
+}
+
+.dropdown-menu {
+  width: max-content;
+}
+
+/* Ensure .dropdown-menu is hidden by default and shown on hover */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* ...other styles... */
+  overflow-x: auto;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu {
+  display: block;
+}
+
+/* Ensure the menu stays hidden when measuring */
+.dropdown-menu.pre-hover {
+  display: block !important;
+  pointer-events: none;
 }
 
 @media all and (max-width: 992px) {
