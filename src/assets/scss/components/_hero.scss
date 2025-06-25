@@ -1,0 +1,25 @@
+.hero {
+	background-color: var(--c-blue);
+	background-image: url("../img/3-circle.svg");
+	background-repeat: repeat-x;
+	background-position: 2px 2px;
+	background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
+	color: white;
+	position: relative;
+	min-height: 500px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 250px; // Adjust width as needed for your SVG
+		height: 100%;
+		background-image: url("../img/hero-geo-pattern.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right top;
+		pointer-events: none;
+		z-index: 1;
+	}
+}

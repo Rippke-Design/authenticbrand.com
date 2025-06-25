@@ -17,3 +17,7 @@ $base-spacing-unit: 20px;
 $brand-gradient-pink: linear-gradient(180deg, $brand-light-purple 0%, $brand-pink 100%);
 
 $breadcrumb-divider: quote("»");
+
+:root {
+	--c-blue: #003c71;
+}
