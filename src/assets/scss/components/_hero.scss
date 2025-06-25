@@ -8,6 +8,11 @@
 	position: relative;
 	min-height: 500px;
 
+	.row {
+		align-content: center;
+		height: 500px;
+	}
+
 	&::after {
 		content: "";
 		position: absolute;
@@ -17,9 +22,15 @@
 		height: 100%;
 		background-image: url("../img/hero-geo-pattern.svg");
 		background-repeat: no-repeat;
-		background-size: cover;
+		// background-size: cover;
 		background-position: right top;
 		pointer-events: none;
 		z-index: 1;
+	}
+
+	h1 {
+		span {
+			color: var(--c-teal);
+		}
 	}
 }

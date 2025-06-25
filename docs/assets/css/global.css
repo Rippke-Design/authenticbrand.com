@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 :root {
   --c-blue: #003c71;
+  --c-teal: #00b4ad;
 }
 
 /*!
@@ -11900,7 +11901,8 @@ header {
   }
 }
 footer {
-  background: #ccc;
+  background-color: var(--c-teal);
+  color: white;
   padding: 40px 0;
 }
 
@@ -11909,7 +11911,7 @@ main {
 }
 .btn {
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -11934,6 +11936,11 @@ main {
 .btn.btn-secondary:hover {
   background-color: #420033;
 }
+.btn.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+}
 
 .hero {
   background-color: var(--c-blue);
@@ -11945,6 +11952,10 @@ main {
   position: relative;
   min-height: 500px;
 }
+.hero .row {
+  align-content: center;
+  height: 500px;
+}
 .hero::after {
   content: "";
   position: absolute;
@@ -11954,8 +11965,10 @@ main {
   height: 100%;
   background-image: url("../img/hero-geo-pattern.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: right top;
   pointer-events: none;
   z-index: 1;
+}
+.hero h1 span, .hero .h1 span {
+  color: var(--c-teal);
 }
