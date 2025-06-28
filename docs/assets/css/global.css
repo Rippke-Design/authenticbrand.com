@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 :root {
-  --c-blue: #003c71;
+  --c-dark-blue: #003c71;
   --c-teal: #00b4ad;
+  --c-teal-darker: #007481;
 }
 
 /*!
@@ -11996,4 +11997,59 @@ main {
 }
 .hero h1 span, .hero .h1 span {
   color: var(--c-teal);
+}
+
+.faq {
+  background: linear-gradient(to right, #007481 0%, #007481 25%, #fff 25%, #fff 100%);
+  position: relative;
+}
+.faq .bleed-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 520px;
+  max-width: none;
+  z-index: 0;
+  pointer-events: none;
+}
+.faq .col-lg-4 {
+  position: relative;
+  overflow: visible;
+}
+
+details {
+  border-bottom: 1px solid var(--c-teal-darker);
+  padding: 36px 0;
+}
+details:last-child {
+  border-bottom: none;
+}
+details summary {
+  color: var(--c-dark-blue);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  padding-right: 30px;
+}
+details summary::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/closed-question.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: background-image 0.2s ease;
+}
+details[open] summary {
+  margin-bottom: 20px;
+}
+details[open] summary::after {
+  background-image: url("../img/open-question.svg");
 }
