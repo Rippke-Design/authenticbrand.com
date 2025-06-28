@@ -4,6 +4,8 @@
   --c-dark-blue: #003c71;
   --c-teal: #00b4ad;
   --c-teal-darker: #007481;
+  --c-yellow: #faa400;
+  --c-white: #fff;
 }
 
 /*!
@@ -11927,7 +11929,7 @@ header {
   }
 }
 footer {
-  background-color: var(--c-teal);
+  background-color: var(--c-teal-darker);
   color: white;
   padding: 40px 0;
 }
@@ -11940,41 +11942,39 @@ main {
   border-radius: 35px;
   font-size: 16px;
   font-weight: 700;
-  text-transform: uppercase;
-  padding: 15px 75px 15px 25px;
+  padding: 10px 20px;
   position: relative;
-}
-.btn .fas {
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
+  transition: filter 0.2s ease, background-color 0.2s ease;
 }
 .btn.btn-primary {
-  background-color: #ed5791;
+  background-color: var(--c-yellow);
+  color: var(--c-dark-blue);
 }
 .btn.btn-primary:hover {
-  background-color: #eb4082;
-}
-.btn.btn-secondary {
-  background-color: #5b0047;
-}
-.btn.btn-secondary:hover {
-  background-color: #420033;
+  filter: brightness(0.9);
 }
 .btn.btn-outline {
   background-color: transparent;
-  border: 2px solid white;
-  padding: 10px 20px;
+  border: 3px solid var(--c-white);
+  color: var(--c-white);
+  padding: 7px 17px;
+}
+.btn.btn-outline:hover {
+  background-color: var(--c-white);
+  color: var(--c-dark-blue);
+}
+
+.buttons {
+  background-color: var(--c-teal-darker);
 }
 
 .hero {
-  background-color: var(--c-blue);
+  background-color: var(--c-dark-blue);
   background-image: url("../img/3-circle.svg");
   background-repeat: repeat-x;
   background-position: 2px 2px;
   background-size: 26px 76px;
-  color: white;
+  color: var(--c-white);
   position: relative;
   min-height: 500px;
 }
@@ -11994,6 +11994,24 @@ main {
   background-position: right top;
   pointer-events: none;
   z-index: 1;
+}
+@media (width < 1000px) {
+  .hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/hero-geo-pattern-mobile.svg");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 160px 77px;
+    pointer-events: none;
+    z-index: 1;
+  }
 }
 .hero h1 span, .hero .h1 span {
   color: var(--c-teal);
