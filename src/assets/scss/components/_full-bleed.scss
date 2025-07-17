@@ -1,0 +1,59 @@
+// For full bleed sections, we need to remove padding from .container or width from .container and add the padding into the columns so when the columns stack we can just use background color and hide the background gradient from outer div
+
+// possibly use container fluid? these needs to have classes of .col-lg-6 col-md-6 to make the stacking happen at 788px
+.full-bleed {
+	.col-inner {
+		padding: 80px;
+	}
+
+	@include media-breakpoint-down(md) {
+		.container {
+			// set max width for medium and down so theres no extra space on the sides and background colors can span full width
+			max-width: 100%;
+		}
+
+		.col-inner {
+			padding: 20px;
+		}
+	}
+}
+
+.full-bleed-25-75 {
+	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+
+	@include media-breakpoint-down(sm) {
+		background: none;
+	}
+
+	.col-left {
+	}
+
+	.col-right {
+	}
+}
+
+.full-bleed-50-50 {
+	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
+
+	.col-left {
+		background-image: url("../img/circles-bg-pattern.svg");
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: 90px 100%;
+	}
+
+	@include media-breakpoint-down(md) {
+		background: none;
+		.col-left {
+			background-color: var(--c-left);
+			background-image: url("../img/circles-bg-pattern.svg");
+			background-size: 90px 100%;
+			background-repeat: no-repeat;
+			background-position: right top;
+		}
+
+		.col-right {
+			background: var(--c-right);
+		}
+	}
+}

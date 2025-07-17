@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 :root {
   --c-dark-blue: #003c71;
+  --c-dark-blue2: #00366a;
   --c-teal: #00b4ad;
   --c-teal-darker: #007481;
   --c-yellow: #faa400;
@@ -11969,7 +11970,6 @@ main {
 }
 
 .hero {
-  background-color: var(--c-dark-blue);
   background-image: url("../img/3-circle.svg");
   background-repeat: repeat-x;
   background-position: 2px 2px;
@@ -11978,11 +11978,40 @@ main {
   position: relative;
   min-height: 500px;
 }
-.hero .row {
-  align-content: center;
-  height: 500px;
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: auto;
+    padding: 150px 0;
+  }
 }
-.hero::after {
+.hero .row {
+  align-items: center;
+  min-height: 500px;
+}
+@media (max-width: 991.98px) {
+  .hero .row {
+    min-height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .hero img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+.hero .highlight-teal {
+  color: var(--c-teal);
+}
+.hero.hero-blue {
+  background-color: var(--c-dark-blue);
+}
+.hero.hero-dark-teal {
+  background-color: var(--c-teal-darker);
+}
+.hero.hero-teal {
+  background-color: var(--c-teal);
+}
+.hero.hero-homepage::after {
   content: "";
   position: absolute;
   top: 0;
@@ -11995,8 +12024,8 @@ main {
   pointer-events: none;
   z-index: 1;
 }
-@media (width < 1000px) {
-  .hero::after {
+@media (max-width: 991.98px) {
+  .hero.hero-homepage::after {
     content: "";
     position: absolute;
     left: 0;
@@ -12012,9 +12041,6 @@ main {
     pointer-events: none;
     z-index: 1;
   }
-}
-.hero h1 span, .hero .h1 span {
-  color: var(--c-teal);
 }
 
 .faq {
@@ -12070,4 +12096,61 @@ details[open] summary {
 }
 details[open] summary::after {
   background-image: url("../img/open-question.svg");
+}
+
+.full-bleed .col-inner {
+  padding: 80px;
+}
+@media (max-width: 767.98px) {
+  .full-bleed .container {
+    max-width: 100%;
+  }
+  .full-bleed .col-inner {
+    padding: 20px;
+  }
+}
+
+.full-bleed-25-75 {
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+}
+@media (max-width: 575.98px) {
+  .full-bleed-25-75 {
+    background: none;
+  }
+}
+.full-bleed-50-50 {
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
+}
+.full-bleed-50-50 .col-left {
+  background-image: url("../img/circles-bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 90px 100%;
+}
+@media (max-width: 767.98px) {
+  .full-bleed-50-50 {
+    background: none;
+  }
+  .full-bleed-50-50 .col-left {
+    background-color: var(--c-left);
+    background-image: url("../img/circles-bg-pattern.svg");
+    background-size: 90px 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .full-bleed-50-50 .col-right {
+    background: var(--c-right);
+  }
+}
+
+.section-pattern-diamond {
+  background-color: var(--c-dark-blue);
+  background-image: url("../img/diamond-pattern.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.section-bg-dark {
+  color: var(--c-white);
 }

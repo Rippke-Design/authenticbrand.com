@@ -7,6 +7,7 @@
 	<link href="dark-mode-favicon.png" rel="icon" media="(prefers-color-scheme: dark)">
 	<link href="light-mode-favicon.png" rel="icon" media="(prefers-color-scheme: no-preference)">
 	<script src="https://kit.fontawesome.com/fc47785991.js" crossorigin="anonymous"></script>
+	<script src="../assets/js/nav-position.js"></script>
 </head>
 
 <body>
@@ -145,52 +146,12 @@
 		</div>
 	</nav>
 </header>
-
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
-			var dropdown = menu.closest('.dropdown');
-			if (!dropdown) return;
-
-			dropdown.addEventListener('mouseenter', function () {
-				// 1. Temporarily show the menu off-screen for measurement
-				menu.classList.add('pre-hover');
-				menu.style.visibility = 'hidden';
-				menu.style.display = 'block';
-				menu.style.left = '';
-				menu.style.right = '';
-
-				// 2. Measure and set alignment BEFORE showing to user
-				var rect = menu.getBoundingClientRect();
-				var vw = window.innerWidth || document.documentElement.clientWidth;
-
-				if (rect.right > vw) {
-					menu.style.left = 'auto';
-					menu.style.right = '0';
-				} else {
-					menu.style.left = '';
-					menu.style.right = '';
-				}
-
-				// 3. Now allow CSS hover to show the menu
-				menu.style.visibility = '';
-				menu.style.display = '';
-				menu.classList.remove('pre-hover');
-			});
-
-			dropdown.addEventListener('mouseleave', function () {
-				menu.style.left = '';
-				menu.style.right = '';
-			});
-		});
-	});
-</script>
 	<main>
-		<section class="hero">
+		<section class="hero hero-blue hero-homepage">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h1><span>Overcome</span> Random Acts of Marketing®</h1>
+        <h1><span class="highlight-teal">Overcome</span> Random Acts of Marketing®</h1>
         <p class="tagline">
           Marketing Leadership Solutions for the Modern Growth Business
         </p>
@@ -199,21 +160,76 @@
   </div>
 
 </section>
-		<section class="bleed-backgrounds position-relative">
+		<section class="hero hero-inner hero-teal">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-sm-3" style="background-color: #0b8a8a;">
-        <!-- Note padding has to be added inside columns for full bleeds -->
-        <h2>column left</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
-          aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
-          dolores tenetur officiis est corporis quod.</p>
+      <div class="col-lg-7">
+        <h1><span>Overcome</span> Random Acts of Marketing®</h1>
+        <p class="tagline">
+          Marketing Leadership Solutions for the Modern Growth Business
+        </p>
       </div>
-      <div class="col-lg-9 col-sm-9" style="background-color: #14c6c6;">
-        <h2>right column</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
-          aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
-          dolores tenetur officiis est corporis quod.</p>
+
+      <div class="col-lg-5">
+        <img src="https://placehold.co/400x400?text=Placeholder+Image" alt="Placeholder">
+      </div>
+    </div>
+  </div>
+
+</section>
+		<section class="full-bleed full-bleed-50-50" style="--c-left: var(--c-teal); --c-right: var(--c-white);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-left">
+        <div class="col-inner">
+          <h2>column left 50</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-right">
+        <div class="col-inner">
+          <h2>Column right 50</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="full-bleed full-bleed-25-75" style="--c-left: var(--c-teal-darker); --c-right: var(--c-teal);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-left" style="background-color: var(--c-teal-darker)">
+        <!-- Note padding has to be added inside columns for full bleeds -->
+        <div class="col-inner">
+          <h2>column left 25</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
+            aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
+            dolores tenetur officiis est corporis quod.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-9 col-md-9 col-right" style="background-color: var(--c-teal)">
+        <div class="col-inner">
+          <h2>right column 50</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
+            aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
+            dolores tenetur officiis est corporis quod.</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -227,8 +243,6 @@
         #0b8a8a 25%,
         #14c6c6 25%,
         #14c6c6 100%);
-
-
   }
 </style>
 		<section class="buttons">
@@ -270,7 +284,7 @@
           love to connect with you.</p>
 
 
-        <img src="../assets/img/faq-geometric-pattern.webp" class="bleed-img d-none d-sm-block" alt="Pattern">
+        <img src="./assets/img/faq-geometric-pattern.webp" class="bleed-img d-none d-sm-block" alt="Pattern">
       </div>
       <div class="col-lg-8 col-sm-8" style="background-color: #fff;">
 
@@ -393,35 +407,46 @@
   </div>
   </div>
 </section>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>This is your starter project!</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
 
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</div>
-			</div>
-		</div>
+
+		<section class="section-pattern-diamond section-bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-left">
+        <h2>Left col</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-left">
+        <h2>Right col</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 	</main>
 
 	<footer>
