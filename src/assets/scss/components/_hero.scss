@@ -12,6 +12,10 @@
 		padding: 150px 0;
 	}
 
+	@include media-breakpoint-down(md) {
+		padding: 100px 0;
+	}
+
 	.row {
 		align-items: center;
 		min-height: 500px;
@@ -21,9 +25,13 @@
 		}
 	}
 
+	h1 {
+		margin-bottom: 16px;
+	}
+
 	img {
 		@include media-breakpoint-down(lg) {
-			margin: 0 auto;
+			margin: 25px auto 0 auto;
 			display: block;
 		}
 	}
@@ -32,8 +40,7 @@
 		color: var(--c-teal);
 	}
 
-	// hero variations
-
+	// hero backgrounds
 	&.hero-blue {
 		background-color: var(--c-dark-blue);
 	}
@@ -79,5 +86,13 @@
 				z-index: 1;
 			}
 		}
+	}
+}
+
+// Hide <br> tags inside .hero for headlines on smaller screens
+@include media-breakpoint-down(md) {
+	.hero h1 br,
+	.hero h2 br {
+		display: none;
 	}
 }
