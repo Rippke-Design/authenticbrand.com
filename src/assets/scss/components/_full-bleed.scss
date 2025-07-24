@@ -35,7 +35,7 @@
 .full-bleed-50-50 {
 	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(lg) {
 		background: none;
 	}
 
@@ -65,10 +65,16 @@
 		background: var(--c-right);
 	}
 
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(lg) {
 		.container {
 			padding-left: 0;
 			padding-right: 0;
+			max-width: 100%;
+		}
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
 		}
 
 		.col-inner {

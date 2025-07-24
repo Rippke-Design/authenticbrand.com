@@ -12335,7 +12335,7 @@ details[open] summary::after {
 .full-bleed-50-50 {
   background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .full-bleed-50-50 {
     background: none;
   }
@@ -12356,10 +12356,15 @@ details[open] summary::after {
 .full-bleed-50-50 .col-right {
   background: var(--c-right);
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .full-bleed-50-50 .container {
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
+  }
+  .full-bleed-50-50 .row {
+    margin-left: 0;
+    margin-right: 0;
   }
   .full-bleed-50-50 .col-inner {
     padding-left: 2rem;
@@ -12419,7 +12424,7 @@ details[open] summary::after {
 .section-cards {
   padding: 100px 0;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .section-cards {
     padding: 50px 0;
   }
@@ -12431,7 +12436,7 @@ details[open] summary::after {
 .section-cards .card .card-body {
   padding: 70px 50px;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .section-cards .card .card-body {
     padding: 40px 20px;
   }
