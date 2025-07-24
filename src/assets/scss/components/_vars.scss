@@ -1,22 +1,22 @@
 // Brand Colors
-$brand-dark: #231f20;
-$brand-purple: #5b0047;
-$brand-light-purple: #86509f;
-$brand-blue: #0071bc;
-$brand-pink: #ed5791;
-$brand-gray: #414042;
-$brand-white: #fff;
-$brand-light-gray1: #f0f0f0;
-$brand-light-gray2: #bbbdbf;
-$brand-dark-gray: #58595b;
+// $brand-dark: #231f20;
+// $brand-purple: #5b0047;
+// $brand-light-purple: #86509f;
+// $brand-blue: #0071bc;
+// $brand-pink: #ed5791;
+// $brand-gray: #414042;
+// $brand-white: #fff;
+// $brand-light-gray1: #f0f0f0;
+// $brand-light-gray2: #bbbdbf;
+// $brand-dark-gray: #58595b;
 
 // $grid-gutter-width: 16px !default;
 
 $base-spacing-unit: 20px;
 
-$brand-gradient-pink: linear-gradient(180deg, $brand-light-purple 0%, $brand-pink 100%);
+// $brand-gradient-pink: linear-gradient(180deg, $brand-light-purple 0%, $brand-pink 100%);
 
-$breadcrumb-divider: quote("»");
+// $breadcrumb-divider: quote("»");
 
 :root {
 	--c-dark-blue: #003c71;
@@ -24,6 +24,7 @@ $breadcrumb-divider: quote("»");
 	--c-teal: #00b4ad;
 	--c-teal-darker: #007481;
 	--c-yellow: #faa400;
+	--c-yellow-lighter: #feedcc;
 	--c-white: #fff;
 	--c-red: #f42534;
 	--c-black: #000;

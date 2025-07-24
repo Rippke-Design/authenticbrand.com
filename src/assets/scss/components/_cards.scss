@@ -1,0 +1,18 @@
+.section-cards {
+	padding: 100px 0;
+
+	@include media-breakpoint-down(lg) {
+		padding: 50px 0;
+	}
+	.card {
+		border-radius: 10px;
+		border: none;
+		.card-body {
+			padding: 70px 50px;
+
+			@include media-breakpoint-down(lg) {
+				padding: 40px 20px;
+			}
+		}
+	}
+}

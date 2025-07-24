@@ -35,25 +35,51 @@
 .full-bleed-50-50 {
 	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 
+	@include media-breakpoint-down(md) {
+		background: none;
+	}
+
 	.col-left {
-		background-image: url("../img/circles-bg-pattern.svg");
+		background-color: var(--c-left);
+		background-image: var(--col-left-bg); // this comes from the ACF field inline style
 		background-repeat: no-repeat;
 		background-position: right top;
 		background-size: 90px 100%;
+
+		&.has-bg-left {
+			.col-inner {
+				// add more padding to the left
+				padding-left: 4rem;
+			}
+		}
+
+		&.has-bg-right {
+			.col-inner {
+				// add more padding to the right
+				padding-right: 4rem;
+			}
+		}
+	}
+
+	.col-right {
+		background: var(--c-right);
 	}
 
 	@include media-breakpoint-down(md) {
-		background: none;
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.col-inner {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
 		.col-left {
-			background-color: var(--c-left);
-			background-image: url("../img/circles-bg-pattern.svg");
 			background-size: 90px 100%;
 			background-repeat: no-repeat;
 			background-position: right top;
-		}
-
-		.col-right {
-			background: var(--c-right);
 		}
 	}
 }
