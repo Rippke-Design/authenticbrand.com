@@ -1,5 +1,46 @@
 footer {
 	background-color: var(--c-teal-darker);
-	color: white;
+	color: var(--c-white);
 	padding: 40px 0;
+
+	address {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
+
+	.footer-logo {
+		width: 100%;
+		max-width: 290px;
+		margin-bottom: 26px;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	.footer-social {
+		a {
+			color: var(--c-white);
+			transition: color 0.2s ease;
+			&:hover {
+				color: var(--c-black);
+			}
+		}
+	}
+
+	a:not(.btn) {
+		color: var(--c-white);
+		text-decoration: none;
+		&:hover {
+			color: var(--c-black);
+			text-decoration: underline;
+			text-underline-offset: 5px;
+		}
+	}
 }

@@ -90,9 +90,15 @@
 }
 
 // Hide <br> tags inside .hero for headlines on smaller screens
-@include media-breakpoint-down(md) {
-	.hero h1 br,
-	.hero h2 br {
-		display: none;
+@include media-breakpoint-down(lg) {
+	.hero {
+		h1,
+		h2,
+		p {
+			text-align: center;
+			br {
+				display: none;
+			}
+		}
 	}
 }
