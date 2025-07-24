@@ -36,3 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
 		})
 	})
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+	var devToggle = document.getElementById("dev-mode-toggle")
+	if (!devToggle) return
+	devToggle.addEventListener("change", function () {
+		var badges = document.querySelectorAll(".badge")
+		badges.forEach(function (badge) {
+			badge.style.display = devToggle.checked ? "none" : ""
+		})
+	})
+})

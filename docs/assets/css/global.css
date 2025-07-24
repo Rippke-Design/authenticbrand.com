@@ -12459,3 +12459,29 @@ details[open] summary::after {
     padding: 50px 0;
   }
 }
+
+section {
+  position: relative;
+}
+section .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+html {
+  position: relative;
+}
+
+.dev-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: gray;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+  border-top-left-radius: 8px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}

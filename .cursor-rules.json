@@ -29,6 +29,11 @@
 			"description": "Avoid empty Bootstrap columns unless necessary; add a comment if intentional.",
 			"applies_to": ["html"],
 			"enforcement": "recommended"
+		},
+		{
+			"description": "Use only let and const for variable declarations in JavaScript. Do not use var.",
+			"applies_to": ["js"],
+			"enforcement": "required"
 		}
 	]
 }
