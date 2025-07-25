@@ -29,3 +29,13 @@
 .background-black {
 	background-color: var(--c-black);
 }
+
+.background-pattern-cubes {
+	background-image: url("../img/pattern-cubes-light-blue.svg");
+	background-size: 457px 1115px;
+	background-repeat: no-repeat;
+}
+
+.background-pattern-right {
+	background-position: bottom 0 right -90px;
+}

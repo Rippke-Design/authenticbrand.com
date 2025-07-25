@@ -12128,9 +12128,6 @@ footer a:not(.btn):hover {
   text-underline-offset: 5px;
 }
 
-main {
-  padding: 40px 0;
-}
 .btn {
   border: none;
   border-radius: 35px;
@@ -12422,6 +12419,16 @@ details[open] summary::after {
   background-color: var(--c-black);
 }
 
+.background-pattern-cubes {
+  background-image: url("../img/pattern-cubes-light-blue.svg");
+  background-size: 457px 1115px;
+  background-repeat: no-repeat;
+}
+
+.background-pattern-right {
+  background-position: bottom 0 right -90px;
+}
+
 .section-cards {
   padding: 100px 0;
 }
@@ -12484,4 +12491,26 @@ html {
   z-index: 9999;
   border-top-left-radius: 8px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-cards-slider {
+  padding: 100px 0;
+  overflow: hidden;
+}
+@media (max-width: 1199.98px) {
+  .section-cards-slider {
+    padding: 50px 0;
+  }
+}
+.section-cards-slider .card {
+  border-radius: 10px;
+  border: none;
+}
+.section-cards-slider .card .card-body {
+  padding: 70px 50px;
+}
+@media (max-width: 1199.98px) {
+  .section-cards-slider .card .card-body {
+    padding: 40px 20px;
+  }
 }

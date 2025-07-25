@@ -1,0 +1,19 @@
+.section-cards-slider {
+	padding: 100px 0;
+	overflow: hidden;
+
+	@include media-breakpoint-down(xl) {
+		padding: 50px 0;
+	}
+	.card {
+		border-radius: 10px;
+		border: none;
+		.card-body {
+			padding: 70px 50px;
+
+			@include media-breakpoint-down(xl) {
+				padding: 40px 20px;
+			}
+		}
+	}
+}
