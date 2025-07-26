@@ -12429,25 +12429,55 @@ details[open] summary::after {
   background-position: bottom 0 right -90px;
 }
 
-.section-cards {
+.section-hover-cards {
   padding: 100px 0;
 }
 @media (max-width: 1199.98px) {
-  .section-cards {
+  .section-hover-cards {
     padding: 50px 0;
   }
 }
-.section-cards .card {
+.section-hover-cards .card {
   border-radius: 10px;
   border: none;
 }
-.section-cards .card .card-body {
+.section-hover-cards .card.card-dark-blue {
+  background-color: var(--bs-dark-blue) !important;
+}
+.section-hover-cards .card.card-white {
+  background-color: var(--bs-white) !important;
+}
+.section-hover-cards .card .card-body {
   padding: 70px 50px;
 }
 @media (max-width: 1199.98px) {
-  .section-cards .card .card-body {
+  .section-hover-cards .card .card-body {
     padding: 40px 20px;
   }
+}
+.section-hover-cards .card-hover-wrapper {
+  position: relative;
+  background-color: orange;
+}
+.section-hover-cards .card-hover-wrapper .card {
+  height: 100%;
+}
+.section-hover-cards .card-hover-wrapper .card-initial {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.section-hover-cards .card-hover-wrapper .card-hover {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.section-hover-cards .card-hover-wrapper:hover .card-initial {
+  opacity: 0;
 }
 
 .text-banner {
@@ -12485,12 +12515,14 @@ html {
   position: fixed;
   bottom: 0;
   right: 0;
-  background: gray;
+  background-color: var(--bs-danger);
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 10px 20px;
   z-index: 9999;
   border-top-left-radius: 8px;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+}
+.dev-mode input[type=checkbox]:checked ~ label {
+  display: none;
 }
 
 .section-cards-slider {

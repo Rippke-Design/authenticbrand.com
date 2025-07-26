@@ -1,4 +1,4 @@
-.section-cards {
+.section-hover-cards {
 	padding: 100px 0;
 
 	@include media-breakpoint-down(xl) {
@@ -7,11 +7,51 @@
 	.card {
 		border-radius: 10px;
 		border: none;
+
+		&.card-dark-blue {
+			background-color: var(--bs-dark-blue) !important;
+		}
+
+		&.card-white {
+			background-color: var(--bs-white) !important;
+		}
+
 		.card-body {
 			padding: 70px 50px;
 
 			@include media-breakpoint-down(xl) {
 				padding: 40px 20px;
+			}
+		}
+	}
+
+	.card-hover-wrapper {
+		position: relative;
+		background-color: orange;
+
+		.card {
+			height: 100%;
+		}
+
+		.card-initial {
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+			opacity: 1;
+			transition: opacity 0.2s ease-in-out;
+		}
+
+		.card-hover {
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&:hover {
+			.card-initial {
+				opacity: 0;
 			}
 		}
 	}

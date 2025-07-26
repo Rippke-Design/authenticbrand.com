@@ -17,10 +17,13 @@ html {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	background: gray;
+	background-color: var(--bs-danger);
 	color: #fff;
-	padding: 0.5rem 1rem;
+	padding: 10px 20px;
 	z-index: 9999;
 	border-top-left-radius: 8px;
-	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+
+	input[type="checkbox"]:checked ~ label {
+		display: none;
+	}
 }
