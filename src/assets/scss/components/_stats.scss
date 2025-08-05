@@ -1,0 +1,50 @@
+.stats-section {
+	padding: 100px 0;
+
+	.stat-card {
+		background-color: var(--c-blue-lighter);
+		border: none;
+		padding: 20px;
+
+		.stat-card-title {
+			font-size: 40px;
+			position: relative;
+			margin-bottom: 30px;
+
+			&:after {
+				position: absolute;
+				bottom: -15px;
+				left: 0;
+				content: "";
+				width: 60px;
+				height: 2px;
+				background-color: var(--after-color);
+			}
+
+			&.text-dark-blue {
+				color: var(--c-dark-blue);
+				--after-color: var(--c-dark-blue);
+			}
+
+			&.text-teal {
+				color: var(--c-teal);
+				--after-color: var(--c-teal);
+			}
+
+			&.text-teal-darker {
+				color: var(--c-teal-darker);
+				--after-color: var(--c-teal-darker);
+			}
+
+			&.text-yellow {
+				color: var(--c-yellow);
+				--after-color: var(--c-yellow);
+			}
+
+			&.text-red {
+				color: var(--c-red);
+				--after-color: var(--c-red);
+			}
+		}
+	}
+}

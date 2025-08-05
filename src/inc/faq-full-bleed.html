@@ -21,6 +21,7 @@
       </div>
       <div class="col-lg-8 col-sm-8" style="background-color: #fff;">
 
+        <!-- https://codepen.io/kevinpowell/pen/OJKWMwO -->
         <details open>
           <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
@@ -44,7 +45,7 @@
           <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
         </details>
 
-        <details open>
+        <details>
           <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
             animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
@@ -67,7 +68,7 @@
           <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
         </details>
 
-        <details open>
+        <details>
           <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
             animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
@@ -90,7 +91,7 @@
           <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
         </details>
 
-        <details open>
+        <details>
           <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
             animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
@@ -113,7 +114,7 @@
           <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
         </details>
 
-        <details open>
+        <details>
           <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
             animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
@@ -139,4 +140,31 @@
     </div>
   </div>
   </div>
+
+  <style>
+    :root {
+      interpolate-size: allow-keywords;
+    }
+
+    details {
+
+
+      overflow: hidden;
+    }
+
+    /* don't add margin/padding to this, add it to the actual
+   stuff inside the details content */
+    details::details-content {
+
+      block-size: 0;
+      transition: block-size 0.3s, content-visibility 0.3s;
+      transition-behavior: allow-discrete;
+    }
+
+    details:open::details-content {
+      block-size: auto;
+    }
+  </style>
+
+
 </section>
