@@ -12534,6 +12534,15 @@ details[open] summary::after {
   }
 }
 
+.logo-banner {
+  padding: 100px 0;
+}
+@media (max-width: 1199.98px) {
+  .logo-banner {
+    padding: 50px 0;
+  }
+}
+
 section {
   position: relative;
 }
