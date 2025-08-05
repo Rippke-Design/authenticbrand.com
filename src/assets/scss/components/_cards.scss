@@ -1,5 +1,6 @@
 .section-hover-cards {
 	padding: 100px 0;
+	border-bottom: 25px solid var(--c-yellow);
 
 	@include media-breakpoint-down(xl) {
 		padding: 50px 0;
@@ -7,6 +8,10 @@
 	.card {
 		border-radius: 10px;
 		border: none;
+
+		&:hover {
+			cursor: pointer;
+		}
 
 		&.card-dark-blue {
 			background-color: var(--bs-dark-blue) !important;

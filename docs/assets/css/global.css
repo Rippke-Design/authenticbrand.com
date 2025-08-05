@@ -12431,6 +12431,7 @@ details[open] summary::after {
 
 .section-hover-cards {
   padding: 100px 0;
+  border-bottom: 25px solid var(--c-yellow);
 }
 @media (max-width: 1199.98px) {
   .section-hover-cards {
@@ -12440,6 +12441,9 @@ details[open] summary::after {
 .section-hover-cards .card {
   border-radius: 10px;
   border: none;
+}
+.section-hover-cards .card:hover {
+  cursor: pointer;
 }
 .section-hover-cards .card.card-dark-blue {
   background-color: var(--bs-dark-blue) !important;
