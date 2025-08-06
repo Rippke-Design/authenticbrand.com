@@ -1,0 +1,171 @@
+<section id="offscreen-right-slider"
+  class="section-cards-slider background-teal-darker background-pattern-cubes background-pattern-right text-light">
+  <span class="badge text-bg-danger">Offscreen Right Slider</span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 background-teal-darker z-1">
+        <h2>Success Stories</h2>
+        <p>Our work spans industries and scenarios, but one thing remains consistent: our commitment to helping
+          businesses Overcome
+          Random Acts of Marketing® and achieve sustainable growth through strategic leadership.</p>
+
+        <p>Explore our case studies to see how our approach has created a meaningful impact for organizations like
+          yours.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="splide" id="offscreen-right-card-slider" aria-label="Splide Basic HTML Example">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide">&laquo;</button>
+            <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide">&raquo;</button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image1" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image2" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image3" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image4" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image5" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://placehold.co/600x400?text=Image6" alt="Card Image" class="card-img-top">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
+                    <a href="#" class="">Read More</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<style>
+  .splide__track {
+    overflow: visible;
+  }
+
+  #offscreen-right-slider .splide {
+    overflow: visible;
+  }
+
+  #offscreen-right-slider .splide__list {
+    overflow: visible;
+  }
+
+  /* #offscreen-right-slider .container {
+    overflow: visible;
+  }
+
+  #offscreen-right-slider .row {
+    overflow: visible;
+  } */
+
+  /* #offscreen-right-slider .col-lg-6:last-child {
+    overflow: visible;
+  } */
+
+  #offscreen-right-slider {
+    margin-top: 80px;
+  }
+
+  #offscreen-right-slider .splide__arrows {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  #offscreen-right-slider .splide__arrow {
+    position: static;
+    transform: none;
+  }
+</style>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#offscreen-right-card-slider', {
+      perPage: 2,
+      perMove: 1,
+      trimSpace: false,
+      gap: '2rem',
+      pagination: false,
+      breakpoints: {
+        992: {
+          perPage: 1,
+          perMove: 1,
+          trimSpace: false,
+          pagination: false
+        },
+      },
+    }).mount();
+  });
+</script>
