@@ -3,6 +3,7 @@
 :root {
   --c-dark-blue: #003c71;
   --c-dark-blue2: #00366a;
+  --c-blue-light: #bfcedb;
   --c-blue-lighter: #f2f5f8;
   --c-teal: #00b4ad;
   --c-teal-darker: #007481;
@@ -11930,6 +11931,14 @@ h2, .h2 {
   color: var(--c-white);
 }
 
+main a:not(.btn) {
+  color: var(--c-teal-darker);
+  transition: color 0.3s ease-in-out;
+}
+main a:not(.btn):hover {
+  color: #00464e;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -12174,7 +12183,7 @@ footer a:not(.btn):hover {
   border-radius: 35px;
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 20px 8px 20px;
   position: relative;
   transition: filter 0.2s ease, background-color 0.2s ease;
 }
@@ -12301,7 +12310,7 @@ footer a:not(.btn):hover {
 }
 
 .faq {
-  background: linear-gradient(to right, #007481 0%, #007481 25%, #fff 25%, #fff 100%);
+  background: linear-gradient(to right, var(--c-teal-darker) 0%, var(--c-teal-darker) 25%, var(--c-white) 25%, var(--c-white) 100%);
   position: relative;
 }
 .faq .bleed-img {
@@ -12488,6 +12497,10 @@ details[open] summary::after {
   background-color: var(--c-dark-blue);
 }
 
+.background-blue-light {
+  background-color: var(--c-blue-light);
+}
+
 .background-teal {
   background-color: var(--c-teal);
 }
@@ -12516,14 +12529,47 @@ details[open] summary::after {
   background-color: var(--c-black);
 }
 
+/* Patterns */
 .background-pattern-cubes {
   background-image: url("../img/pattern-cubes-light-blue.svg");
   background-size: 457px 1115px;
   background-repeat: no-repeat;
 }
 
+.background-pattern-diamond {
+  background-image: url("../img/diamond-pattern.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.background-pattern-red-dots {
+  background-image: url("../img/red-dots-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 264px 194px;
+}
+
+.background-pattern-stripe-circle {
+  background-image: url("../img/half-circle-stripe-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 450.29px 449.584px;
+}
+
+.background-position-right-center-offscreen {
+  background-position: top 50% right -40px;
+}
+
+.background-position-left-bottom-offscreen {
+  background-position: bottom 100px left -100px;
+}
+
+/* Background positioning */
 .background-pattern-right {
   background-position: bottom 0 right -90px;
+}
+
+.background-pattern-left {
+  background-position: bottom 0 left -90px;
 }
 
 .flip-cards {
@@ -12627,6 +12673,35 @@ details[open] summary::after {
   }
 }
 
+.logo-banner {
+  overflow-x: hidden;
+}
+
+.animate-marquee,
+.animate-marquee2 {
+  display: flex;
+  gap: 30px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Both marquee divs animate same distance left */
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee 15s linear infinite;
+  animation-delay: 7.5s;
+  /* half of animation duration */
+}
+
 .island-section .island {
   padding: 50px;
   border-radius: 15px;
@@ -12677,7 +12752,7 @@ section {
 }
 section .badge {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
   z-index: 2;
 }

@@ -3,7 +3,14 @@
 }
 
 .faq {
-	background: linear-gradient(to right, #007481 0%, #007481 25%, #fff 25%, #fff 100%);
+	background: linear-gradient(
+		to right,
+		var(--c-teal-darker) 0%,
+		var(--c-teal-darker) 25%,
+		var(--c-white) 25%,
+		var(--c-white) 100%
+	);
+
 	position: relative;
 
 	.bleed-img {

@@ -2,6 +2,10 @@
 	background-color: var(--c-dark-blue);
 }
 
+.background-blue-light {
+	background-color: var(--c-blue-light);
+}
+
 .background-teal {
 	background-color: var(--c-teal);
 }
@@ -30,12 +34,47 @@
 	background-color: var(--c-black);
 }
 
+/* Patterns */
+
 .background-pattern-cubes {
 	background-image: url("../img/pattern-cubes-light-blue.svg");
 	background-size: 457px 1115px;
 	background-repeat: no-repeat;
 }
 
+.background-pattern-diamond {
+	background-image: url("../img/diamond-pattern.svg");
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.background-pattern-red-dots {
+	background-image: url("../img/red-dots-pattern.svg");
+	background-repeat: no-repeat;
+	background-size: 264px 194px;
+}
+
+.background-pattern-stripe-circle {
+	background-image: url("../img/half-circle-stripe-pattern.svg");
+	background-repeat: no-repeat;
+	background-size: 450.29px 449.584px;
+}
+
+.background-position-right-center-offscreen {
+	background-position: top 50% right -40px;
+}
+
+.background-position-left-bottom-offscreen {
+	background-position: bottom 100px left -100px;
+}
+
+/* Background positioning */
+
 .background-pattern-right {
 	background-position: bottom 0 right -90px;
+}
+
+.background-pattern-left {
+	background-position: bottom 0 left -90px;
 }

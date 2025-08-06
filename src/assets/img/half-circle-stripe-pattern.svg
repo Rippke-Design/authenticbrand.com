@@ -1,0 +1,29 @@
+<svg width="284" height="451" viewBox="0 0 284 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_55_2700" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-167" y="0" width="451" height="451">
+<path d="M58.7823 450.292C183.127 450.292 283.927 349.649 283.927 225.5C283.927 101.351 183.127 0.708008 58.7823 0.708008C-65.562 0.708008 -166.363 101.351 -166.363 225.5C-166.363 349.649 -65.562 450.292 58.7823 450.292Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_55_2700)">
+<path d="M-269 0.708008H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 22.1204H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 43.5232H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 64.9355H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 86.3386H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 107.751H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 129.163H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 150.566H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 171.979H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 193.391H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 214.794H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 236.206H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 257.609H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 279.021H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 300.434H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 321.837H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 343.249H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 364.661H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 386.064H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 407.477H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 428.879H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+<path d="M-269 450.292H293" stroke="#00B4AD" stroke-width="10" stroke-miterlimit="10"/>
+</g>
+</svg>

@@ -26,6 +26,14 @@ h2 {
 .lead {
 }
 
+main a:not(.btn) {
+	color: var(--c-teal-darker);
+	transition: color 0.3s ease-in-out;
+	&:hover {
+		color: darken(#007481, 10%);
+	}
+}
+
 .poppins-regular {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
