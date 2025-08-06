@@ -1,5 +1,4 @@
-.section-cards-slider {
-	padding: 100px 0;
+.offscreen-slider {
 	overflow: hidden;
 
 	@include media-breakpoint-down(xl) {
@@ -14,6 +13,24 @@
 			@include media-breakpoint-down(xl) {
 				padding: 40px 20px;
 			}
+		}
+	}
+}
+
+// position a before element on top to cover up the cards moving off screen to left side
+#offscreen-right-slider {
+	.container {
+		position: relative;
+		&:before {
+			content: "";
+			height: 100%;
+			width: 600px;
+			background-color: var(--c-teal-darker);
+			position: absolute;
+			z-index: 10;
+			left: -573px;
+			top: 0;
+			bottom: 0;
 		}
 	}
 }

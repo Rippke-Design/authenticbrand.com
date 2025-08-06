@@ -1,3 +1,7 @@
+:root {
+	interpolate-size: allow-keywords;
+}
+
 .faq {
 	background: linear-gradient(to right, #007481 0%, #007481 25%, #fff 25%, #fff 100%);
 	position: relative;
@@ -16,14 +20,46 @@
 		position: relative;
 		overflow: visible;
 	}
+
+	.col-left {
+		.content-inner {
+			padding-right: 50px;
+		}
+	}
+
+	.col-right {
+		.content-inner {
+			padding-left: 50px;
+		}
+	}
 }
 
 details {
 	border-bottom: 1px solid var(--c-teal-darker);
 	padding: 36px 0;
+	overflow: hidden;
+
+	/* don't add margin/padding to this, add it to the actual
+   stuff inside the details content */
+
+	// example: https://codepen.io/nikibrown/pen/wBKdbyd
+	&::details-content {
+		block-size: 0;
+		transition: block-size 0.3s, content-visibility 0.3s;
+		transition-behavior: allow-discrete;
+	}
+
+	&:open::details-content {
+		block-size: auto;
+	}
+
+	&:first-child {
+		padding-top: 0;
+	}
 
 	&:last-child {
 		border-bottom: none;
+		padding-bottom: 0;
 	}
 
 	summary {

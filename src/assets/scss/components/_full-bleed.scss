@@ -3,7 +3,7 @@
 // possibly use container fluid? these needs to have classes of .col-lg-6 col-md-6 to make the stacking happen at 788px
 .full-bleed {
 	.col-inner {
-		padding: 80px;
+		// padding: 80px;
 	}
 
 	@include media-breakpoint-down(md) {
@@ -13,22 +13,54 @@
 		}
 
 		.col-inner {
-			padding: 20px;
+			//padding: 20px;
 		}
 	}
 }
 
+// background gradients
 .full-bleed-25-75 {
 	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+}
 
-	@include media-breakpoint-down(sm) {
+.full-bleed-75-25 {
+	background: linear-gradient(to left, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+}
+
+.full-bleed-50-50 {
+	background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
+}
+
+.full-bleed-25-75,
+.full-bleed-75-25 {
+	@include media-breakpoint-down(lg) {
 		background: none;
 	}
 
 	.col-left {
+		background-color: var(--c-left);
 	}
 
 	.col-right {
+		background-color: var(--c-right);
+	}
+
+	@include media-breakpoint-down(lg) {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 100%;
+		}
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.col-inner {
+			padding-left: 2rem !important;
+			padding-right: 2rem !important;
+		}
 	}
 }
 

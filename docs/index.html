@@ -271,7 +271,7 @@
 
 </section>
 	<main>
-		<section id="cta-banner" class="text-banner background-teal">
+		<section id="cta-banner" class="text-banner background-teal padding-y-100">
   <span class="badge text-bg-danger">CTA Banner</span>
   <div class="container">
     <div class="row ">
@@ -291,7 +291,7 @@
     </div>
   </div>
 </section>
-		<section id="logo-banner" class="logo-banner">
+		<section id="logo-banner" class="logo-banner padding-y-100">
   <span class="badge text-bg-danger">Logo Banner</span>
   <div class="container gy-4">
     <div class="row ">
@@ -319,7 +319,7 @@
     </div>
   </div>
 </section>
-		<section id="stats" class="stats-section">
+		<section id="stats" class="stats-section padding-y-100">
   <span class="badge text-bg-danger">Stats</span>
   <div class="container">
     <div class="row gy-4 mb-4">
@@ -381,7 +381,7 @@
     </div>
   </div>
 </section>
-		<section class="island-section">
+		<section id="island-section" class="island-section padding-y-100">
   <span class="badge text-bg-danger">Island Section</span>
   <div class="container">
     <div class="row">
@@ -426,7 +426,7 @@
     </div>
   </div>
 </section>
-		<section id="flip-cards" class="section-hover-cards background-yellow-lighter">
+		<section id="flip-cards" class="flip-cards background-yellow-lighter padding-y-100">
   <span class=" badge text-bg-danger">Flip Cards</span>
 
 
@@ -438,7 +438,7 @@
 
         <p>Our CMO match process can get you up and running with a marketing leader in days - not months.</p>
 
-        <h3>Here’s how it works:</h3>
+        <h3>Here's how it works:</h3>
       </div>
       <div class="col-lg-4">
         <div class="flip-card h-100">
@@ -601,9 +601,8 @@
     </div>
   </div> -->
 </section>
-
 		<section id="offscreen-slider"
-  class="section-cards-slider background-dark-blue background-pattern-cubes background-pattern-right">
+  class="offscreen-slider background-dark-blue background-pattern-cubes background-pattern-right padding-y-100">
   <span class="badge text-bg-danger">Offscreen Slider</span>
   <div class="container">
     <div class="row">
@@ -755,7 +754,7 @@
   });
 </script>
 		<section id="offscreen-right-slider"
-  class="section-cards-slider background-teal-darker background-pattern-cubes background-pattern-right text-light">
+  class="offscreen-slider background-teal-darker background-pattern-cubes background-pattern-right text-light padding-y-100">
   <span class="badge text-bg-danger">Offscreen Right Slider</span>
   <div class="container">
     <div class="row">
@@ -887,9 +886,6 @@
     overflow: visible;
   } */
 
-  #offscreen-right-slider {
-    margin-top: 80px;
-  }
 
   #offscreen-right-slider .splide__arrows {
     display: flex;
@@ -925,7 +921,6 @@
     }).mount();
   });
 </script>
-
 		<!-- inline css vars are used in _full-bleed.scss - these need to be set in ACF fields -->
 <!-- Need to find a way to allow for adding of additional styling images in each column -->
 <section class="full-bleed full-bleed-50-50" style="--c-left: var(--c-teal); --c-right: var(--c-white);">
@@ -934,7 +929,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-12 col-left"
         style="--col-left-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
-        <div class="col-inner">
+        <div class="col-inner padding-80">
           <h2>Column left 50 - 50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -945,7 +940,7 @@
       </div>
       <div class="col-lg-6 col-md-12 col-right"
         style="--col-right-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
-        <div class="col-inner">
+        <div class="col-inner padding-80">
           <h2>Column right 50 - 50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -965,7 +960,7 @@
     <div class="row">
       <div class="col-lg-6 col-md-12 col-left"
         style="--col-left-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
-        <div class="col-inner">
+        <div class="col-inner padding-80">
           <h2>Column left 50 - 50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -977,7 +972,7 @@
       <div class="col-lg-6 col-md-12 col-right"
         style="--col-right-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
         <!-- if dark blue bg then use text-light on col-inner - this can be done in the ACF field if blue is selected -->
-        <div class="col-inner text-light">
+        <div class="col-inner text-light padding-80">
           <h2 class="text-light">Column right 50 - 50</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -989,22 +984,22 @@
     </div>
   </div>
 </section>
-		<section class="full-bleed full-bleed-25-75" style="--c-left: var(--c-teal-darker); --c-right: var(--c-teal);">
+		<section class="full-bleed full-bleed-25-75" style="--c-left: var(--c-teal-darker); --c-right: var(--c-white);">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-left" style="background-color: var(--c-teal-darker)">
+      <div class="col-lg-3 col-md-12 col-left  text-light" style="background-color: var(--c-teal-darker)">
         <!-- Note padding has to be added inside columns for full bleeds -->
-        <div class="col-inner">
-          <h2>column left 25</h2>
+        <div class="col-inner padding-y-100 padding-end-50">
+          <h2>Column left 25</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
             aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
             dolores tenetur officiis est corporis quod.</p>
         </div>
       </div>
 
-      <div class="col-lg-9 col-md-9 col-right" style="background-color: var(--c-teal)">
-        <div class="col-inner">
-          <h2>right column 50</h2>
+      <div class="col-lg-9 col-md-12 col-right" style="background-color: var(--c-white)">
+        <div class="col-inner padding-y-100 padding-start-50">
+          <h2>Right column 75</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
             aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
             dolores tenetur officiis est corporis quod.</p>
@@ -1015,16 +1010,32 @@
   </div>
   </div>
 </section>
+		<section class="full-bleed full-bleed-25-75" style="--c-left: var(--c-white); --c-right: var(--c-blue-lighter);">
+  <div class="container">
+    <div class="row">
 
-<style>
-  .bleed-backgrounds {
-    background: linear-gradient(to right,
-        #0b8a8a 0%,
-        #0b8a8a 25%,
-        #14c6c6 25%,
-        #14c6c6 100%);
-  }
-</style>
+
+      <div class="col-lg-9 col-md-12 col-left" style="background-color: var(--c-white)">
+        <div class="col-inner padding-y-100 padding-end-50 ">
+          <h2>Column 75</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
+            aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
+            dolores tenetur officiis est corporis quod.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-12 col-right " style="background-color: var(--c-blue-lighter)">
+        <!-- Note padding has to be added inside columns for full bleeds -->
+        <div class="col-inner padding-y-100 padding-start-50">
+          <h2>Column 25</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iusto, ratione placeat voluptatibus
+            aspernatur eum inventore. Reiciendis animi, incidunt recusandae tempore eligendi, molestiae praesentium
+            dolores tenetur officiis est corporis quod.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 		<section class="buttons">
   <div class="container">
     <div class="row">
@@ -1045,178 +1056,160 @@
   </div>
 
 </section>
-		<section class="faq">
+		<section id="faq-full-bleed" class="faq">
+  <span class="badge text-bg-danger">FAQ Full Bleed</span>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-sm-4 faq-bg-bleed " style="background-color: #007481;">
+      <div class="col-lg-4 col-sm-4 faq-bg-bleed background-teal-darker text-light padding-y-100 col-left">
+        <div class="content-inner">
+          <h2>Frequently Asked Questions</h2>
+
+          <p>Growing businesses have many questions about strategic marketing transformation and leadership solutions.
+          </p>
+
+          <p>To help you explore how Authentic® can support your business growth, we've compiled the most frequently
+            asked
+            questions
+            about marketing leadership, business transformation, and our proven methodologies.</p>
+
+          <p>If you have additional questions about overcoming random acts of marketing or building sustainable growth
+            systems, we'd
+            love to connect with you.</p>
+
+        </div>
+
         <!-- Note padding has to be added inside columns for full bleeds -->
-
-        <h2>Frequently Asked Questions</h2>
-
-        <p>Growing businesses have many questions about strategic marketing transformation and leadership solutions.</p>
-
-        <p>To help you explore how Authentic® can support your business growth, we've compiled the most frequently asked
-          questions
-          about marketing leadership, business transformation, and our proven methodologies.</p>
-
-        <p>If you have additional questions about overcoming random acts of marketing or building sustainable growth
-          systems, we'd
-          love to connect with you.</p>
 
 
         <img src="./assets/img/faq-geometric-pattern.webp" class="bleed-img d-none d-sm-block" alt="Pattern">
       </div>
-      <div class="col-lg-8 col-sm-8" style="background-color: #fff;">
+      <div class="col-lg-8 col-sm-8 background-white padding-y-100 col-right">
+        <div class="content-inner">
+          <!-- https://codepen.io/kevinpowell/pen/OJKWMwO -->
+          <details open>
+            <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
+              animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
+            </p>
+          </details>
+          <details>
+            <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
+            <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
+              provide
+              project-based advice, Authentic combines three critical elements: tested, trusted, true marketing
+              executives
+              + proven
+              Authentic Growth® methodology + collaborative mindshare.</p>
 
-        <!-- https://codepen.io/kevinpowell/pen/OJKWMwO -->
-        <details open>
-          <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
-            animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
-          </p>
-        </details>
-        <details>
-          <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
-          <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
-            provide
-            project-based advice, Authentic combines three critical elements: tested, trusted, true marketing executives
-            + proven
-            Authentic Growth® methodology + collaborative mindshare.</p>
+            <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
+              guides. We don't
+              just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
+              business
+              transformation.</p>
 
-          <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
-            guides. We don't
-            just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
-            business
-            transformation.</p>
+            <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
+          </details>
 
-          <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
-        </details>
+          <details>
+            <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
+              animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
+            </p>
+          </details>
+          <details>
+            <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
+            <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
+              provide
+              project-based advice, Authentic combines three critical elements: tested, trusted, true marketing
+              executives
+              + proven
+              Authentic Growth® methodology + collaborative mindshare.</p>
 
-        <details>
-          <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
-            animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
-          </p>
-        </details>
-        <details>
-          <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
-          <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
-            provide
-            project-based advice, Authentic combines three critical elements: tested, trusted, true marketing executives
-            + proven
-            Authentic Growth® methodology + collaborative mindshare.</p>
+            <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
+              guides. We don't
+              just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
+              business
+              transformation.</p>
 
-          <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
-            guides. We don't
-            just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
-            business
-            transformation.</p>
+            <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
+          </details>
 
-          <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
-        </details>
+          <details>
+            <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
+              animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
+            </p>
+          </details>
+          <details>
+            <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
+            <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
+              provide
+              project-based advice, Authentic combines three critical elements: tested, trusted, true marketing
+              executives
+              + proven
+              Authentic Growth® methodology + collaborative mindshare.</p>
 
-        <details>
-          <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
-            animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
-          </p>
-        </details>
-        <details>
-          <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
-          <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
-            provide
-            project-based advice, Authentic combines three critical elements: tested, trusted, true marketing executives
-            + proven
-            Authentic Growth® methodology + collaborative mindshare.</p>
+            <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
+              guides. We don't
+              just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
+              business
+              transformation.</p>
 
-          <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
-            guides. We don't
-            just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
-            business
-            transformation.</p>
+            <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
+          </details>
 
-          <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
-        </details>
+          <details>
+            <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
+              animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
+            </p>
+          </details>
+          <details>
+            <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
+            <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
+              provide
+              project-based advice, Authentic combines three critical elements: tested, trusted, true marketing
+              executives
+              + proven
+              Authentic Growth® methodology + collaborative mindshare.</p>
 
-        <details>
-          <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
-            animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
-          </p>
-        </details>
-        <details>
-          <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
-          <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
-            provide
-            project-based advice, Authentic combines three critical elements: tested, trusted, true marketing executives
-            + proven
-            Authentic Growth® methodology + collaborative mindshare.</p>
+            <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
+              guides. We don't
+              just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
+              business
+              transformation.</p>
 
-          <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
-            guides. We don't
-            just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
-            business
-            transformation.</p>
+            <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
+          </details>
 
-          <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
-        </details>
+          <details>
+            <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
+              animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
+            </p>
+          </details>
+          <details>
+            <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
+            <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
+              provide
+              project-based advice, Authentic combines three critical elements: tested, trusted, true marketing
+              executives
+              + proven
+              Authentic Growth® methodology + collaborative mindshare.</p>
 
-        <details>
-          <summary>What does it mean to "Overcome Random Acts of Marketing®"?</summary>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ullam ab et doloribus ratione officia
-            animi porro dolores magnam obcaecati minus iure autem laudantium, iusto, nisi ipsum quidem tenetur facere!
-          </p>
-        </details>
-        <details>
-          <summary>How does Authentic's approach differ from marketing agencies and consultants?</summary>
-          <p>Unlike traditional marketing agencies that focus on tactical execution or independent consultants who
-            provide
-            project-based advice, Authentic combines three critical elements: tested, trusted, true marketing executives
-            + proven
-            Authentic Growth® methodology + collaborative mindshare.</p>
+            <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
+              guides. We don't
+              just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
+              business
+              transformation.</p>
 
-          <p>Our marketing executives are W2 employees with executive-level experience who work as strategic growth
-            guides. We don't
-            just execute marketing tactics—we build comprehensive marketing operating systems that drive sustainable
-            business
-            transformation.</p>
-
-          <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
-        </details>
+            <p>Learn about our unique Marketers + Methodology + Mindshare approach to marketing transformation.</p>
+          </details>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-
-  <style>
-    :root {
-      interpolate-size: allow-keywords;
-    }
-
-    details {
-
-
-      overflow: hidden;
-    }
-
-    /* don't add margin/padding to this, add it to the actual
-   stuff inside the details content */
-    details::details-content {
-
-      block-size: 0;
-      transition: block-size 0.3s, content-visibility 0.3s;
-      transition-behavior: allow-discrete;
-    }
-
-    details:open::details-content {
-      block-size: auto;
-    }
-  </style>
-
-
 </section>
-
-
 		<section class="section-pattern-diamond section-bg-dark">
   <div class="container">
     <div class="row">
@@ -1254,9 +1247,6 @@
     </div>
   </div>
 </section>
-
-
-
 	</main>
 
 	<footer>

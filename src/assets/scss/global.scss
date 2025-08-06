@@ -2,6 +2,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "components/structure";
 @import "components/typography";
+@import "components/padding";
 @import "components/header";
 @import "components/nav";
 @import "components/footer";
@@ -15,7 +16,7 @@
 @import "components/patterns";
 @import "components/backgrounds";
 @import "components/cards";
-@import "components/text-banner";
+@import "components/cta-banner";
 @import "components/logo-banner";
 @import "components/island";
 @import "components/stats";
