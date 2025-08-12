@@ -38,7 +38,7 @@
 
 .background-pattern-cubes {
 	background-image: url("../img/pattern-cubes-light-blue.svg");
-	background-size: 457px 1115px;
+	background-size: var(--bg-img-width) var(--bg-img-height);
 	background-repeat: no-repeat;
 }
 
@@ -47,18 +47,31 @@
 	background-repeat: repeat;
 	background-size: contain;
 	background-position: center;
+	// background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 .background-pattern-red-dots {
 	background-image: url("../img/red-dots-pattern.svg");
 	background-repeat: no-repeat;
-	background-size: 264px 194px;
+	background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 .background-pattern-stripe-circle {
 	background-image: url("../img/half-circle-stripe-pattern.svg");
 	background-repeat: no-repeat;
-	background-size: 450.29px 449.584px;
+	background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-stripe-circle-dark {
+	background-image: url("../img/half-circle-stripe-pattern-dark.svg");
+	background-repeat: no-repeat;
+	background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-circle-dot {
+	background-image: url("../img/circle-dot.svg");
+	background-repeat: no-repeat;
+	background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 .background-position-right-center-offscreen {
@@ -67,6 +80,16 @@
 
 .background-position-left-bottom-offscreen {
 	background-position: bottom 100px left -100px;
+}
+
+.background-position-left-top-offscreen {
+	background-position: top calc((var(--bg-img-height) / 2) * -1) left calc((var(--bg-img-width) / 2) * -1);
+	//background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-position-right-bottom-offscreen {
+	background-position: bottom calc((var(--bg-img-height) / 2) * -1) right calc((var(--bg-img-width) / 2) * -1);
+	//background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 /* Background positioning */

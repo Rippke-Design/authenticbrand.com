@@ -12,3 +12,12 @@
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
+
+section {
+	// when columns stack, add gap to .row
+	@include media-breakpoint-down(lg) {
+		.row {
+			gap: 25px;
+		}
+	}
+}

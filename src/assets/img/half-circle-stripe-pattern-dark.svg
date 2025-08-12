@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 460 459.6">
+  <!-- Generator: Adobe Illustrator 29.6.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 207)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: #007481;
+      }
+    </style>
+    <mask id="mask" x="0" y="0" width="460" height="459.6" maskUnits="userSpaceOnUse">
+      <g id="mask0_55_2700">
+        <path class="st1" d="M225.8,454.6c124.3,0,225.1-100.6,225.1-224.8S350.1,5,225.8,5,.6,105.6.6,229.8s100.8,224.8,225.1,224.8Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="st0">
+    <g>
+      <rect class="st2" width="460" height="10"/>
+      <rect class="st2" y="21.4" width="460" height="10"/>
+      <rect class="st2" y="42.8" width="460" height="10"/>
+      <rect class="st2" y="64.2" width="460" height="10"/>
+      <rect class="st2" y="85.6" width="460" height="10"/>
+      <rect class="st2" y="107" width="460" height="10"/>
+      <rect class="st2" y="128.5" width="460" height="10"/>
+      <rect class="st2" y="149.9" width="460" height="10"/>
+      <rect class="st2" y="171.3" width="460" height="10"/>
+      <rect class="st2" y="192.7" width="460" height="10"/>
+      <rect class="st2" y="214.1" width="460" height="10"/>
+      <rect class="st2" y="235.5" width="460" height="10"/>
+      <rect class="st2" y="256.9" width="460" height="10"/>
+      <rect class="st2" y="278.3" width="460" height="10"/>
+      <rect class="st2" y="299.7" width="460" height="10"/>
+      <rect class="st2" y="321.1" width="460" height="10"/>
+      <rect class="st2" y="342.5" width="460" height="10"/>
+      <rect class="st2" y="364" width="460" height="10"/>
+      <rect class="st2" y="385.4" width="460" height="10"/>
+      <rect class="st2" y="406.8" width="460" height="10"/>
+      <rect class="st2" y="428.2" width="460" height="10"/>
+      <rect class="st2" y="449.6" width="460" height="10"/>
+    </g>
+  </g>
+</svg>

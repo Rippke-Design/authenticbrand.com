@@ -11906,6 +11906,12 @@ textarea.form-control-lg {
   padding-right: 2rem;
 }
 
+@media (max-width: 991.98px) {
+  section .row {
+    gap: 25px;
+  }
+}
+
 html,
 body {
   font-weight: 400;
@@ -12532,7 +12538,7 @@ details[open] summary::after {
 /* Patterns */
 .background-pattern-cubes {
   background-image: url("../img/pattern-cubes-light-blue.svg");
-  background-size: 457px 1115px;
+  background-size: var(--bg-img-width) var(--bg-img-height);
   background-repeat: no-repeat;
 }
 
@@ -12546,13 +12552,25 @@ details[open] summary::after {
 .background-pattern-red-dots {
   background-image: url("../img/red-dots-pattern.svg");
   background-repeat: no-repeat;
-  background-size: 264px 194px;
+  background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 .background-pattern-stripe-circle {
   background-image: url("../img/half-circle-stripe-pattern.svg");
   background-repeat: no-repeat;
-  background-size: 450.29px 449.584px;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-stripe-circle-dark {
+  background-image: url("../img/half-circle-stripe-pattern-dark.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-circle-dot {
+  background-image: url("../img/circle-dot.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
 }
 
 .background-position-right-center-offscreen {
@@ -12563,6 +12581,14 @@ details[open] summary::after {
   background-position: bottom 100px left -100px;
 }
 
+.background-position-left-top-offscreen {
+  background-position: top calc(var(--bg-img-height) / 2 * -1) left calc(var(--bg-img-width) / 2 * -1);
+}
+
+.background-position-right-bottom-offscreen {
+  background-position: bottom calc(var(--bg-img-height) / 2 * -1) right calc(var(--bg-img-width) / 2 * -1);
+}
+
 /* Background positioning */
 .background-pattern-right {
   background-position: bottom 0 right -90px;
@@ -12570,6 +12596,34 @@ details[open] summary::after {
 
 .background-pattern-left {
   background-position: bottom 0 left -90px;
+}
+
+.card {
+  --bs-card-border-radius: 15px;
+}
+
+.card-padding-large {
+  padding: 50px;
+}
+@media (max-width: 991.98px) {
+  .card-padding-large {
+    padding: 25px;
+  }
+}
+
+.card-horizontal {
+  overflow-x: hidden;
+}
+.card-horizontal .card-image-right {
+  object-fit: cover;
+  border-radius: 0 var(--bs-card-border-radius) var(--bs-card-border-radius) 0;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+@media (max-width: 991.98px) {
+  .card-horizontal .card-image-right {
+    margin: 0 -25px -25px -25px;
+  }
 }
 
 .flip-cards {

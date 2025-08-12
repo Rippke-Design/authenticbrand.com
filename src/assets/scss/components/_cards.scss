@@ -1,3 +1,27 @@
+.card {
+	--bs-card-border-radius: 15px;
+}
+
+.card-padding-large {
+	padding: 50px;
+	@include media-breakpoint-down(lg) {
+		padding: 25px;
+	}
+}
+
+.card-horizontal {
+	overflow-x: hidden;
+	.card-image-right {
+		object-fit: cover;
+		border-radius: 0 var(--bs-card-border-radius) var(--bs-card-border-radius) 0;
+		margin-top: -50px;
+		margin-bottom: -50px;
+		@include media-breakpoint-down(lg) {
+			margin: 0 -25px -25px -25px;
+		}
+	}
+}
+
 .flip-cards {
 	border-bottom: 25px solid var(--c-yellow);
 
