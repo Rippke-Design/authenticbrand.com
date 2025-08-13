@@ -12368,8 +12368,9 @@ details {
 }
 details::details-content {
   block-size: 0;
-  transition: block-size 0.3s, content-visibility 0.3s;
+  transition: block-size 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), content-visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition-behavior: allow-discrete;
+  will-change: block-size;
 }
 details:open::details-content {
   block-size: auto;
@@ -12409,6 +12410,27 @@ details[open] summary {
 }
 details[open] summary::after {
   background-image: url("../img/open-question.svg");
+}
+
+.accordion-icon summary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 991.98px) {
+  .accordion-icon summary {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.accordion-icon .details-inner {
+  padding-left: 90px;
+}
+@media (max-width: 991.98px) {
+  .accordion-icon .details-inner {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -12527,6 +12549,10 @@ details[open] summary::after {
   background-color: var(--c-blue-light);
 }
 
+.background-blue-lighter {
+  background-color: var(--c-blue-lighter);
+}
+
 .background-teal {
   background-color: var(--c-teal);
 }
@@ -12621,6 +12647,7 @@ details[open] summary::after {
 .card {
   --bs-card-border-radius: 15px;
   --bs-card-inner-border-radius: 15px;
+  border: none;
 }
 
 .card-padding-large {
@@ -12829,7 +12856,7 @@ details[open] summary::after {
   /* half of animation duration */
 }
 
-.island-section .island {
+.island {
   padding: 50px;
   border-radius: 15px;
 }
@@ -12936,4 +12963,109 @@ html {
   left: -573px;
   top: 0;
   bottom: 0;
+}
+
+.timeline {
+  position: relative;
+  padding: 50px 0;
+}
+
+/* Base gray line */
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--c-blue-light);
+}
+
+.timeline-fill {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 0;
+  background: var(--c-red);
+  /*   transition: height 0.4s ease; */
+  /* Smooth height animation */
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  gap: 20px;
+}
+
+/* Dots */
+.timeline-dot {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: 8px;
+  flex-basis: 50px;
+}
+
+.timeline-dot::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: var(--c-blue-light);
+  border: 4px solid var(--c-white);
+  box-shadow: 0 0 0 9px var(--c-blue-light);
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: -16px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Content boxes */
+.timeline-content {
+  background: var(--c-white);
+  padding: 15px;
+  border-radius: 15px;
+  flex-basis: calc(100% - 50px - 20px);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .timeline-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.timeline-content:before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid var(--c-white);
+}
+.timeline-content .eyebrow {
+  font-size: 18px;
+  display: block;
+  font-weight: 500;
+}
+
+/* Active state */
+.timeline-item.active .timeline-dot::before {
+  background: var(--c-red);
+  border: 4px solid var(--c-white);
+  box-shadow: 0 0 0 9px var(--c-red);
+}
+
+/* Make completed dots var(	--c-red (stay var(	--c-red after passing) */
+.timeline-item.completed .timeline-dot::before {
+  background: var(--c-red);
+  border: 4px solid var(--c-white);
+  box-shadow: 0 0 0 9px var(--c-red);
 }

@@ -1,0 +1,113 @@
+.timeline {
+	position: relative;
+	padding: 50px 0;
+}
+
+/* Base gray line */
+.timeline-line {
+	position: absolute;
+	left: 20px;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	background: var(--c-blue-light);
+}
+
+.timeline-fill {
+	position: absolute;
+	left: 20px;
+	top: 0;
+	width: 4px;
+	height: 0;
+	background: var(--c-red);
+	/*   transition: height 0.4s ease; */
+	/* Smooth height animation */
+}
+
+.timeline-item {
+	display: flex;
+	align-items: center;
+	margin: 50px 0;
+	gap: 20px;
+}
+
+/* Dots */
+.timeline-dot {
+	position: relative;
+	flex-shrink: 0;
+	// margin-right: 30px;
+	margin-left: 8px;
+	flex-basis: 50px;
+}
+
+.timeline-dot::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	background: var(--c-blue-light);
+	border: 4px solid var(--c-white);
+	box-shadow: 0 0 0 9px var(--c-blue-light);
+	border-radius: 50%;
+	position: absolute;
+	left: 2px;
+	top: -16px;
+	transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Content boxes */
+.timeline-content {
+	background: var(--c-white);
+	padding: 15px;
+	border-radius: 15px;
+	//box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	//transition: transform 0.3s ease, box-shadow 0.3s ease;
+	flex-basis: calc(100% - 50px - 20px);
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	position: relative;
+
+	@include media-breakpoint-down(lg) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: -12px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 0;
+		height: 0;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-right: 12px solid var(--c-white);
+	}
+
+	.eyebrow {
+		font-size: 18px;
+		display: block;
+		font-weight: 500;
+	}
+}
+
+/* Active state */
+.timeline-item.active .timeline-dot::before {
+	background: var(--c-red);
+	border: 4px solid var(--c-white);
+	box-shadow: 0 0 0 9px var(--c-red);
+}
+
+// .timeline-item.active .timeline-content {
+// 	transform: scale(1.05);
+// 	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+// }
+
+/* Make completed dots var(	--c-red (stay var(	--c-red after passing) */
+.timeline-item.completed .timeline-dot::before {
+	background: var(--c-red);
+	border: 4px solid var(--c-white);
+	box-shadow: 0 0 0 9px var(--c-red);
+}
