@@ -113,3 +113,33 @@
 		font-size: 0.875rem;
 	}
 }
+
+.offer-card {
+	border: none;
+	margin-bottom: 20px;
+	strong {
+		color: var(--c-teal);
+	}
+}
+
+.what-we-offer {
+	h3 {
+		color: var(--c-dark-blue);
+	}
+	.row {
+		row-gap: 100px;
+		@include media-breakpoint-down(lg) {
+			row-gap: 25px;
+		}
+	}
+
+	.offer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.offer-card {
+			margin-top: auto;
+		}
+	}
+}
