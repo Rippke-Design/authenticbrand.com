@@ -1,5 +1,6 @@
 .card {
 	--bs-card-border-radius: 15px;
+	--bs-card-inner-border-radius: 15px;
 }
 
 .card-padding-large {
@@ -141,5 +142,30 @@
 		.offer-card {
 			margin-top: auto;
 		}
+	}
+}
+
+.success-stories {
+	.row {
+		row-gap: 50px;
+		@include media-breakpoint-down(lg) {
+			row-gap: 25px;
+		}
+	}
+}
+.success-story-card {
+	height: 100%;
+	will-change: transform, box-shadow;
+	transform: translateZ(0); // Force GPU acceleration
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+	h3 {
+		color: var(--c-dark-blue);
+	}
+
+	&:hover {
+		transform: scale(1.03) translateZ(0);
+		cursor: pointer;
+		box-shadow: 0 0 12.7px 3px rgba(0, 0, 0, 0.4);
 	}
 }
