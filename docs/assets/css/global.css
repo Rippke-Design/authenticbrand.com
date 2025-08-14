@@ -12541,36 +12541,84 @@ details[open] summary::after {
   color: var(--c-white);
 }
 
+.background-curved-bottom {
+  overflow: visible;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.background-curved-bottom:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 80px;
+  border-radius: 88%/100%;
+  transform: translateY(40px);
+  z-index: 0;
+}
+.background-curved-bottom + section {
+  margin-top: -40px;
+  padding-top: 140px !important;
+  z-index: 0;
+}
+@media (max-width: 1199.98px) {
+  .background-curved-bottom + section {
+    padding-top: 90px !important;
+  }
+}
+
+.has-curved-section-above {
+  margin-top: -40px;
+  padding-top: 140px !important;
+  z-index: 0;
+}
+@media (max-width: 1199.98px) {
+  .has-curved-section-above {
+    padding-top: 90px !important;
+  }
+}
+
 .background-dark-blue {
   background-color: var(--c-dark-blue);
+  --bg-color: var(--c-dark-blue);
 }
 
 .background-blue-light {
   background-color: var(--c-blue-light);
+  --bg-color: var(--c-blue-light);
 }
 
 .background-blue-lighter {
   background-color: var(--c-blue-lighter);
+  --bg-color: var(--c-blue-lighter);
 }
 
 .background-teal {
   background-color: var(--c-teal);
+  --bg-color: var(--c-teal);
 }
 
 .background-teal-darker {
   background-color: var(--c-teal-darker);
+  --bg-color: var(--c-teal-darker);
 }
 
 .background-yellow {
   background-color: var(--c-yellow);
+  --bg-color: var(--c-yellow);
 }
 
 .background-yellow-lighter {
   background-color: var(--c-yellow-lighter);
+  --bg-color: var(--c-yellow-lighter);
 }
 
 .background-white {
   background-color: var(--c-white);
+  --bg-color: var(--c-white);
 }
 
 .background-red {
@@ -12579,6 +12627,7 @@ details[open] summary::after {
 
 .background-black {
   background-color: var(--c-black);
+  --bg-color: var(--c-black);
 }
 
 /* Patterns */
