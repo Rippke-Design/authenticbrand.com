@@ -11937,6 +11937,20 @@ h2, .h2 {
   color: var(--c-white);
 }
 
+article h1, article .h1 {
+  color: var(--c-dark-blue);
+}
+article h2, article .h2 {
+  color: var(--c-dark-blue);
+}
+article h3, article .h3 {
+  color: var(--c-teal);
+}
+
+#article-content {
+  border-top: 15px solid var(--c-dark-blue);
+}
+
 main a:not(.btn) {
   color: var(--c-teal-darker);
   transition: color 0.3s ease-in-out;

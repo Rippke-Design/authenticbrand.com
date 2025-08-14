@@ -23,6 +23,23 @@ h2 {
 	}
 }
 
+article {
+	h1 {
+		color: var(--c-dark-blue);
+	}
+	h2 {
+		color: var(--c-dark-blue);
+	}
+
+	h3 {
+		color: var(--c-teal);
+	}
+}
+
+#article-content {
+	border-top: 15px solid var(--c-dark-blue);
+}
+
 .lead {
 }
 
