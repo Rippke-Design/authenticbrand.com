@@ -90,6 +90,20 @@
 
 /* Patterns */
 
+.background-pattern-circle-row-top {
+	background-image: url("../img/3-circle.svg");
+	background-repeat: repeat-x;
+	background-position: 2px 2px;
+	background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
+}
+
+.background-pattern-circle-row-bottom {
+	background-image: url("../img/3-circle.svg");
+	background-repeat: repeat-x;
+	background-position: 2px bottom;
+	background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
+}
+
 .background-pattern-cubes {
 	background-image: url("../img/pattern-cubes-light-blue.svg");
 	background-size: var(--bg-img-width) var(--bg-img-height);
