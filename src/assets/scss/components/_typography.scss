@@ -1,5 +1,26 @@
 $brand-font: "Poppins", sans-serif;
 
+#tinymce {
+	padding: 30px;
+}
+
+.mce-colorbutton .mce-grid td {
+	background-color: transparent !important;
+	height: 20px !important;
+	width: 20px !important;
+	border: 1px solid #ddd !important;
+}
+
+.mce-colorbutton .mce-grid td span {
+	display: block !important;
+	height: 18px !important;
+	width: 18px !important;
+}
+
+.mce-grid.mce-grid-border.mce-colorbutton-grid tbody tr:nth-last-child(-n + 2) {
+	display: none !important;
+}
+
 html,
 body {
 	font-weight: 400;
