@@ -6,8 +6,8 @@
 	background: linear-gradient(
 		to right,
 		var(--c-teal-darker) 0%,
-		var(--c-teal-darker) 25%,
-		var(--c-white) 25%,
+		var(--c-teal-darker) 50%,
+		var(--c-white) 50%,
 		var(--c-white) 100%
 	);
 
@@ -17,7 +17,7 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		width: 520px;
+		width: 1493px;
 		max-width: none;
 		z-index: 0;
 		pointer-events: none;
