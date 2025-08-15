@@ -1,8 +1,8 @@
 .hero {
-	background-image: url("../img/3-circle.svg");
-	background-repeat: repeat-x;
-	background-position: 2px 2px;
-	background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
+	// background-image: url("../img/3-circle.svg");
+	// background-repeat: repeat-x;
+	// background-position: 2px 2px;
+	// background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
 	color: var(--c-white);
 	position: relative;
 	min-height: 500px;
@@ -41,17 +41,17 @@
 	}
 
 	// hero backgrounds
-	&.hero-blue {
-		background-color: var(--c-dark-blue);
-	}
+	// &.hero-blue {
+	// 	background-color: var(--c-dark-blue);
+	// }
 
-	&.hero-dark-teal {
-		background-color: var(--c-teal-darker);
-	}
+	// &.hero-dark-teal {
+	// 	background-color: var(--c-teal-darker);
+	// }
 
-	&.hero-teal {
-		background-color: var(--c-teal);
-	}
+	// &.hero-teal {
+	// 	background-color: var(--c-teal);
+	// }
 
 	&.hero-homepage {
 		&::after {

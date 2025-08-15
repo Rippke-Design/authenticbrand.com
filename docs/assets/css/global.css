@@ -11937,6 +11937,11 @@ h2, .h2 {
   color: var(--c-white);
 }
 
+strong {
+  font-weight: 600;
+  color: var(--c-teal-darker);
+}
+
 article h1, article .h1 {
   color: var(--c-dark-blue);
 }
@@ -12246,10 +12251,6 @@ footer a:not(.btn):hover {
 }
 
 .hero {
-  background-image: url("../img/3-circle.svg");
-  background-repeat: repeat-x;
-  background-position: 2px 2px;
-  background-size: 26px 76px;
   color: var(--c-white);
   position: relative;
   min-height: 500px;
@@ -12285,15 +12286,6 @@ footer a:not(.btn):hover {
 }
 .hero .highlight-teal {
   color: var(--c-teal);
-}
-.hero.hero-blue {
-  background-color: var(--c-dark-blue);
-}
-.hero.hero-dark-teal {
-  background-color: var(--c-teal-darker);
-}
-.hero.hero-teal {
-  background-color: var(--c-teal);
 }
 .hero.hero-homepage::after {
   content: "";
@@ -12657,7 +12649,13 @@ details[open] summary::after {
 
 .background-pattern-cubes {
   background-image: url("../img/pattern-cubes-light-blue.svg");
-  background-size: var(--bg-img-width) var(--bg-img-height);
+  background-size: 262px 840px;
+  background-repeat: no-repeat;
+}
+
+.background-pattern-cubes-reverse {
+  background-image: url("../img/pattern-cubes-light-blue-reverse.svg");
+  background-size: 262px 840px;
   background-repeat: no-repeat;
 }
 
@@ -12710,11 +12708,11 @@ details[open] summary::after {
 
 /* Background positioning */
 .background-pattern-right {
-  background-position: bottom 0 right -90px;
+  background-position: bottom 0 right 0;
 }
 
 .background-pattern-left {
-  background-position: bottom 0 left -90px;
+  background-position: bottom 0 left 0;
 }
 
 .card {

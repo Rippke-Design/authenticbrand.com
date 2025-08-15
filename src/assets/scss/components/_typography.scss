@@ -23,6 +23,11 @@ h2 {
 	}
 }
 
+strong {
+	font-weight: 600;
+	color: var(--c-teal-darker);
+}
+
 article {
 	h1 {
 		color: var(--c-dark-blue);
