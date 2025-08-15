@@ -47,6 +47,15 @@ header {
 		border-radius: 0;
 		border: none;
 		padding: 30px 40px !important;
+		@include media-breakpoint-down(xl) {
+			padding: 20px 0px !important;
+			width: 100% !important;
+			overflow: hidden;
+
+			hr {
+				border: none;
+			}
+		}
 	}
 
 	form {

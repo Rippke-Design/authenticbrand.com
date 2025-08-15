@@ -12081,6 +12081,16 @@ header .dropdown-menu {
   border: none;
   padding: 30px 40px !important;
 }
+@media (max-width: 1199.98px) {
+  header .dropdown-menu {
+    padding: 20px 0px !important;
+    width: 100% !important;
+    overflow: hidden;
+  }
+  header .dropdown-menu hr {
+    border: none;
+  }
+}
 header form {
   margin-bottom: 0;
 }
