@@ -12333,13 +12333,12 @@ footer a:not(.btn):hover {
     display: none;
   }
 }
-:root {
-  interpolate-size: allow-keywords;
-}
-
 .faq {
   background: linear-gradient(to right, var(--c-teal-darker) 0%, var(--c-teal-darker) 50%, var(--c-white) 50%, var(--c-white) 100%);
   position: relative;
+}
+.faq .details-inner {
+  padding-top: 20px;
 }
 .faq .bleed-img {
   position: absolute;
@@ -12361,21 +12360,31 @@ footer a:not(.btn):hover {
   padding-left: 50px;
 }
 
+@supports (contain: paint) and (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+  details {
+    border-bottom: 1px solid var(--c-teal-darker);
+    padding: 36px 0;
+    overflow: hidden;
+  }
+  details::details-content {
+    block-size: 0;
+    transition: block-size 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), content-visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-behavior: allow-discrete;
+    will-change: block-size;
+  }
+  details:open::details-content {
+    block-size: auto;
+  }
+}
 details {
   border-bottom: 1px solid var(--c-teal-darker);
   padding: 36px 0;
   overflow: hidden;
   /* don't add margin/padding to this, add it to the actual
     stuff inside the details content */
-}
-details::details-content {
-  block-size: 0;
-  transition: block-size 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), content-visibility 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition-behavior: allow-discrete;
-  will-change: block-size;
-}
-details:open::details-content {
-  block-size: auto;
 }
 details:first-child {
   padding-top: 0;
@@ -12406,9 +12415,6 @@ details summary::after {
   background-position: center;
   background-size: contain;
   transition: background-image 0.2s ease;
-}
-details[open] summary {
-  margin-bottom: 20px;
 }
 details[open] summary::after {
   background-image: url("../img/open-question.svg");
