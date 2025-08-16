@@ -12489,11 +12489,11 @@ details[open] summary::after {
 }
 
 .full-bleed-25-75 {
-  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 }
 
 .full-bleed-75-25 {
-  background: linear-gradient(to left, var(--c-left) 0%, var(--c-left) 25%, var(--c-right) 25%, var(--c-right) 100%);
+  background: linear-gradient(to left, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 }
 
 .full-bleed-50-50 {

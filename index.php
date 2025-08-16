@@ -11,6 +11,8 @@ if( have_rows('components') ):
             get_template_part('inc/cta-banner');
         elseif( get_row_layout() == 'logo-banner' ):
             get_template_part('inc/logo-banner');
+        elseif( get_row_layout() == 'awards-section' ):
+            get_template_part('inc/awards-section');
         endif;
     endwhile;
 endif;
