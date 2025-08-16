@@ -2,10 +2,18 @@
 	overflow-x: hidden;
 }
 
+.marquee-wrapper {
+	display: flex;
+	width: max-content;
+}
+
 .animate-marquee,
 .animate-marquee2 {
 	display: flex;
-	gap: 30px;
+	//gap: 30px;
+	@extend .gap-4;
+	white-space: nowrap;
+	flex-shrink: 0;
 }
 
 @keyframes marquee {
@@ -18,13 +26,7 @@
 	}
 }
 
-/* Both marquee divs animate same distance left */
-.animate-marquee {
-	animation: marquee 15s linear infinite;
-}
-
-.animate-marquee2 {
-	animation: marquee 15s linear infinite;
-	animation-delay: 7.5s;
-	/* half of animation duration */
+/* Single animation for the wrapper containing both marquees */
+.marquee-wrapper {
+	animation: marquee 25s linear infinite;
 }
