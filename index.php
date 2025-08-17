@@ -13,7 +13,7 @@ if( have_rows('components') ):
             get_template_part('inc/logo-banner');
         elseif( get_row_layout() == 'awards-section' ):
             get_template_part('inc/awards-section');
-        elseif( get_row_layout() == 'icon-tabs' ):
+        elseif( get_row_layout() == 'icon-tabs-section' ):
             get_template_part('inc/icon-tabs');
         endif;
     endwhile;

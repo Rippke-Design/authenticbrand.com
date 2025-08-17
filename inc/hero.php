@@ -19,19 +19,3 @@
       </div>
     </div>
 </section>
-
-
-<!-- <ul style="list-style: none; padding: 0; margin: 0;">
-  <li style=" margin-bottom: 8px;">
-    <span style="width: 20px; height: 20px; background: #003c71; margin-right: 8px;">&nbsp; &nbsp; &nbsp;</span>Dark Blue
-  </li>
-  <li style=" margin-bottom: 8px;">
-    <span style="width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;">&nbsp; &nbsp; &nbsp;</span>Teal
-  </li>
-  <li style=" margin-bottom: 8px;">
-    <span style="width: 20px; height: 20px; background: #007481; margin-right: 8px;">&nbsp; &nbsp; &nbsp;</span>Dark Teal
-  </li>
-  <li style="">
-    <span style="width: 20px; height: 20px; background: #faa400; margin-right: 8px;">&nbsp; &nbsp; &nbsp;</span>Yellow
-  </li>
-</ul> -->

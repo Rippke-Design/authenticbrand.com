@@ -3,6 +3,7 @@
 		border: none;
 		gap: 40px;
 		flex-direction: column;
+		justify-content: center;
 
 		@include media-breakpoint-down(lg) {
 			flex-direction: row;
