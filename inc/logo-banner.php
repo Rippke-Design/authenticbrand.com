@@ -1,4 +1,5 @@
-<section id="logo-banner" class="logo-banner <?php the_sub_field('background_color'); ?> padding-y-100">
+<section id="logo-banner-<?php echo get_row_index(); ?>"
+  class="logo-banner <?php the_sub_field('background_color'); ?> padding-y-100">
   <!-- <span class="badge text-bg-danger">Logo Banner</span> -->
   <div class="container gy-4">
     <div class="row ">
