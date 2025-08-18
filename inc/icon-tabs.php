@@ -1,4 +1,4 @@
-<section id="con-tabs-<?php echo get_row_index(); ?>"
+<section id="icon-tabs-<?php echo get_row_index(); ?>"
   class="icon-tabs background-dark-blue padding-y-100 background-pattern-circle-row-bottom">
   <!-- <span class="badge text-bg-danger">Icon Tabs</span> -->
   <div class="container">

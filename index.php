@@ -15,6 +15,8 @@ if( have_rows('components') ):
             get_template_part('inc/awards-section');
         elseif( get_row_layout() == 'icon-tabs-section' ):
             get_template_part('inc/icon-tabs');
+        elseif( get_row_layout() == 'full-width-columns' ):
+            get_template_part('inc/full-width-columns');
         endif;
     endwhile;
 endif;
