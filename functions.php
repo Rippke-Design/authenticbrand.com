@@ -107,3 +107,7 @@ add_filter('acf/prepare_field/type=message', function($field) {
     add_filter('acf/escape', '__return_false');
     return $field;
 });
+
+
+// add featured image
+add_theme_support('post-thumbnails');

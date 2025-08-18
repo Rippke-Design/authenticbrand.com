@@ -17,6 +17,8 @@ if( have_rows('components') ):
             get_template_part('inc/icon-tabs');
         elseif( get_row_layout() == 'full-width-columns' ):
             get_template_part('inc/full-width-columns');
+        elseif( get_row_layout() == 'offscreen-slider' ):
+            get_template_part('inc/offscreen-slider');
         endif;
     endwhile;
 endif;

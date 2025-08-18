@@ -11908,7 +11908,7 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
-  section .row {
+  section:not([class^=full-bleed]) .row {
     gap: 25px;
   }
 }
@@ -12493,7 +12493,7 @@ details[open] summary::after {
 }
 
 .full-bleed-75-25 {
-  background: linear-gradient(to left, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 50%, var(--c-right) 50%, var(--c-right) 100%);
 }
 
 .full-bleed-50-50 {
@@ -13068,14 +13068,14 @@ html {
   }
 }
 
-#offscreen-right-slider .container {
+.offscreen-right-slider .container {
   position: relative;
 }
-#offscreen-right-slider .container:before {
+.offscreen-right-slider .container:before {
   content: "";
   height: 100%;
   width: 600px;
-  background-color: var(--c-teal-darker);
+  background-color: var(--c-background, red);
   position: absolute;
   z-index: 10;
   left: -573px;

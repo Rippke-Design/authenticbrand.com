@@ -18,14 +18,14 @@
 }
 
 // position a before element on top to cover up the cards moving off screen to left side
-#offscreen-right-slider {
+.offscreen-right-slider {
 	.container {
 		position: relative;
 		&:before {
 			content: "";
 			height: 100%;
 			width: 600px;
-			background-color: var(--c-teal-darker);
+			background-color: var(--c-background, red);
 			position: absolute;
 			z-index: 10;
 			left: -573px;

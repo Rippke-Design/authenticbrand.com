@@ -13,8 +13,9 @@
 	padding-right: 2rem;
 }
 
-section {
+section:not([class^="full-bleed"]) {
 	// when columns stack, add gap to .row
+	// TODO: add exceptions for full-bleed columns
 	@include media-breakpoint-down(lg) {
 		.row {
 			gap: 25px;
