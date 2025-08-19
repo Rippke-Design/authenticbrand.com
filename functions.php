@@ -111,3 +111,15 @@ add_filter('acf/prepare_field/type=message', function($field) {
 
 // add featured image
 add_theme_support('post-thumbnails');
+
+
+// ACF Site options page
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title'    => 'Site Options',
+        'menu_title'    => 'Site Options',
+        'menu_slug'     => 'site-options',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
