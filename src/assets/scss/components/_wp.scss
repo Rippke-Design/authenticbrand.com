@@ -1,0 +1,97 @@
+// WordPress core alignment classes
+
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	text-align: center;
+	clear: both;
+}
+
+.alignwide {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: block;
+}
+
+.alignfull {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: block;
+}
+
+.wp-block {
+	&.alignleft {
+		float: left;
+		margin-right: 1.5em;
+		margin-bottom: 1em;
+	}
+	&.alignright {
+		float: right;
+		margin-left: 1.5em;
+		margin-bottom: 1em;
+	}
+	&.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+		text-align: center;
+		clear: both;
+	}
+	&.alignwide {
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		display: block;
+	}
+	&.alignfull {
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		display: block;
+	}
+}
+
+// Responsive tweaks
+@include media-breakpoint-down(md) {
+	.alignleft,
+	.alignright,
+	.wp-block.alignleft,
+	.wp-block.alignright {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.alignwide,
+	.alignfull,
+	.wp-block.alignwide,
+	.wp-block.alignfull {
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}

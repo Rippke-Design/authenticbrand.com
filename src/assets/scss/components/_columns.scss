@@ -1,0 +1,9 @@
+.contained-columns-section {
+	.row {
+		@include media-breakpoint-down(lg) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

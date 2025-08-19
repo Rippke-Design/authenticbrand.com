@@ -31,6 +31,8 @@ if( have_rows('components') ):
             get_template_part('inc/flip-cards-section');
         elseif( get_row_layout() == 'solution-section' ):
             get_template_part('inc/solutions-section');
+        elseif( get_row_layout() == 'contained-columns' ):
+            get_template_part('inc/contained-columns-section');
         endif;
     endwhile;
 endif;

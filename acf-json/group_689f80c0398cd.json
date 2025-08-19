@@ -2276,6 +2276,119 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_68a50690999a6": {
+                    "key": "layout_68a50690999a6",
+                    "name": "contained-columns",
+                    "label": "Contained Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a50690999a7",
+                            "label": "Contained Columns Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a50690999a8",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a50690999aa",
+                            "label": "Columns",
+                            "name": "columns",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_689f80c0b67b0",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 1,
+                            "max": 4,
+                            "collapsed": "",
+                            "button_label": "Add Column",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a50690999ab",
+                                    "label": "Column Content",
+                                    "name": "column_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a50690999aa"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -2316,5 +2429,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755637715
+    "modified": 1755645701
 }
