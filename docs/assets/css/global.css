@@ -12293,6 +12293,23 @@ body .gform_wrapper .gform_footer input[type=submit] {
   width: fit-content !important;
 }
 
+body .gform_wrapper input[type=text],
+body .gform_wrapper input[type=email],
+body .gform_wrapper textarea,
+body .gform_wrapper select {
+  background-color: var(--c-white) !important;
+  border-radius: 10px !important;
+  border: 2px solid #d1d3d4 !important;
+  padding: 8px 16px;
+}
+body .gform_wrapper input[type=text]:focus,
+body .gform_wrapper input[type=email]:focus,
+body .gform_wrapper textarea:focus,
+body .gform_wrapper select:focus {
+  outline: none !important;
+  border-color: #9ca1a3 !important;
+}
+
 .hero {
   color: var(--c-white);
   position: relative;

@@ -1,0 +1,13 @@
+body .gform_wrapper input[type="text"],
+body .gform_wrapper input[type="email"],
+body .gform_wrapper textarea,
+body .gform_wrapper select {
+	background-color: var(--c-white) !important;
+	border-radius: 10px !important;
+	border: 2px solid #d1d3d4 !important;
+	padding: 8px 16px;
+	&:focus {
+		outline: none !important;
+		border-color: darken(#d1d3d4, 20%) !important;
+	}
+}

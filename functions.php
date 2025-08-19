@@ -67,6 +67,33 @@ add_filter('tiny_mce_before_init', function ($mce_init) {
     return $mce_init;
 });
 
+// Add TinyMCE Button Options
+function add_tinymce_button_options() {
+    // Check if user has permission to edit posts
+    if (!current_user_can('edit_posts') && !current_user_can('edit_pages')) {
+        return;
+    }
+
+    // Add only in Rich Editor mode
+    if (get_user_option('rich_editing') == 'true') {
+        add_filter('mce_external_plugins', 'add_tinymce_plugin');
+        add_filter('mce_buttons', 'register_tinymce_button');
+    }
+}
+add_action('admin_init', 'add_tinymce_button_options');
+
+// Register the plugin
+function add_tinymce_plugin($plugin_array) {
+    $plugin_array['authentic_buttons'] = get_template_directory_uri() . '/js/tinymce-buttons.js';
+    return $plugin_array;
+}
+
+// Register the button
+function register_tinymce_button($buttons) {
+    array_push($buttons, 'authentic_buttons');
+    return $buttons;
+}
+
 // Allow additional inline CSS properties
 add_filter('safe_style_css', 'allow_additional_inline_css_properties');
 function allow_additional_inline_css_properties($allowed_css) {
