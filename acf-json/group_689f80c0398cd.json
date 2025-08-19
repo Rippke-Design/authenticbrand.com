@@ -1,0 +1,2320 @@
+{
+    "key": "group_689f80c0398cd",
+    "title": "Components",
+    "fields": [
+        {
+            "key": "field_689f80c0b67b0",
+            "label": "Components",
+            "name": "components",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "Section at the top of each page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_689f80d966ad1": {
+                    "key": "layout_689f80d966ad1",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_689f8adbecf5f",
+                            "label": "Hero Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n\r\n\r\n<ul style=\"list-style: none;  display: flex; gap: 10px;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li>\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_689f895fce70b",
+                            "label": "Homepage Hero?",
+                            "name": "homepage_hero",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Adds positioned graphic to the right of hero.",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_689f80e6b67b1",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_689f81715b50c",
+                            "label": "Hero Headline",
+                            "name": "hero_headline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_689f81895b50d",
+                            "label": "Hero Sub Headline",
+                            "name": "hero_sub_headline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_689f81c648745",
+                            "label": "Hero Image",
+                            "name": "hero_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_689f895fce70b",
+                                        "operator": "!=",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_689f91bb2f951": {
+                    "key": "layout_689f91bb2f951",
+                    "name": "cta-banner",
+                    "label": "CTA Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_689f91bb2f952",
+                            "label": "CTA Banner Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_689f91bb2f954",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_689f91bb2f955",
+                            "label": "CTA Banner Content",
+                            "name": "cta_banner_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_689f927fa862e",
+                            "label": "CTA Buttons",
+                            "name": "cta_buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Button",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_689f928da862f",
+                                    "label": "CTA Button",
+                                    "name": "cta_button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "allow_in_bindings": 0,
+                                    "parent_repeater": "field_689f927fa862e"
+                                },
+                                {
+                                    "key": "field_689f92d03c239",
+                                    "label": "Button Color",
+                                    "name": "button_color",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "btn-yellow": "Yellow",
+                                        "btn-outline": "White Outline",
+                                        "btn-white": "White",
+                                        "btn-blue": "Blue"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_689f927fa862e"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_689fb956dffb4": {
+                    "key": "layout_689fb956dffb4",
+                    "name": "logo-banner",
+                    "label": "Logo Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_689fb956dffb5",
+                            "label": "CTA Banner Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_689fb956dffb6",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_689fb956dffb7",
+                            "label": "Logo Banner Content",
+                            "name": "logo_banner_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_689fb956dffb8",
+                            "label": "Logos",
+                            "name": "logos",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Logo",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_689fb956dffb9",
+                                    "label": "Logo",
+                                    "name": "logo",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "allow_in_bindings": 0,
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_689fb956dffb8"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a0a7124235c": {
+                    "key": "layout_68a0a7124235c",
+                    "name": "awards-section",
+                    "label": "Awards Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a0a7124235d",
+                            "label": "Award Section Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a0a7124235e",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a0a7124235f",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a0a71242360",
+                            "label": "Awards",
+                            "name": "awards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Award",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a0a71242361",
+                                    "label": "Award Image",
+                                    "name": "award_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "allow_in_bindings": 0,
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_68a0a71242360"
+                                },
+                                {
+                                    "key": "field_68a0a75342362",
+                                    "label": "Award Date",
+                                    "name": "award_date",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a0a71242360"
+                                },
+                                {
+                                    "key": "field_68a0a75c42363",
+                                    "label": "Award Text",
+                                    "name": "award_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a0a71242360"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a1e785ecb94": {
+                    "key": "layout_68a1e785ecb94",
+                    "name": "icon-tabs-section",
+                    "label": "Icon Tabs Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a1e785ecb95",
+                            "label": "Icon Tabs Section Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a1e785ecb96",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a1e785ecb97",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a1e785ecb98",
+                            "label": "Tab Content",
+                            "name": "tab_content",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Tab Content",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a1e785ecb99",
+                                    "label": "Tab Icon",
+                                    "name": "tab_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "Recommended size: 80 x 80 px",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "allow_in_bindings": 0,
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_68a1e785ecb98"
+                                },
+                                {
+                                    "key": "field_68a1e785ecb9b",
+                                    "label": "Tab Content Image",
+                                    "name": "tab_content_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "allow_in_bindings": 0,
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_68a1e785ecb98"
+                                },
+                                {
+                                    "key": "field_68a1e941420df",
+                                    "label": "Tab Content Headline",
+                                    "name": "tab_content_headline",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a1e785ecb98"
+                                },
+                                {
+                                    "key": "field_68a1e785ecb9a",
+                                    "label": "Tab Content",
+                                    "name": "tab_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a1e785ecb98"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a27310e6bf7": {
+                    "key": "layout_68a27310e6bf7",
+                    "name": "full-width-columns",
+                    "label": "Full Width Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a27310e6bf8",
+                            "label": "Full Width Columns Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a2738f3d9a9",
+                            "label": "Column Layout",
+                            "name": "column_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "full-bleed-50-50": "50% Columns",
+                                "full-bleed-25-75": "25% Column 75% Column",
+                                "full-bleed-75-25": "75% Column 25% Column"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a27310e6bf9",
+                            "label": "Left Column Background Color",
+                            "name": "left_column_background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "var(--c-dark-blue)": "Dark Blue",
+                                "var(--c-teal)": "Teal",
+                                "var(--c-teal-darker)": "Dark Teal",
+                                "var(--c-yellow)": "Yellow",
+                                "var(--c-white)": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a2734ee6c00",
+                            "label": "Left Column Content",
+                            "name": "left_column_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a27357e6c01",
+                            "label": "Right Column Background Color",
+                            "name": "right_column_background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "var(--c-dark-blue)": "Dark Blue",
+                                "var(--c-teal)": "Teal",
+                                "var(--c-teal-darker)": "Dark Teal",
+                                "var(--c-yellow)": "Yellow",
+                                "var(--c-white)": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a27365e6c02",
+                            "label": "Right Column Content",
+                            "name": "right_column_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a36c006808a": {
+                    "key": "layout_68a36c006808a",
+                    "name": "offscreen-slider",
+                    "label": "Offscreen Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a36c006808b",
+                            "label": "Offscreen Slider Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a36e99bc264",
+                            "label": "Column Layout",
+                            "name": "column_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "slider-50-50": "50% Columns (slider in the right column)",
+                                "slider-100": "100% Column (slider on its own line)"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a36c006808d",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a36c006808e",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a36c849d550",
+                            "label": "CTA Button",
+                            "name": "cta_button",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "Optional CTA Button",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_68a36c959d551",
+                            "label": "CTA Button Style",
+                            "name": "cta_button_style",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "btn-yellow": "Yellow",
+                                "btn-outline": "White Outline (only on dark backgrounds)",
+                                "btn-white": "White (only on dark backgrounds)",
+                                "btn-blue": "Blue"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a36d138f816",
+                            "label": "Slides",
+                            "name": "slides",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4ad95193b8": {
+                    "key": "layout_68a4ad95193b8",
+                    "name": "faq-section",
+                    "label": "FAQ Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4ad95193bd",
+                            "label": "FAQ Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a4ad95193bf",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4ad95193c0",
+                            "label": "Left Column Content",
+                            "name": "left_column_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4adff193c4",
+                            "label": "FAQ Items",
+                            "name": "faq_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add FAQ Item",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4b0a45dc12",
+                                    "label": "Open?",
+                                    "name": "open",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_68a4adff193c4"
+                                },
+                                {
+                                    "key": "field_68a4ae1e193c5",
+                                    "label": "FAQ Headline",
+                                    "name": "faq_headline",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a4adff193c4"
+                                },
+                                {
+                                    "key": "field_68a4ae28193c6",
+                                    "label": "FAQ Content",
+                                    "name": "faq_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a4adff193c4"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4b803e9673": {
+                    "key": "layout_68a4b803e9673",
+                    "name": "stats-section",
+                    "label": "Stats Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4b803e9674",
+                            "label": "Stats Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a4b803e9675",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4b803e9676",
+                            "label": "Left Column Content",
+                            "name": "left_column_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4b83ae967b",
+                            "label": "Right Column Content",
+                            "name": "right_column_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4b803e9677",
+                            "label": "Stats",
+                            "name": "stats",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add FAQ Item",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4b803e9679",
+                                    "label": "Stat Number",
+                                    "name": "stat_number",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a4b803e9677"
+                                },
+                                {
+                                    "key": "field_68a4b86fc9ad6",
+                                    "label": "Stat Unit",
+                                    "name": "stat_unit",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "% or + etc",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a4b803e9677"
+                                },
+                                {
+                                    "key": "field_68a4b803e967a",
+                                    "label": "Stat Content",
+                                    "name": "stat_content",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a4b803e9677"
+                                },
+                                {
+                                    "key": "field_68a4b8fe4ccb1",
+                                    "label": "Stat Text Color",
+                                    "name": "stat_text_color",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "text-dark-blue": "Dark Blue",
+                                        "text-yellow": "Yellow",
+                                        "text-red": "Red",
+                                        "text-teal": "Teal",
+                                        "text-teal-darker": "Dark Teal"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68a4b803e9677"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_68a4b8a20b789",
+                            "label": "Stat Bottom CTA",
+                            "name": "stat_bottom_cta",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4be5cb6b3d": {
+                    "key": "layout_68a4be5cb6b3d",
+                    "name": "island-section",
+                    "label": "Island Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4be5cb6b3e",
+                            "label": "Island Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a4be5cb6b3f",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4be5cb6b40",
+                            "label": "Before Island Content",
+                            "name": "before_island_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4dee16e026",
+                            "label": "Island Background Color",
+                            "name": "island_background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4d369afce6",
+                            "label": "Island Content Top",
+                            "name": "island_content_top",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4be9db6b49",
+                            "label": "Use Columns?",
+                            "name": "use_columns",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_68a4c96c3ca3c",
+                            "label": "Columns",
+                            "name": "columns",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a4be9db6b49",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Column",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4c97b3ca3d",
+                                    "label": "Column Content",
+                                    "name": "column_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a4c96c3ca3c"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_68a4d38cafce7",
+                            "label": "Island Content Bottom",
+                            "name": "island_content_bottom",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4be87b6b48",
+                            "label": "After Island Content",
+                            "name": "after_island_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4c0d36c9e4": {
+                    "key": "layout_68a4c0d36c9e4",
+                    "name": "form-section",
+                    "label": "Form Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4c0d36c9e6",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4d9191b220",
+                            "label": "Form Section Layout",
+                            "name": "form_section_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "form-25-75": "25% Column 75% Column",
+                                "form-100": "100% Width Column"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4c0d36c9e7",
+                            "label": "Form Section Content",
+                            "name": "form_section_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4c0f86c9ea",
+                            "label": "Gravity Form",
+                            "name": "gravity_form",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "CTA Form",
+                                "2": "Newsletter Form"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4d4aee065d": {
+                    "key": "layout_68a4d4aee065d",
+                    "name": "flip-cards-section",
+                    "label": "Flip Cards Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4d4aee065e",
+                            "label": "Flip Cards Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a4d4aee065f",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4d4aee0660",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4d4aee0661",
+                            "label": "Flip Cards",
+                            "name": "flip_cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 3,
+                            "max": 3,
+                            "collapsed": "",
+                            "button_label": "Add Flip Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4d4aee0663",
+                                    "label": "Card Front (Default State)",
+                                    "name": "card_front",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a4d4aee0661"
+                                },
+                                {
+                                    "key": "field_68a4d50e193fb",
+                                    "label": "Card Back (Flipped state)",
+                                    "name": "card_back",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a4d4aee0661"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_68a4e26894fab": {
+                    "key": "layout_68a4e26894fab",
+                    "name": "solution-section",
+                    "label": "Solution Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4e26894fac",
+                            "label": "Solution Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a4e26894fad",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a4e26894fae",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a4e26894fb2",
+                            "label": "Solution Cards",
+                            "name": "solution_cards",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_689f80c0b67b0",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Card",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4e26894fb3",
+                                    "label": "Card Content",
+                                    "name": "card_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a4e26894fb2"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_68a4e26894fb5",
+                            "label": "Bottom Content",
+                            "name": "bottom_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Component"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755637715
+}

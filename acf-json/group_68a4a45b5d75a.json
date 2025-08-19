@@ -1,0 +1,226 @@
+{
+    "key": "group_68a4a45b5d75a",
+    "title": "Navigation",
+    "fields": [
+        {
+            "key": "field_68a4a45b82eff",
+            "label": "Main Nav Links",
+            "name": "main_nav_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Main Nav Link",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68a4a47982f00",
+                    "label": "Main Nav Link",
+                    "name": "main_nav_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_68a4a45b82eff"
+                },
+                {
+                    "key": "field_68a4a4a782f01",
+                    "label": "Dropdown Menu",
+                    "name": "dropdown_menu",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_68a4a45b82eff"
+                },
+                {
+                    "key": "field_68a4a4ca82f02",
+                    "label": "Dropdown Menu Column",
+                    "name": "dropdown_menu_columns",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_68a4a4a782f01",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Dropdown Menu Column",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_68a4a5bc82f03",
+                            "label": "Dropdown Menu Section",
+                            "name": "dropdown_menu_section",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Dropdown Menu Section",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a4a72a0fe4b",
+                                    "label": "Dropdown Menu Section Heading",
+                                    "name": "dropdown_menu_section_heading",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a4a5bc82f03"
+                                },
+                                {
+                                    "key": "field_68a4a7420fe4c",
+                                    "label": "Dropdown Menu Links",
+                                    "name": "dropdown_menu_links",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Add Dropdown Menu Links",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_68a4a7570fe4d",
+                                            "label": "Dropdown Menu Link",
+                                            "name": "dropdown_menu_link",
+                                            "aria-label": "",
+                                            "type": "link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "allow_in_bindings": 0,
+                                            "parent_repeater": "field_68a4a7420fe4c"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_68a4a5bc82f03"
+                                }
+                            ],
+                            "parent_repeater": "field_68a4a4ca82f02"
+                        }
+                    ],
+                    "parent_repeater": "field_68a4a45b82eff"
+                }
+            ]
+        },
+        {
+            "key": "field_68a4ac005d38d",
+            "label": "Main Nav CTA Button",
+            "name": "main_nav_cta_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "CTA Button in top right of main nav",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1755637692
+}
