@@ -1,44 +1,45 @@
 <section id="island-section-<?php echo get_row_index(); ?>" class="island-section padding-y-100">
-  <span class="badge text-bg-danger">Island Section</span>
+  <!-- <span class="badge text-bg-danger">Island Section</span> -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
+        <?php if (get_sub_field('before_island_content')): ?>
+        <div class="mb-5">
+          <?php the_sub_field('before_island_content'); ?>
+        </div>
+        <?php endif; ?>
+
         <div class="island background-dark-blue text-white text-center">
           <div class="island-content">
-            <h2 class="text-white">Our Core Values</h2>
-            <p>Our core values define us and guide every decision and relationship.</p>
+            <div class="row">
+              <div class="col-lg-12 text-white mb-5">
+                <?php the_sub_field('island_content_top'); ?>
+              </div>
+            </div>
 
             <div class="row text-center mb-4">
+              <?php if( have_rows('columns') ): ?>
+              <?php while( have_rows('columns') ): the_row(); ?>
               <div class="col">
-                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
-                <h3>Headline</h3>
+                <?php the_sub_field('column_content'); ?>
               </div>
-              <div class="col">
-                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
-                <h3>Headline</h3>
-              </div>
-              <div class="col">
-                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
-                <h3>Headline</h3>
-              </div>
-              <div class="col">
-                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
-                <h3>Headline</h3>
-              </div>
-              <div class="col">
-                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
-                <h3>Headline</h3>
-              </div>
-
+              <?php endwhile; ?>
+              <?php endif; ?>
             </div>
 
             <div class="row">
-              <div class="col-lg-12 text-center">
-                <a href="#" class="btn btn-primary">CTA Button</a>
+              <div class="col-lg-12">
+                <?php the_sub_field('island_content_bottom'); ?>
               </div>
             </div>
           </div>
         </div>
+
+        <?php if (get_sub_field('after_island_content')): ?>
+        <div class="mt-5">
+          <?php the_sub_field('after_island_content'); ?>
+        </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
