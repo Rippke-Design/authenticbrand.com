@@ -27,6 +27,8 @@ if( have_rows('components') ):
             get_template_part('inc/island-section');
         elseif( get_row_layout() == 'form-section' ):
             get_template_part('inc/form-section');
+        elseif( get_row_layout() == 'flip-cards-section' ):
+            get_template_part('inc/flip-cards-section');
         endif;
     endwhile;
 endif;
