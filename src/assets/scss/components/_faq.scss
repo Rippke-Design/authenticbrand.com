@@ -9,8 +9,25 @@
 
 	position: relative;
 
+	@include media-breakpoint-down(lg) {
+		background: none;
+	}
+
+	@include media-breakpoint-down(lg) {
+		// set max width for medium and down so theres no extra space on the sides and background colors can span full width
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 100%;
+		}
+
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
 	.details-inner {
-		//padding-top: 20px;
 		padding-bottom: 36px;
 	}
 
@@ -32,12 +49,20 @@
 	.col-left {
 		.content-inner {
 			padding-right: 50px;
+			@include media-breakpoint-down(lg) {
+				padding-left: 2rem !important;
+				padding-right: 2rem !important;
+			}
 		}
 	}
 
 	.col-right {
 		.content-inner {
 			padding-left: 50px;
+			@include media-breakpoint-down(lg) {
+				padding-left: 2rem !important;
+				padding-right: 2rem !important;
+			}
 		}
 	}
 }

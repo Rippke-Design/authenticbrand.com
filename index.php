@@ -19,6 +19,8 @@ if( have_rows('components') ):
             get_template_part('inc/full-width-columns');
         elseif( get_row_layout() == 'offscreen-slider' ):
             get_template_part('inc/offscreen-slider');
+        elseif( get_row_layout() == 'faq-section' ):
+            get_template_part('inc/faq-section');
         endif;
     endwhile;
 endif;

@@ -11908,7 +11908,7 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
-  section:not([class^=full-bleed]) .row {
+  section:not([class^=full-bleed]):not(.faq) .row {
     gap: 25px;
   }
 }
@@ -12369,6 +12369,22 @@ footer a:not(.btn):hover {
   background: linear-gradient(to right, var(--c-teal-darker) 0%, var(--c-teal-darker) 50%, var(--c-white) 50%, var(--c-white) 100%);
   position: relative;
 }
+@media (max-width: 991.98px) {
+  .faq {
+    background: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .faq .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .faq .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .faq .details-inner {
   padding-bottom: 36px;
 }
@@ -12388,8 +12404,20 @@ footer a:not(.btn):hover {
 .faq .col-left .content-inner {
   padding-right: 50px;
 }
+@media (max-width: 991.98px) {
+  .faq .col-left .content-inner {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
 .faq .col-right .content-inner {
   padding-left: 50px;
+}
+@media (max-width: 991.98px) {
+  .faq .col-right .content-inner {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 @supports (interpolate-size: allow-keywords) {
