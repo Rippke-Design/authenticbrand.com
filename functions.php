@@ -82,9 +82,9 @@ function add_tinymce_button_options() {
 }
 add_action('admin_init', 'add_tinymce_button_options');
 
-// Register the plugin
+// Add Buttons to TinyMCE
 function add_tinymce_plugin($plugin_array) {
-    $plugin_array['authentic_buttons'] = get_template_directory_uri() . '/js/tinymce-buttons.js';
+    $plugin_array['authentic_buttons'] = get_template_directory_uri() . '/docs/assets/js/tinymce-buttons.js';
     return $plugin_array;
 }
 

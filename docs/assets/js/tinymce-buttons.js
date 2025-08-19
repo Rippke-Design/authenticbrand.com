@@ -4,7 +4,7 @@
 			// Add button to toolbar
 			editor.addButton("authentic_buttons", {
 				type: "menubutton",
-				text: "Authentic Buttons",
+				text: "▶ CTA Buttons",
 				icon: false,
 				menu: [
 					{

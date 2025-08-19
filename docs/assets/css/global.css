@@ -13034,6 +13034,13 @@ details[open] summary::after {
   padding: 50px;
   border-radius: 15px;
 }
+@media (max-width: 991.98px) {
+  .island .island-columns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .stats-section .stat-card {
   background-color: var(--c-blue-lighter);

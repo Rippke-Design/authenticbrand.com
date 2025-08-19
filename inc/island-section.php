@@ -1,4 +1,25 @@
-<section id="island-section-<?php echo get_row_index(); ?>" class="island-section padding-y-100">
+<?php
+$island_background_color = get_sub_field('island_background_color');
+$island_text_color = "";
+// if color is background-dark-blue, background-teal,  background-teal-darker  
+if ($island_background_color == "background-dark-blue" || $island_background_color == "background-teal" || $island_background_color == "background-teal-darker") {
+  $island_text_color = "text-white";
+} else {
+  $island_text_color = "text-dark";
+}
+
+
+$background_color = get_sub_field('background_color');
+$text_color = "";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-white";
+} else {
+  $text_color = "text-dark";
+}
+?>
+
+<section id="island-section-<?php echo get_row_index(); ?>"
+  class="<?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> island-section padding-y-100">
   <!-- <span class="badge text-bg-danger">Island Section</span> -->
   <div class="container">
     <div class="row">
@@ -9,15 +30,16 @@
         </div>
         <?php endif; ?>
 
-        <div class="island background-dark-blue text-white text-center">
+        <div
+          class="island <?php the_sub_field('island_background_color'); ?> text-center <?php echo $island_text_color; ?>">
           <div class="island-content">
             <div class="row">
-              <div class="col-lg-12 text-white mb-5">
+              <div class="col-lg-12 mb-5">
                 <?php the_sub_field('island_content_top'); ?>
               </div>
             </div>
 
-            <div class="row text-center mb-4">
+            <div class="row island-columns mb-4">
               <?php if( have_rows('columns') ): ?>
               <?php while( have_rows('columns') ): the_row(); ?>
               <div class="col">
