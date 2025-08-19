@@ -123,3 +123,26 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => false
     ));
 }
+
+
+// popoulate gravity forms to embed
+// https://wpdevdesign.com/how-to-populate-gravity-forms-in-acf-select-field-and-display-the-selected-form-in-oxygen/
+add_filter('acf/load_field/name=gravity_form', function($field) {
+    if (class_exists('GFAPI')) {
+        $forms = GFAPI::get_forms();
+        $choices = [];
+        foreach ($forms as $form) {
+            $choices[$form['id']] = $form['title'];
+        }
+        $field['choices'] = $choices;
+    }
+    return $field;
+});
+
+// Modify Gravity Forms button classes
+add_filter('gform_submit_button', 'custom_gform_button_classes', 10, 2);
+function custom_gform_button_classes($button, $form) {
+    // Remove default classes and add your custom ones
+    $button = str_replace('gform_button button', 'btn btn-yellow', $button);
+    return $button;
+}

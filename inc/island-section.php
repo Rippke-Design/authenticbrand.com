@@ -1,0 +1,45 @@
+<section id="island-section-<?php echo get_row_index(); ?>" class="island-section padding-y-100">
+  <span class="badge text-bg-danger">Island Section</span>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="island background-dark-blue text-white text-center">
+          <div class="island-content">
+            <h2 class="text-white">Our Core Values</h2>
+            <p>Our core values define us and guide every decision and relationship.</p>
+
+            <div class="row text-center mb-4">
+              <div class="col">
+                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
+                <h3>Headline</h3>
+              </div>
+              <div class="col">
+                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
+                <h3>Headline</h3>
+              </div>
+              <div class="col">
+                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
+                <h3>Headline</h3>
+              </div>
+              <div class="col">
+                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
+                <h3>Headline</h3>
+              </div>
+              <div class="col">
+                <img src="https://placehold.co/115x115?text=Icon" alt="" class="d-block mx-auto rounded-circle mb-4">
+                <h3>Headline</h3>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <a href="#" class="btn btn-primary">CTA Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

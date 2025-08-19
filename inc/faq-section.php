@@ -5,8 +5,8 @@
         <div class="content-inner padding-y-100">
           <?php the_sub_field('left_column_content'); ?>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/faq-geometric-pattern.webp"
-          class="bleed-img d-none d-sm-block" alt="Pattern">
+        <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/faq-geometric-pattern.webp"
+          class="bleed-img d-none d-xl-block" alt="Pattern">
       </div>
       <div class="col-lg-8 col-md-12 background-white  col-right">
         <div class="content-inner padding-y-100">

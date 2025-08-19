@@ -21,6 +21,12 @@ if( have_rows('components') ):
             get_template_part('inc/offscreen-slider');
         elseif( get_row_layout() == 'faq-section' ):
             get_template_part('inc/faq-section');
+        elseif( get_row_layout() == 'stats-section' ):
+            get_template_part('inc/stats-section');
+        elseif( get_row_layout() == 'island-section' ):
+            get_template_part('inc/island-section');
+        elseif( get_row_layout() == 'form-section' ):
+            get_template_part('inc/form-section');
         endif;
     endwhile;
 endif;
