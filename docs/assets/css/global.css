@@ -12199,6 +12199,9 @@ footer {
   color: var(--c-white);
   padding: 40px 0;
 }
+footer strong {
+  color: var(--c-white);
+}
 footer address {
   font-size: 18px;
 }

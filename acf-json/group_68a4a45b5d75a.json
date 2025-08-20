@@ -8,7 +8,7 @@
             "name": "main_nav_links",
             "aria-label": "",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Top level navigation links are also added to the menu in the footer.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -209,7 +209,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "site-options"
+                "value": "header-footer"
             }
         ]
     ],
@@ -222,5 +222,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755637692
+    "modified": 1755714509
 }

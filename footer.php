@@ -8,30 +8,29 @@
 
       <div class="col-lg-4">
 
-        <address>
-          <strong class="text-white">Authentic Headquarters</strong><br>
-          4600 W. 77th St. Suite 385<br>
-          Minneapolis, MN 55435<br>
-          Phone: <a href="tel:6128086300">612-808-6300</a>
+        <address class="text-white">
+          <?php the_field('footer_contact_info', 'option'); ?>
         </address>
-        <p>
-          <small>Authentic<sup>®</sup>, Overcome Random Acts of Marketing<sup>®</sup>, and Authentic Growth<sup>®</sup>
-            are
-            registered trademarks of Authentic Brand LLC.</small>
-        </p>
+
+        <?php the_field('footer_tagline ', 'option'); ?>
+
 
         <ul class="list-unstyled d-flex align-items-center footer-social mt-3 mb-3 gap-3">
+          <?php if (get_field('linkedin_url', 'option')) : ?>
           <li>
-            <a href="https://www.linkedin.com/company/authenticbrandllc/" target="_blank" rel="noopener"
+            <a href="<?php the_field('linkedin_url', 'option'); ?>" target="_blank" rel="noopener"
               aria-label="LinkedIn">
               <i class="fab fa-linkedin fa-xl"></i>
             </a>
           </li>
+          <?php endif; ?>
+          <?php if (get_field('youtube_url', 'option')) : ?>
           <li>
-            <a href="https://www.youtube.com/@AuthenticBrandLLC" target="_blank" rel="noopener" aria-label="YouTube">
+            <a href="<?php the_field('youtube_url', 'option'); ?>" target="_blank" rel="noopener" aria-label="YouTube">
               <i class="fab fa-youtube fa-xl"></i>
             </a>
           </li>
+          <?php endif; ?>
         </ul>
 
 
@@ -60,19 +59,30 @@
       </div>
       <div class="col-lg-3">
         <div class="d-grid gap-2">
-          <a href="#" class="btn btn-outline">
-            Find the right marketing leadership solution for your business.
+          <?php
+          if (have_rows('footer_cta_buttons', 'option')) :
+            while (have_rows('footer_cta_buttons', 'option')) : the_row();
+              $button = get_sub_field('footer_cta_button');
+              if ($button) :
+              ?>
+          <a href="<?php echo esc_url($button['url']); ?>" class="btn btn-outline">
+            <?php echo esc_html($button['title']); ?>
           </a>
-
-          <a href="#" class="btn btn-outline">
-            Explore Authentic® careers.
-          </a>
-
+          <?php
+              endif;
+            endwhile;
+          endif;
+          ?>
         </div>
 
       </div>
       <div class="col-lg-3">
-        <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/badges-footer.png" alt="">
+        <?php
+        $footer_image = get_field('footer_image', 'option');
+        if ($footer_image) : ?>
+        <img src="<?php echo esc_url($footer_image['url']); ?>" alt="<?php echo esc_attr($footer_image['alt']); ?>"
+          class="img-fluid">
+        <?php endif; ?>
       </div>
 
       <div class="col-lg-12">

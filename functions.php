@@ -143,11 +143,12 @@ add_theme_support('post-thumbnails');
 // ACF Site options page
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
-        'page_title'    => 'Site Options',
-        'menu_title'    => 'Site Options',
-        'menu_slug'     => 'site-options',
+        'page_title'    => 'Header / Footer',
+        'menu_title'    => 'Header / Footer',
+        'menu_slug'     => 'header-footer',
         'capability'    => 'edit_posts',
-        'redirect'      => false
+        'redirect'      => false,
+        'position'      => 4
     ));
 }
 
@@ -173,3 +174,25 @@ function custom_gform_button_classes($button, $form) {
     $button = str_replace('gform_button button', 'btn btn-yellow', $button);
     return $button;
 }
+
+
+// tinyMCE remove buttons from toolbar
+function disable_tinymce_buttons_row1($buttons) {
+    $buttons = array_diff($buttons, array('wp_more', 'wp_full_screen', 'fullscreen', 'blockquote'));
+    return $buttons;
+}
+add_filter('mce_buttons', 'disable_tinymce_buttons_row1');
+
+// Also try the second toolbar row for full screen and other buttons
+function disable_tinymce_buttons_row2($buttons) {
+    $buttons = array_diff($buttons, array('wp_full_screen', 'charmap', 'indent', 'outdent'));
+    return $buttons;
+}
+add_filter('mce_buttons_2', 'disable_tinymce_buttons_row2');
+
+// Try the third toolbar row as well
+function disable_tinymce_buttons_row3($buttons) {
+    $buttons = array_diff($buttons, array('wp_full_screen'));
+    return $buttons;
+}
+add_filter('mce_buttons_3', 'disable_tinymce_buttons_row3');
