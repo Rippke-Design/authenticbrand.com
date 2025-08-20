@@ -13120,6 +13120,11 @@ html {
   display: none;
 }
 
+body:not(.page-all-components-page) section .badge,
+body:not(.page-all-components-page) .dev-mode {
+  display: none;
+}
+
 .offscreen-slider {
   overflow: hidden;
 }

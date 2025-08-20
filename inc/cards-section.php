@@ -11,7 +11,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 <section id="cards-section-<?php echo get_row_index(); ?>"
   class="cards-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> background-pattern-cubes background-pattern-right padding-y-100">
 
-  <!-- <span class="badge text-bg-danger">Success Stories</span> -->
+  <span class="badge text-bg-danger">Success Stories</span>
   <div class="container">
     <div class="row">
       <?php if (get_sub_field('headline')): ?>

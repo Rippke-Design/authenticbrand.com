@@ -2,7 +2,7 @@
   class="section-50-50 <?php the_sub_field('background_color'); ?> padding-y-100 background-pattern-red-dots background-position-right-center-offscreen"
   style="--bg-img-width: 264px; --bg-img-height: 194px;">
   <div class="background-pattern-stripe-circle background-position-left-bottom-offscreen">
-    <!-- <span class="badge text-bg-danger">Solutions</span> -->
+    <span class="badge text-bg-danger">Solutions</span>
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-12 mb-4">

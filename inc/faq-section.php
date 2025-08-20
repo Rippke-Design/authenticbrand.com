@@ -1,4 +1,5 @@
 <section id="faq-full-bleed" class="faq">
+  <span class="badge text-bg-danger">FAQ</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-12 faq-bg-bleed background-teal-darker text-light col-left">

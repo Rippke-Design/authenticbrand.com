@@ -1,7 +1,7 @@
 <section id="awards-<?php echo get_row_index(); ?>" class="awards background-blue-lighter padding-y-100"
   style="--bg-img-width: 460px; --bg-img-height: 460px;">
 
-  <!-- <span class="badge text-bg-danger">Awards</span> -->
+  <span class="badge text-bg-danger">Awards</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

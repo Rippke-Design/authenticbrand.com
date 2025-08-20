@@ -20,7 +20,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
 <section id="island-section-<?php echo get_row_index(); ?>"
   class="<?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> island-section padding-y-100">
-  <!-- <span class="badge text-bg-danger">Island Section</span> -->
+  <span class="badge text-bg-danger">Island Section</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">

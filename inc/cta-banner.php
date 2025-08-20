@@ -1,6 +1,6 @@
 <section id="cta-banner-<?php echo get_row_index(); ?>"
   class="text-banner <?php the_sub_field('background_color'); ?> padding-y-100">
-  <!-- <span class="badge text-bg-danger">CTA Banner</span> -->
+  <span class="badge text-bg-danger">CTA Banner</span>
   <div class="container">
     <div class="row ">
 

@@ -196,3 +196,17 @@ function disable_tinymce_buttons_row3($buttons) {
     return $buttons;
 }
 add_filter('mce_buttons_3', 'disable_tinymce_buttons_row3');
+
+
+// Add page slug to body class
+add_filter('body_class', function($classes) {
+    if (is_singular()) {
+        global $post;
+        if (isset($post->post_name)) {
+            $classes[] = 'page-' . sanitize_html_class($post->post_name);
+        }
+    } elseif (is_home() || is_front_page()) {
+        $classes[] = 'page-home';
+    }
+    return $classes;
+});

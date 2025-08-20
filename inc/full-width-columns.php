@@ -22,7 +22,7 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
 <section id="full-width-columns-<?php echo get_row_index(); ?>"
   class="full-bleed <?php the_sub_field('column_layout'); ?>" style=" --c-left: <?php the_sub_field('left_column_background_color'); ?>; --c-right:
   <?php the_sub_field('right_column_background_color'); ?>;">
-  <!-- <span class="badge text-bg-danger">Full Bleed 50 - 50</span> -->
+  <span class="badge text-bg-danger">Full Width Columns</span>
   <div class="container">
     <div class="row <?php echo $column_alignment; ?>">
 

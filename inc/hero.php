@@ -1,5 +1,6 @@
 <section id="hero-inner-<?php echo get_row_index(); ?>"
   class="hero <?php the_sub_field('background_color'); ?> background-pattern-circle-row-top <?php if ( get_sub_field('homepage_hero') ) { echo 'hero-homepage'; } else { echo 'hero-inner'; } ?>">
+  <span class="badge text-bg-danger">Hero</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-7">

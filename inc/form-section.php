@@ -18,6 +18,7 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
 <?php if (get_sub_field("form_section_layout") == "form-25-75"): ?>
 <section id="form-section-<?php echo get_row_index(); ?>" class="form-section full-bleed-25-75" style=" --c-left: <?php the_sub_field('left_column_background_color'); ?>; --c-right:
   <?php the_sub_field('right_column_background_color'); ?>;">
+  <span class="badge text-bg-danger">Form Section</span>
   <div class="container">
     <div class="row ">
 
@@ -45,6 +46,7 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
 <?php if (get_sub_field("form_section_layout") == "form-100"): ?>
 <section id="form-section-<?php echo get_row_index(); ?>"
   class="form-section <?php the_sub_field('background_color'); ?> padding-y-100">
+  <span class="badge text-bg-danger">Form Section</span>
   <div class="container">
     <div class="row ">
       <div class="col-lg-12">

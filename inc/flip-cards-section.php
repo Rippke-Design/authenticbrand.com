@@ -1,8 +1,5 @@
 <section id="flip-cards-<?php echo get_row_index(); ?>" class="flip-cards background-yellow-lighter padding-y-100">
-  <!-- <span class=" badge text-bg-danger">Flip Cards</span> -->
-
-
-
+  <span class="badge text-bg-danger">Flip Cards</span>
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-12">

@@ -1,5 +1,5 @@
 <section id="stats-<?php echo get_row_index(); ?>" class="stats-section padding-y-100">
-  <!-- <span class="badge text-bg-danger">Stats</span> -->
+  <span class="badge text-bg-danger">Stats</span>
   <div class="container">
     <div class="row gy-4 mb-4">
       <div class="col-lg-7">

@@ -17,7 +17,7 @@ endif;
 <?php if (get_sub_field('column_layout') == 'slider-100'): ?>
 <section id="offscreen-slider-<?php echo get_row_index(); ?>"
   class="offscreen-slider <?php the_sub_field('background_color'); ?> background-pattern-cubes background-pattern-right padding-y-100 text-light">
-  <!-- <span class="badge text-bg-danger">Offscreen Slider</span> -->
+  <span class="badge text-bg-danger">Offscreen Slider</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
   class="offscreen-right-slider offscreen-slider <?php the_sub_field('background_color'); ?> background-pattern-cubes background-pattern-right text-light padding-y-100"
   style="--c-background: <?php echo $background_color_hide_slides; ?>;">
 
-  <!-- <span class="badge text-bg-danger">Offscreen Right Slider</span> -->
+  <span class="badge text-bg-danger">Offscreen Right Slider</span>
   <div class="container">
     <div class="row">
       <div class="col-lg-6 <?php the_sub_field('background_color'); ?> z-1">
