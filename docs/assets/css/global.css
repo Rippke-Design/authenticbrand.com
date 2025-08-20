@@ -11955,7 +11955,7 @@ h2, .h2 {
   color: var(--c-dark-blue);
 }
 .text-light h2, .text-light .h2 {
-  color: var(--c-white);
+  color: var(--c-white) !important;
 }
 @media (max-width: 767.98px) {
   h2 br, .h2 br {

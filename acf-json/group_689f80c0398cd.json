@@ -889,6 +889,36 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68a62dab2e94b",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "align-items-center": "Vertical Align Center",
+                                "align-items-start": "Vertical Align Top",
+                                "align-items-end": "Vertical Align Bottom"
+                            },
+                            "default_value": "align-items-center",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a27310e6bf9",
                             "label": "Left Column Background Color",
                             "name": "left_column_background_color",
@@ -1644,7 +1674,8 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2373,6 +2404,57 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68a633309c914",
+                            "label": "Before columns Content",
+                            "name": "before_columns_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a633de0428b",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "align-items-center": "Vertical Align Center",
+                                "align-items-start": "Vertical Align Top",
+                                "align-items-end": "Vertical Align Bottom"
+                            },
+                            "default_value": "align-items-center",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a50690999aa",
                             "label": "Columns",
                             "name": "columns",
@@ -2395,7 +2477,7 @@
                             },
                             "layout": "row",
                             "min": 1,
-                            "max": 4,
+                            "max": 5,
                             "collapsed": "",
                             "button_label": "Add Column",
                             "rows_per_page": 20,
@@ -2423,6 +2505,27 @@
                                     "parent_repeater": "field_68a50690999aa"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_68a6333b9c915",
+                            "label": "After Columns Content",
+                            "name": "after_columns_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -2467,5 +2570,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755720167
+    "modified": 1755722746
 }

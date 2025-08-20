@@ -2,6 +2,8 @@
 <!-- Need to find a way to allow for adding of additional styling images in each column -->
 <?php 
 
+$column_alignment = get_sub_field('column_alignment');
+
 // Text color is set to light by default - if the background color is white or yellow then the text color is set to dark
 $left_column_text_color = "text-light";
 $right_column_text_color = "text-light";
@@ -22,7 +24,7 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
   <?php the_sub_field('right_column_background_color'); ?>;">
   <!-- <span class="badge text-bg-danger">Full Bleed 50 - 50</span> -->
   <div class="container">
-    <div class="row">
+    <div class="row <?php echo $column_alignment; ?>">
 
       <?php if (get_sub_field("column_layout") == "full-bleed-50-50"): ?>
       <div class="col-lg-6 col-md-12 col-left <?php echo $left_column_text_color; ?>"

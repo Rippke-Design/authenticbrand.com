@@ -2,13 +2,11 @@
 
 $column_alignment = get_sub_field('column_alignment');
 $island_background_color = get_sub_field('island_background_color');
-$island_text_color = "";
+$island_text_color = "text-dark";
 // if color is background-dark-blue, background-teal,  background-teal-darker  
 if ($island_background_color == "background-dark-blue" || $island_background_color == "background-teal" || $island_background_color == "background-teal-darker") {
-  $island_text_color = "text-white";
-} else {
-  $island_text_color = "text-dark";
-}
+  $island_text_color = "text-light";
+} 
 
 
 $background_color = get_sub_field('background_color');

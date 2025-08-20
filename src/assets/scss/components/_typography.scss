@@ -40,7 +40,7 @@ h2 {
 	color: var(--c-dark-blue);
 
 	.text-light & {
-		color: var(--c-white);
+		color: var(--c-white) !important;
 	}
 
 	@include media-breakpoint-down(md) {
