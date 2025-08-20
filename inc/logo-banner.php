@@ -10,9 +10,9 @@
   </div>
 
   <!-- Single seamless marquee wrapper -->
-  <div class="marquee-wrapper gap-4">
+  <div class="marquee-wrapper">
     <!-- First marquee -->
-    <div class="animate-marquee d-flex gap-4 align-items-center" style="animation-play-state: running;">
+    <div class="animate-marquee d-flex align-items-center" style="animation-play-state: running;">
       <!-- original logos -->
       <?php if( have_rows('logos') ): ?>
       <?php while( have_rows('logos') ): the_row(); 
@@ -39,7 +39,7 @@
     </div>
 
     <!-- Second marquee -->
-    <div class="animate-marquee2 d-flex gap-4 align-items-center" style="animation-play-state: running;">
+    <div class="animate-marquee2 d-flex align-items-center" style="animation-play-state: running;">
       <!-- original logos -->
       <?php if( have_rows('logos') ): ?>
       <?php while( have_rows('logos') ): the_row(); 

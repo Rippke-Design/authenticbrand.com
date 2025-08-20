@@ -1755,6 +1755,44 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_68a629015a29f",
+                            "label": "Column Alignment",
+                            "name": "column_alignment",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a4be9db6b49",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "align-items-center": "Vertical Align Center",
+                                "align-items-start": "Vertical Align Top",
+                                "align-items-end": "Vertical Align Bottom"
+                            },
+                            "default_value": "align-items-center",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a4c96c3ca3c",
                             "label": "Columns",
                             "name": "columns",
@@ -2429,5 +2467,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755645701
+    "modified": 1755720167
 }

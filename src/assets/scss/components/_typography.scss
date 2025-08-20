@@ -42,6 +42,12 @@ h2 {
 	.text-light & {
 		color: var(--c-white);
 	}
+
+	@include media-breakpoint-down(md) {
+		br {
+			display: none;
+		}
+	}
 }
 
 strong {

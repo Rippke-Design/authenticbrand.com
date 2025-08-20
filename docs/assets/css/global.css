@@ -8230,8 +8230,7 @@ textarea.form-control-lg {
   gap: 1rem !important;
 }
 
-.gap-4, .animate-marquee,
-.animate-marquee2 {
+.gap-4 {
   gap: 1.5rem !important;
 }
 
@@ -11958,6 +11957,11 @@ h2, .h2 {
 .text-light h2, .text-light .h2 {
   color: var(--c-white);
 }
+@media (max-width: 767.98px) {
+  h2 br, .h2 br {
+    display: none;
+  }
+}
 
 strong {
   font-weight: 600;
@@ -13016,6 +13020,7 @@ details[open] summary::after {
 .animate-marquee,
 .animate-marquee2 {
   display: flex;
+  gap: 100px;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -13030,7 +13035,7 @@ details[open] summary::after {
 }
 /* Single animation for the wrapper containing both marquees */
 .marquee-wrapper {
-  animation: marquee 25s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
 .island {

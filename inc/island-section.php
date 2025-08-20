@@ -1,4 +1,6 @@
 <?php
+
+$column_alignment = get_sub_field('column_alignment');
 $island_background_color = get_sub_field('island_background_color');
 $island_text_color = "";
 // if color is background-dark-blue, background-teal,  background-teal-darker  
@@ -30,30 +32,34 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         </div>
         <?php endif; ?>
 
-        <div
-          class="island <?php the_sub_field('island_background_color'); ?> text-center <?php echo $island_text_color; ?>">
+        <div class="island <?php the_sub_field('island_background_color'); ?>  <?php echo $island_text_color; ?>">
           <div class="island-content">
+            <?php if (get_sub_field('island_content_top')): ?>
             <div class="row">
               <div class="col-lg-12 mb-5">
                 <?php the_sub_field('island_content_top'); ?>
               </div>
             </div>
+            <?php endif; ?>
 
-            <div class="row island-columns mb-4">
-              <?php if( have_rows('columns') ): ?>
+
+            <?php if( have_rows('columns') ): ?>
+            <div class="row island-columns <?php echo $column_alignment; ?>">
               <?php while( have_rows('columns') ): the_row(); ?>
               <div class="col">
                 <?php the_sub_field('column_content'); ?>
               </div>
               <?php endwhile; ?>
-              <?php endif; ?>
             </div>
+            <?php endif; ?>
 
+            <?php if (get_sub_field('island_content_bottom')): ?>
             <div class="row">
               <div class="col-lg-12">
                 <?php the_sub_field('island_content_bottom'); ?>
               </div>
             </div>
+            <?php endif; ?>
           </div>
         </div>
 

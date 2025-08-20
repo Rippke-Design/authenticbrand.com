@@ -10,8 +10,8 @@
 .animate-marquee,
 .animate-marquee2 {
 	display: flex;
-	//gap: 30px;
-	@extend .gap-4;
+	gap: 100px;
+	//@extend .gap-4;
 	white-space: nowrap;
 	flex-shrink: 0;
 }
@@ -28,5 +28,5 @@
 
 /* Single animation for the wrapper containing both marquees */
 .marquee-wrapper {
-	animation: marquee 25s linear infinite;
+	animation: marquee 35s linear infinite;
 }
