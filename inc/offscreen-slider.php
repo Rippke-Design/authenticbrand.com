@@ -14,9 +14,6 @@ elseif (get_sub_field('background_color') == 'background-white'):
 endif;
 ?>
 
-
-
-
 <?php if (get_sub_field('column_layout') == 'slider-100'): ?>
 <section id="offscreen-slider-<?php echo get_row_index(); ?>"
   class="offscreen-slider <?php the_sub_field('background_color'); ?> background-pattern-cubes background-pattern-right padding-y-100 text-light">
@@ -50,15 +47,15 @@ endif;
               <ul class="splide__list">
 
                 <?php 
-                    $slides = get_sub_field('slides');
-                    if ($slides): 
-                      foreach ($slides as $slide_post):
-                        // Get the post ID from the relationship field
-                        $slide_id = $slide_post->ID;
-                        $slide_title = get_the_title($slide_id);
-                        $slide_permalink = get_permalink($slide_id);
-                        $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
-                    ?>
+                  $slides = get_sub_field('slides');
+                  if ($slides): 
+                    foreach ($slides as $slide_post):
+                      // Get the post ID from the relationship field
+                      $slide_id = $slide_post->ID;
+                      $slide_title = get_the_title($slide_id);
+                      $slide_permalink = get_permalink($slide_id);
+                      $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
+                ?>
                 <li class="splide__slide">
                   <div class="card">
                     <?php if ($slide_image): ?>
@@ -73,24 +70,8 @@ endif;
                     </div>
                   </div>
                 </li>
-                <?php 
-                      endforeach; 
-                    endif; 
-                  ?>
-
-                <!-- <li class="splide__slide">
-                  <div class="card">
-                    <div class="card-image">
-                      <img src="https://placehold.co/600x400?text=Image1" alt="Card Image" class="card-img-top">
-                    </div>
-                    <div class="card-body">
-                      <h3 class="card-title">Card Title lorem ipsum dolor sit amet</h3>
-                      <a href="#" class="">Read More</a>
-                    </div>
-                  </div>
-                </li> -->
-
-
+                <?php endforeach; ?>
+                <?php endif; ?>
               </ul>
             </div>
           </div>
@@ -99,8 +80,7 @@ endif;
     </div>
   </div>
 </section>
-
-
+<!-- TODO: enqueue the splide js and css -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -154,10 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }).mount();
 });
 </script>
-
-
 <?php endif; ?>
-
 
 
 <?php if (get_sub_field('column_layout') == 'slider-50-50'): ?>
@@ -181,15 +158,15 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="splide__track">
             <ul class="splide__list">
               <?php 
-                  $slides = get_sub_field('slides');
-                  if ($slides): 
-                    foreach ($slides as $slide_post):
-                      // Get the post ID from the relationship field
-                      $slide_id = $slide_post->ID;
-                      $slide_title = get_the_title($slide_id);
-                      $slide_permalink = get_permalink($slide_id);
-                      $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
-                  ?>
+                $slides = get_sub_field('slides');
+                if ($slides): 
+                  foreach ($slides as $slide_post):
+                    // Get the post ID from the relationship field
+                    $slide_id = $slide_post->ID;
+                    $slide_title = get_the_title($slide_id);
+                    $slide_permalink = get_permalink($slide_id);
+                    $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
+                ?>
               <li class="splide__slide">
                 <div class="card">
                   <?php if ($slide_image): ?>
@@ -204,11 +181,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   </div>
                 </div>
               </li>
-              <?php 
-                    endforeach; 
-                  endif; 
-                ?>
-
+              <?php endforeach; ?>
+              <?php endif; ?>
             </ul>
           </div>
         </div>
@@ -218,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 
-
+<!-- TODO: enqueue the splide js and css -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -240,19 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
 ?>.splide__list {
   overflow: visible;
 }
-
-/* #offscreen-right-slider .container {
-    overflow: visible;
-  }
-
-  #offscreen-right-slider .row {
-    overflow: visible;
-  } */
-
-/* #offscreen-right-slider .col-lg-6:last-child {
-    overflow: visible;
-  } */
-
 
 #offscreen-right-slider-<?php echo get_row_index() . ' ';
 

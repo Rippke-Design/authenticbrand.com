@@ -11907,7 +11907,7 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 991.98px) {
-  section:not([class^=full-bleed]):not(.faq) .row {
+  section:not([class^=full-bleed]):not(.faq):not(.form-section.full-bleed-25-75) .row {
     gap: 25px;
   }
 }
@@ -12302,6 +12302,7 @@ body .gform_wrapper .gform_footer input[type=submit] {
 
 body .gform_wrapper input[type=text],
 body .gform_wrapper input[type=email],
+body .gform_wrapper input[type=tel],
 body .gform_wrapper textarea,
 body .gform_wrapper select {
   background-color: var(--c-white) !important;
@@ -12311,6 +12312,7 @@ body .gform_wrapper select {
 }
 body .gform_wrapper input[type=text]:focus,
 body .gform_wrapper input[type=email]:focus,
+body .gform_wrapper input[type=tel]:focus,
 body .gform_wrapper textarea:focus,
 body .gform_wrapper select:focus {
   outline: none !important;
@@ -13418,4 +13420,189 @@ html {
     align-items: center;
     justify-content: center;
   }
+}
+
+.background-curved-bottom {
+  overflow: visible;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.background-curved-bottom:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 80px;
+  border-radius: 88%/100%;
+  transform: translateY(40px);
+  z-index: 0;
+}
+.background-curved-bottom + section {
+  margin-top: -40px;
+  padding-top: 140px !important;
+  z-index: 0;
+}
+@media (max-width: 1199.98px) {
+  .background-curved-bottom + section {
+    padding-top: 90px !important;
+  }
+}
+
+.has-curved-section-above {
+  margin-top: -40px;
+  padding-top: 140px !important;
+  z-index: 0;
+}
+@media (max-width: 1199.98px) {
+  .has-curved-section-above {
+    padding-top: 90px !important;
+  }
+}
+
+.background-dark-blue {
+  background-color: var(--c-dark-blue);
+  --bg-color: var(--c-dark-blue);
+}
+
+.background-blue-light {
+  background-color: var(--c-blue-light);
+  --bg-color: var(--c-blue-light);
+}
+
+.background-blue-lighter {
+  background-color: var(--c-blue-lighter);
+  --bg-color: var(--c-blue-lighter);
+}
+
+.background-teal {
+  background-color: var(--c-teal);
+  --bg-color: var(--c-teal);
+}
+
+.background-teal-darker {
+  background-color: var(--c-teal-darker);
+  --bg-color: var(--c-teal-darker);
+}
+
+.background-yellow {
+  background-color: var(--c-yellow);
+  --bg-color: var(--c-yellow);
+}
+
+.background-yellow-lighter {
+  background-color: var(--c-yellow-lighter);
+  --bg-color: var(--c-yellow-lighter);
+}
+
+.background-white {
+  background-color: var(--c-white);
+  --bg-color: var(--c-white);
+}
+
+.background-red {
+  background-color: var(--c-red);
+}
+
+.background-black {
+  background-color: var(--c-black);
+  --bg-color: var(--c-black);
+}
+
+/* Patterns */
+/* Graphic Dividers */
+.background-divider-squares {
+  background-image: url("../img/graphic-divider-squares.webp");
+  background-repeat: repeat-x;
+  height: 76px;
+}
+
+.background-divider-circles {
+  background-image: url("../img/graphic-divider-circles.webp");
+  background-repeat: repeat-x;
+  height: 116px;
+}
+
+.background-pattern-circle-row-top {
+  background-image: url("../img/3-circle.svg");
+  background-repeat: repeat-x;
+  background-position: 2px 2px;
+  background-size: 26px 76px;
+}
+
+.background-pattern-circle-row-bottom {
+  background-image: url("../img/3-circle.svg");
+  background-repeat: repeat-x;
+  background-position: 2px bottom;
+  background-size: 26px 76px;
+}
+
+.background-pattern-cubes {
+  background-image: url("../img/pattern-cubes-light-blue.svg");
+  background-size: 262px 840px;
+  background-repeat: no-repeat;
+}
+
+.background-pattern-cubes-reverse {
+  background-image: url("../img/pattern-cubes-light-blue-reverse.svg");
+  background-size: 262px 840px;
+  background-repeat: no-repeat;
+}
+
+.background-pattern-diamond {
+  background-image: url("../img/diamond-pattern.svg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.background-pattern-red-dots {
+  background-image: url("../img/red-dots-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-stripe-circle {
+  background-image: url("../img/half-circle-stripe-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-stripe-circle-dark {
+  background-image: url("../img/half-circle-stripe-pattern-dark.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-circle-dot {
+  background-image: url("../img/circle-dot.svg");
+  background-repeat: no-repeat;
+  background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-position-right-center-offscreen {
+  background-position: top 50% right -40px;
+}
+
+.background-position-left-bottom-offscreen {
+  background-position: bottom 100px left -100px;
+}
+
+.background-position-left-top-offscreen {
+  background-position: top calc(var(--bg-img-height) / 2 * -1) left calc(var(--bg-img-width) / 2 * -1);
+}
+
+.background-position-right-bottom-offscreen {
+  background-position: bottom calc(var(--bg-img-height) / 2 * -1) right calc(var(--bg-img-width) / 2 * -1);
+}
+
+/* Background positioning */
+.background-pattern-right {
+  background-position: bottom 0 right 0;
+}
+
+.background-pattern-left {
+  background-position: bottom 0 left 0;
 }

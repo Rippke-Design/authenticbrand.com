@@ -13,7 +13,7 @@
 	padding-right: 2rem;
 }
 
-section:not([class^="full-bleed"]):not(.faq) {
+section:not([class^="full-bleed"]):not(.faq):not(.form-section.full-bleed-25-75) {
 	// when columns stack, add gap to .row
 	// TODO: add exceptions for full-bleed columns
 	@include media-breakpoint-down(lg) {
