@@ -39,6 +39,8 @@ if( have_rows('components') ):
             get_template_part('inc/cards-section');
         elseif( get_row_layout() == 'accordion-columns' ):
             get_template_part('inc/accordion-columns');
+        elseif( get_row_layout() == 'video-section' ):
+            get_template_part('inc/video-section');
         endif;
     endwhile;
 endif;
