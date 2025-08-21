@@ -2991,6 +2991,27 @@
                             "width": "",
                             "height": "",
                             "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_68a7ab7637aa9",
+                            "label": "After Video Content",
+                            "name": "after_video_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -3214,5 +3235,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755815288
+    "modified": 1755818889
 }

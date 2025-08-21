@@ -28,5 +28,13 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         </div>
       </div>
     </div>
+
+    <?php if (get_sub_field('after_video_content')): ?>
+    <div class="row">
+      <div class="col-lg-12 mt-5">
+        <?php the_sub_field('after_video_content'); ?>
+      </div>
+    </div>
+    <?php endif; ?>
   </div>
 </section>
