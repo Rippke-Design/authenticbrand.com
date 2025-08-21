@@ -29,7 +29,8 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         $accordion_content = get_sub_field('accordion_content');
         $is_open = get_sub_field('open');
       ?>
-      <?php if ($accordion_columns_layout == '2col'): ?>
+
+      <?php if ($accordion_columns_layout == 'col2'): ?>
       <div class="col-lg-6 mb-5">
         <?php else: ?>
         <div class="col-lg-12 mb-5">

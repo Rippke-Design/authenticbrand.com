@@ -80,7 +80,10 @@
                                 "background-dark-blue": "Dark Blue",
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
-                                "background-yellow": "Yellow"
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -215,7 +218,10 @@
                                 "background-dark-blue": "Dark Blue",
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
-                                "background-yellow": "Yellow"
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -369,7 +375,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -388,7 +396,7 @@
                             "name": "logo_banner_content",
                             "aria-label": "",
                             "type": "wysiwyg",
-                            "instructions": "",
+                            "instructions": "Content before the animated logo slider.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -452,6 +460,27 @@
                                     "parent_repeater": "field_689fb956dffb8"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_68a78959571c5",
+                            "label": "After Logo Banner Content",
+                            "name": "after_logo_banner_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Content after the animated logo slider.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -500,7 +529,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -675,7 +706,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1100,7 +1133,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1429,7 +1464,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1459,35 +1496,6 @@
                             "choices": {
                                 "col1": "One Column",
                                 "col2": "Two Columns"
-                            },
-                            "default_value": false,
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "allow_in_bindings": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "create_options": 0,
-                            "save_options": 0
-                        },
-                        {
-                            "key": "field_68a766620c430",
-                            "label": "Accordion Layout",
-                            "name": "accordion_layout",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "columns-2": "50% Columns",
-                                "column-1": "100% Column"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1657,7 +1665,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1903,7 +1913,8 @@
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
                                 "background-white": "White",
-                                "background-blue-light": "Light Blue"
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2212,7 +2223,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2402,7 +2415,9 @@
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2551,7 +2566,8 @@
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
                                 "background-white": "White",
-                                "background-blue-light": "Light Blue"
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2706,7 +2722,8 @@
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
                                 "background-white": "White",
-                                "background-blue-light": "Light Blue"
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -2948,7 +2965,8 @@
                                 "background-teal-darker": "Dark Teal",
                                 "background-yellow": "Yellow",
                                 "background-white": "White",
-                                "background-blue-light": "Light Blue"
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3064,5 +3082,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755801865
+    "modified": 1755810188
 }

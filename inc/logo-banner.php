@@ -5,6 +5,7 @@
     <div class="row ">
       <div class="col-lg-12 mb-4">
         <?php the_sub_field("logo_banner_content"); ?>
+
       </div>
     </div>
   </div>
@@ -63,6 +64,14 @@
       </div>
       <?php endif; endwhile; ?>
       <?php endif; ?>
+    </div>
+  </div>
+
+  <div class="container gy-4">
+    <div class="row ">
+      <div class="col-lg-12 mt-4">
+        <?php the_sub_field("after_logo_banner_content"); ?>
+      </div>
     </div>
   </div>
 </section>
