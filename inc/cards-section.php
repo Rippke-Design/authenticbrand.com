@@ -27,7 +27,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           setup_postdata($post);
           $featured_image = get_the_post_thumbnail_url($post->ID, 'medium');
           ?>
-      <div class="col-lg-4">
+      <div class="col-lg-4 mb-5">
         <div class="card success-story-card">
           <?php if ($featured_image) : ?>
           <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr(get_the_title($post->ID)); ?>"

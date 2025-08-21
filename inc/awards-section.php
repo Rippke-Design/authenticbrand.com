@@ -44,4 +44,4 @@
   </div>
 </section>
 
-<script src="<?php echo esc_url( get_template_directory_uri() . '/docs/assets/js/timeline.js' ); ?>"></script>
+<!-- <script src="<?php echo esc_url( get_template_directory_uri() . '/docs/assets/js/timeline.js' ); ?>"></script> -->

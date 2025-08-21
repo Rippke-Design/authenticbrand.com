@@ -43,4 +43,4 @@
   </div>
 </section>
 
-<script type="module" src="./assets/js/number-flow.js"></script>
+<!-- <script type="module" src="./assets/js/number-flow.js"></script> -->
