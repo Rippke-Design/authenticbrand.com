@@ -15,14 +15,14 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
   <div class="container">
     <?php if (get_sub_field('before_video_content')): ?>
     <div class="row">
-      <div class="col-lg-10 offset-lg-1 mb-5">
+      <div class="col-lg-12 mb-5">
         <?php the_sub_field('before_video_content'); ?>
       </div>
     </div>
     <?php endif; ?>
 
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-10 offset-lg-1">
         <div class="video-container">
           <?php the_sub_field('video'); ?>
         </div>
