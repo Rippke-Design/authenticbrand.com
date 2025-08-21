@@ -37,6 +37,8 @@ if( have_rows('components') ):
             get_template_part('inc/graphic-divider-section');
         elseif( get_row_layout() == 'cards-section' ):
             get_template_part('inc/cards-section');
+        elseif( get_row_layout() == 'accordion-columns' ):
+            get_template_part('inc/accordion-columns');
         endif;
     endwhile;
 endif;

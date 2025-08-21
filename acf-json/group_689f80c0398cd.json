@@ -1386,6 +1386,234 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_68a755b9f372b": {
+                    "key": "layout_68a755b9f372b",
+                    "name": "accordion-columns",
+                    "label": "Accordion Columns",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a755b9f372c",
+                            "label": "FAQ Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a755b9f372d",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a768267e314",
+                            "label": "Accordion Columns Layout",
+                            "name": "accordion_columns_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "col1": "One Column",
+                                "col2": "Two Columns"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a766620c430",
+                            "label": "Accordion Layout",
+                            "name": "accordion_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "columns-2": "50% Columns",
+                                "column-1": "100% Column"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a760bc3ff94",
+                            "label": "Headline",
+                            "name": "headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a755b9f372f",
+                            "label": "Accordion Items",
+                            "name": "accordion_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add FAQ Item",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a755b9f3730",
+                                    "label": "Open?",
+                                    "name": "open",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_68a755b9f372f"
+                                },
+                                {
+                                    "key": "field_68a755b9f3731",
+                                    "label": "Accordion Headline",
+                                    "name": "accordion_headline",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_68a755b9f372f"
+                                },
+                                {
+                                    "key": "field_68a755b9f3732",
+                                    "label": "Accordion Content",
+                                    "name": "accordion_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "allow_in_bindings": 0,
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "parent_repeater": "field_68a755b9f372f"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_68a4b803e9673": {
                     "key": "layout_68a4b803e9673",
                     "name": "stats-section",
@@ -2836,5 +3064,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755795317
+    "modified": 1755801865
 }

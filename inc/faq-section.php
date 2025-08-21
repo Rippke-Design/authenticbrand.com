@@ -1,4 +1,4 @@
-<section id="faq-full-bleed" class="faq">
+<section id="faq-full-bleed-<?php echo get_row_index(); ?>" class="faq">
   <span class="badge text-bg-danger">FAQ</span>
   <div class="container">
     <div class="row">
