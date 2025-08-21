@@ -13017,10 +13017,11 @@ details[open] summary::after {
 .marquee-wrapper {
   display: flex;
   width: max-content;
+  animation: marquee var(--slider-speed) linear infinite;
+  animation-delay: -0.1s;
 }
 
-.animate-marquee,
-.animate-marquee2 {
+.animate-marquee {
   display: flex;
   gap: 100px;
   white-space: nowrap;
@@ -13035,11 +13036,6 @@ details[open] summary::after {
     transform: translateX(-50%);
   }
 }
-/* Single animation for the wrapper containing both marquees */
-.marquee-wrapper {
-  animation: marquee 35s linear infinite;
-}
-
 .island {
   padding: 50px;
   border-radius: 15px;
@@ -13122,7 +13118,7 @@ html {
 
 body:not(.page-all-components-page) section .badge,
 body:not(.page-all-components-page) .dev-mode {
-  display: none;
+  display: none !important;
 }
 
 .offscreen-slider {
@@ -13264,6 +13260,11 @@ body:not(.page-all-components-page) .dev-mode {
   background: var(--c-red);
   border: 4px solid var(--c-white);
   box-shadow: 0 0 0 9px var(--c-red);
+}
+
+.awards-image {
+  height: auto;
+  max-width: 150px;
 }
 
 .icon-tabs .nav-tabs {

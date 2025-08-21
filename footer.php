@@ -2,8 +2,10 @@
   <div class="container">
     <div class="row gy-lg-0 gy-5">
       <div class="col-lg-12">
-        <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/authentic-brand-logo-dark.svg"
-          alt="Authentic Brand Logo" class="footer-logo">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/authentic-brand-logo-dark.svg"
+            alt="Authentic Brand Logo" class="footer-logo">
+        </a>
       </div>
 
       <div class="col-lg-4">

@@ -31,6 +31,6 @@ html {
 body:not(.page-all-components-page) {
 	section .badge,
 	.dev-mode {
-		display: none;
+		display: none !important;
 	}
 }

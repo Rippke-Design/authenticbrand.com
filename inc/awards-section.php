@@ -23,7 +23,8 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <?php if ( !empty($award_image) && !empty($award_image['url']) ): ?>
-              <img src="<?php echo esc_url($award_image['url']); ?>" alt="<?php echo esc_attr($award_image['alt']); ?>">
+              <img class="awards-image" src="<?php echo esc_url($award_image['url']); ?>"
+                alt="<?php echo esc_attr($award_image['alt']); ?>">
               <?php endif; ?>
               <h3>
                 <span class="eyebrow"><?php echo $award_date; ?></span>

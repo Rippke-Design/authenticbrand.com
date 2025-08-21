@@ -5,13 +5,13 @@
 .marquee-wrapper {
 	display: flex;
 	width: max-content;
+	animation: marquee var(--slider-speed) linear infinite;
+	animation-delay: -0.1s; // Small delay to smooth the transition
 }
 
-.animate-marquee,
-.animate-marquee2 {
+.animate-marquee {
 	display: flex;
 	gap: 100px;
-	//@extend .gap-4;
 	white-space: nowrap;
 	flex-shrink: 0;
 }
@@ -22,11 +22,6 @@
 	}
 
 	100% {
-		transform: translateX(-50%);
+		transform: translateX(-50%); // Move half the total width
 	}
-}
-
-/* Single animation for the wrapper containing both marquees */
-.marquee-wrapper {
-	animation: marquee 35s linear infinite;
 }
