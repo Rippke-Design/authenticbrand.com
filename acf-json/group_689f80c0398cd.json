@@ -3389,8 +3389,37 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_68a8bec794dbe",
+                            "label": "Card Source Selection Type",
+                            "name": "card_source_selection_type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "manual": "Manual - select specific Client Stories, Blogs, Events etc",
+                                "automatic": "Automatically pull in a specific number of content items"
+                            },
+                            "default_value": "manual",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a65149358b2",
-                            "label": "Cards",
+                            "label": "Manual Card Selections",
                             "name": "cards",
                             "aria-label": "",
                             "type": "relationship",
@@ -3399,8 +3428,9 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_689f80c0b67b0",
-                                        "operator": "!=empty"
+                                        "field": "field_68a8bec794dbe",
+                                        "operator": "==",
+                                        "value": "manual"
                                     }
                                 ]
                             ],
@@ -3426,6 +3456,79 @@
                             "elements": "",
                             "bidirectional": 0,
                             "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_68a8b57d50448",
+                            "label": "Automatic Card Selection",
+                            "name": "card_source",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Pulls in X of latest content type",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a8bec794dbe",
+                                        "operator": "==",
+                                        "value": "automatic"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "client-stories": "Client Stories",
+                                "blog": "Blog",
+                                "events": "Events",
+                                "podcasts": "Podcasts",
+                                "webinars": "Webinars",
+                                "guides": "Guides",
+                                "videos": "Videos"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a8bf49ca9c2",
+                            "label": "Number of Cards",
+                            "name": "number_of_cards",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a8bec794dbe",
+                                        "operator": "==",
+                                        "value": "automatic"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -3470,5 +3573,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755877942
+    "modified": 1755889594
 }
