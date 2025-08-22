@@ -3479,15 +3479,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "client-stories": "Client Stories",
-                                "blog": "Blog",
-                                "events": "Events",
-                                "podcasts": "Podcasts",
-                                "webinars": "Webinars",
-                                "guides": "Guides",
-                                "videos": "Videos"
-                            },
+                            "choices": [],
                             "default_value": false,
                             "return_format": "value",
                             "multiple": 0,
@@ -3573,5 +3565,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755889594
+    "modified": 1755894032
 }

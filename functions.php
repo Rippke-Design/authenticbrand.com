@@ -187,6 +187,27 @@ add_filter('acf/load_field/name=gravity_form', function($field) {
     return $field;
 });
 
+
+// populate select menu ACF field called card_source with categories from posts
+add_filter('acf/load_field/name=card_source', function($field) {
+    $categories = get_categories(array(
+        'hide_empty' => false,
+        'orderby' => 'name',
+        'order' => 'ASC'
+    ));
+    
+    $choices = array();
+    foreach ($categories as $category) {
+        $choices[$category->term_id] = $category->name;
+    }
+    
+    $field['choices'] = $choices;
+    return $field;
+});
+
+
+
+
 // Modify Gravity Forms button classes
 add_filter('gform_submit_button', 'custom_gform_button_classes', 10, 2);
 function custom_gform_button_classes($button, $form) {

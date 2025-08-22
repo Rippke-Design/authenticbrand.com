@@ -20,13 +20,16 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       </div>
       <?php endif; ?>
 
+
+      <?php if (get_sub_field('card_source_selection_type') == 'manual'): ?>
+      <!-- manual card selection -->
       <?php
-      $cards = get_sub_field('cards');
-      if ($cards) :
-        foreach ($cards as $post) :
-          setup_postdata($post);
-          $featured_image = get_the_post_thumbnail_url($post->ID, 'medium');
-          ?>
+          $cards = get_sub_field('cards');
+          if ($cards) :
+            foreach ($cards as $post) :
+              setup_postdata($post);
+              $featured_image = get_the_post_thumbnail_url($post->ID, 'medium');
+              ?>
       <div class="col-lg-4 mb-5">
         <div class="card success-story-card">
           <?php if ($featured_image) : ?>
@@ -43,11 +46,18 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           </div>
         </div>
       </div>
-      <?php
-        endforeach;
-        wp_reset_postdata();
-      endif;
-      ?>
+      <?php endforeach; wp_reset_postdata(); ?>
+      <?php endif; ?>
+
+
+
+      <?php endif; ?>
+
+      <?php if (get_sub_field('card_source_selection_type') == 'automatic'): ?>
+      <!-- automatic card selection -->
+
+      <?php endif; ?>
+
 
     </div>
 
