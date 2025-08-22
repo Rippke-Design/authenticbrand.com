@@ -66,7 +66,7 @@ endif;
                     <?php endif; ?>
                     <div class="card-body">
                       <h3 class="card-title"><?php echo esc_html($slide_title); ?></h3>
-                      <a href="<?php echo esc_url($slide_permalink); ?>">Read More</a>
+                      <a href="<?php echo esc_url($slide_permalink); ?>">Read More &raquo;</a>
                     </div>
                   </div>
                 </li>
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <?php endif; ?>
                   <div class="card-body">
                     <h3 class="card-title"><?php echo esc_html($slide_title); ?></h3>
-                    <a href="<?php echo esc_url($slide_permalink); ?>">Read More</a>
+                    <a href="<?php echo esc_url($slide_permalink); ?>">Read More &raquo;</a>
                   </div>
                 </div>
               </li>

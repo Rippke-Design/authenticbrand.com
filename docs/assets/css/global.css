@@ -13148,6 +13148,17 @@ body:not(.page-all-components-page) .dev-mode {
 .offscreen-slider .card .card-body {
   padding: 70px 50px;
 }
+.offscreen-slider .card .card-body a {
+  color: var(--c-teal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  transition: color 0.2s ease;
+  text-transform: uppercase;
+}
+.offscreen-slider .card .card-body a:hover {
+  color: var(--c-teal-darker);
+}
 @media (max-width: 1199.98px) {
   .offscreen-slider .card .card-body {
     padding: 40px 20px;

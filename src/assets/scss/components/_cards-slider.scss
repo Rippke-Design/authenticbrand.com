@@ -10,6 +10,18 @@
 		.card-body {
 			padding: 70px 50px;
 
+			a {
+				color: var(--c-teal);
+				text-decoration: underline;
+				text-underline-offset: 2px;
+				text-decoration-thickness: 2px;
+				transition: color 0.2s ease;
+				text-transform: uppercase;
+				&:hover {
+					color: var(--c-teal-darker);
+				}
+			}
+
 			@include media-breakpoint-down(xl) {
 				padding: 40px 20px;
 			}
