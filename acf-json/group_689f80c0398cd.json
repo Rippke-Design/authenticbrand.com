@@ -3272,7 +3272,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "<h3>Dividers<\/h3>\r\n\r\n<h4>Divider 1<\/h4>\r\n<img src=\"http:\/\/authentic-new.local\/wp-content\/themes\/authenticbrand.com\/docs\/assets\/img\/graphic-divider-1.webp\">\r\n\r\n<h4>Divider 2<\/h4>\r\n<img src=\"http:\/\/authentic-new.local\/wp-content\/themes\/authenticbrand.com\/docs\/assets\/img\/graphic-divider-2.webp\">",
+                            "message": "<h3>Dividers<\/h3>\r\n\r\n<h4>Divider 1<\/h4>\r\n<img src=\"https:\/\/authenticbrand.wpenginepowered.com\/wp-content\/themes\/authenticbrand.com\/docs\/assets\/img\/graphic-divider-1.webp\">\r\n\r\n<h4>Divider 2<\/h4>\r\n<img src=\"https:\/\/authenticbrand.wpenginepowered.com\/wp-content\/themes\/authenticbrand.com\/docs\/assets\/img\/graphic-divider-2.webp\">",
                             "new_lines": "wpautop",
                             "esc_html": 0
                         },
@@ -3479,7 +3479,24 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": [],
+                            "choices": {
+                                "34": "Article",
+                                "54": "Article|Event",
+                                "84": "Article|Event|News",
+                                "79": "Article|Guide",
+                                "66": "Article|Podcast",
+                                "99": "Article|Webinar",
+                                "71": "Client Story",
+                                "35": "Event",
+                                "38": "Event|News",
+                                "80": "Event|Podcast",
+                                "113": "Guide",
+                                "48": "News",
+                                "81": "Podcast",
+                                "1": "Uncategorized",
+                                "112": "Video",
+                                "98": "Webinar"
+                            },
                             "default_value": false,
                             "return_format": "value",
                             "multiple": 0,
@@ -3565,5 +3582,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755894032
+    "modified": 1755898675
 }
