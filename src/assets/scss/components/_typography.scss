@@ -53,6 +53,13 @@ h2 {
 	}
 }
 
+p.intro {
+	// make the same size as my h3 but font-weight 500
+	@extend .h3;
+	font-weight: 500;
+	color: var(--c-teal-darker);
+}
+
 strong {
 	font-weight: 600;
 	color: var(--c-teal-darker);
@@ -106,9 +113,6 @@ main {
 			background-size: contain;
 		}
 	}
-}
-
-.lead {
 }
 
 main a:not(.btn) {

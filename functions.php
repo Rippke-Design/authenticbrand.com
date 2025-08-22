@@ -86,6 +86,34 @@ function register_tinymce_button($buttons) {
     return $buttons;
 }
 
+
+// Add into paragraph format to TinyMCE, limit styles to h2, h3, h4 and paragraph
+add_filter('tiny_mce_before_init', function($init_array) {
+    $init_array['formats'] = json_encode([
+        // add new format to formats
+        'intro' => [
+            'selector' => 'p',
+            'block'    => 'p',
+            'classes'  => 'intro',
+        ],
+    ], JSON_THROW_ON_ERROR);
+
+    $block_formats = [
+        'Paragraph=p',
+        'Intro Paragraph=intro',
+        'Heading 2=h2',
+        'Heading 3=h3',
+        'Heading 4=h4',
+        
+    ];
+    $init_array['block_formats'] = implode(';', $block_formats);
+
+    return $init_array;
+});
+
+
+
+
 // Allow additional inline CSS properties
 add_filter('safe_style_css', 'allow_additional_inline_css_properties');
 function allow_additional_inline_css_properties($allowed_css) {

@@ -226,7 +226,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, p.intro, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -242,7 +242,7 @@ h2, .h2 {
   font-size: clamp(1.333rem, 1vw + 1rem, 1.889rem);
 }
 
-h3, .h3 {
+h3, .h3, p.intro {
   font-size: clamp(1.111rem, 0.5vw + 1rem, 1.333rem);
 }
 
@@ -11948,6 +11948,7 @@ h1, .h1 {
 h2, .h2,
 h3,
 .h3,
+p.intro,
 h4,
 .h4 {
   font-weight: 600;
@@ -11966,6 +11967,11 @@ h2, .h2 {
   }
 }
 
+p.intro {
+  font-weight: 500;
+  color: var(--c-teal-darker);
+}
+
 strong {
   font-weight: 600;
   color: var(--c-teal-darker);
@@ -11977,7 +11983,7 @@ article h1, article .h1 {
 article h2, article .h2 {
   color: var(--c-dark-blue);
 }
-article h3, article .h3 {
+article h3, article .h3, article p.intro {
   color: var(--c-teal);
 }
 
@@ -12473,6 +12479,9 @@ body .gform_wrapper select:focus {
     background: none;
   }
 }
+.faq details summary {
+  padding-bottom: 36px;
+}
 @media (max-width: 991.98px) {
   .faq .container {
     padding-left: 0;
@@ -12581,7 +12590,6 @@ details summary {
   position: relative;
   cursor: pointer;
   padding-right: 30px;
-  padding-bottom: 36px;
 }
 details summary::after {
   content: "";
@@ -12619,6 +12627,10 @@ details[open] summary::after {
   .accordion-icon .details-inner {
     padding-left: 0;
   }
+}
+
+.accordion-columns .details-inner > *:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 767.98px) {
@@ -13026,7 +13038,7 @@ details[open] summary::after {
   color: var(--c-teal);
 }
 
-.what-we-offer h3, .what-we-offer .h3 {
+.what-we-offer h3, .what-we-offer .h3, .what-we-offer p.intro {
   color: var(--c-dark-blue);
 }
 .what-we-offer .row {
@@ -13072,7 +13084,7 @@ details[open] summary::after {
 .success-story-card a:hover {
   color: var(--c-teal-darker);
 }
-.success-story-card h3, .success-story-card .h3 {
+.success-story-card h3, .success-story-card .h3, .success-story-card p.intro {
   color: var(--c-dark-blue);
 }
 .success-story-card:hover {

@@ -13,6 +13,12 @@
 		background: none;
 	}
 
+	details {
+		summary {
+			padding-bottom: 36px;
+		}
+	}
+
 	@include media-breakpoint-down(lg) {
 		// set max width for medium and down so theres no extra space on the sides and background colors can span full width
 		.container {
@@ -143,7 +149,6 @@ details {
 		position: relative;
 		cursor: pointer;
 		padding-right: 30px;
-		padding-bottom: 36px;
 
 		&::after {
 			content: "";
@@ -181,6 +186,14 @@ details {
 		padding-left: 90px;
 		@include media-breakpoint-down(lg) {
 			padding-left: 0;
+		}
+	}
+}
+
+.accordion-columns {
+	.details-inner {
+		& > *:last-child {
+			margin-bottom: 0;
 		}
 	}
 }

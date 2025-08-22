@@ -1,11 +1,22 @@
+<?php 
+
+// Set text color based on background
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
+?>
+
 <section id="cta-banner-<?php echo get_row_index(); ?>"
-  class="text-banner <?php the_sub_field('background_color'); ?> padding-y-100">
+  class="text-banner <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> padding-y-100">
   <span class="badge text-bg-danger">CTA Banner</span>
   <div class="container">
     <div class="row ">
 
       <div class="col-lg-12">
-        <div class="text-banner-text-content text-light">
+        <div class="text-banner-text-content">
           <?php the_sub_field('cta_banner_content'); ?>
         </div>
         <?php if( have_rows('cta_buttons') ): ?>
