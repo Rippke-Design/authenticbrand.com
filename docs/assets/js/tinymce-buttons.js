@@ -33,6 +33,15 @@
 					},
 				],
 			})
+
+			// Add Check Mark List button
+			editor.addButton("check_mark_list", {
+				text: "Check Mark List",
+				icon: false,
+				onclick: function () {
+					editor.insertContent('<ul class="list-check-mark"><li>Check mark list item</li></ul>')
+				},
+			})
 		},
 
 		createControl: function (n, cm) {
