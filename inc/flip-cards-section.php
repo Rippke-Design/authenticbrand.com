@@ -1,4 +1,13 @@
-<section id="flip-cards-<?php echo get_row_index(); ?>" class="flip-cards background-yellow-lighter padding-y-100">
+<?php 
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
+?>
+<section id="flip-cards-<?php echo get_row_index(); ?>"
+  class="flip-cards <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100">
   <span class="badge text-bg-danger">Flip Cards</span>
   <div class="container">
     <div class="row gy-4">

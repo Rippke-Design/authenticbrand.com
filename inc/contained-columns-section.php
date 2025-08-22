@@ -2,7 +2,6 @@
 
 $column_alignment = get_sub_field('column_alignment');
 
-
 // Set text color based on background
 $background_color = get_sub_field('background_color');
 $text_color = "text-dark";

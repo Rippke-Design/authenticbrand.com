@@ -10,7 +10,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="video-section-<?php echo get_row_index(); ?>"
-  class="video-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> padding-y-100">
+  class="video-section <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100">
   <span class="badge text-bg-danger">Video Section</span>
   <div class="container">
     <?php if (get_sub_field('before_video_content')): ?>

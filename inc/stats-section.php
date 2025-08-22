@@ -1,4 +1,15 @@
-<section id="stats-<?php echo get_row_index(); ?>" class="stats-section padding-y-100">
+<?php 
+
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
+?>
+
+<section id="stats-<?php echo get_row_index(); ?>"
+  class="stats-section <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100">
   <span class="badge text-bg-danger">Stats</span>
   <div class="container">
     <div class="row gy-4 mb-4">

@@ -12387,6 +12387,10 @@ body .gform_wrapper select:focus {
   border-color: #9ca1a3 !important;
 }
 
+body .gform_wrapper select {
+  padding: 0 16px;
+}
+
 .hero {
   color: var(--c-white);
   position: relative;

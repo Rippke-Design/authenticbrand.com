@@ -12,11 +12,18 @@ elseif (get_sub_field('background_color') == 'background-yellow'):
 elseif (get_sub_field('background_color') == 'background-white'):
     $background_color_hide_slides = "var(--c-white)";
 endif;
+
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
 ?>
 
 <?php if (get_sub_field('column_layout') == 'slider-100'): ?>
 <section id="offscreen-slider-<?php echo get_row_index(); ?>"
-  class="offscreen-slider <?php the_sub_field('background_color'); ?> background-pattern-cubes background-pattern-right padding-y-100 text-light">
+  class="offscreen-slider <?php echo $background_color; ?> <?php echo $text_color; ?> background-pattern-cubes background-pattern-right padding-y-100">
   <span class="badge text-bg-danger">Offscreen Slider</span>
   <div class="container">
     <div class="row">
@@ -139,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <?php if (get_sub_field('column_layout') == 'slider-50-50'): ?>
 <section id="offscreen-right-slider-<?php echo get_row_index(); ?>"
-  class="offscreen-right-slider offscreen-slider <?php the_sub_field('background_color'); ?> background-pattern-cubes background-pattern-right text-light padding-y-100"
+  class="offscreen-right-slider offscreen-slider <?php echo $background_color; ?> <?php echo $text_color; ?> background-pattern-cubes background-pattern-right padding-y-100"
   style="--c-background: <?php echo $background_color_hide_slides; ?>;">
 
   <span class="badge text-bg-danger">Offscreen Right Slider</span>

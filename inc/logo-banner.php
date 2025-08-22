@@ -11,17 +11,23 @@ if (have_rows('logos')) {
 // Calculate animation speed: 5 seconds per logo
 $seconds_per_logo = 3;
 $total_duration = $logo_count * $seconds_per_logo;
+
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
 ?>
 
 <section id="logo-banner-<?php echo get_row_index(); ?>"
-  class="logo-banner <?php the_sub_field('background_color'); ?> padding-y-100"
+  class="logo-banner <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100"
   style="--slider-speed: <?php echo $total_duration; ?>s;">
   <span class="badge text-bg-danger">Logo Banner</span>
   <div class="container gy-4">
     <div class="row ">
       <div class="col-lg-12 mb-4">
         <?php the_sub_field("logo_banner_content"); ?>
-
       </div>
     </div>
   </div>
@@ -80,11 +86,13 @@ $total_duration = $logo_count * $seconds_per_logo;
     </div>
   </div>
 
+  <?php if (get_sub_field("after_logo_banner_content")): ?>
   <div class="container gy-4">
-    <div class="row ">
+    <div class="row">
       <div class="col-lg-12 mt-4">
         <?php the_sub_field("after_logo_banner_content"); ?>
       </div>
     </div>
   </div>
+  <?php endif; ?>
 </section>

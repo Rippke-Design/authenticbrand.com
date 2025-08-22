@@ -1,11 +1,22 @@
+<?php 
+
+$background_color = get_sub_field('background_color');
+$text_color = "text-dark";
+if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
+  $text_color = "text-light";
+} 
+
+?>
 <section id="icon-tabs-<?php echo get_row_index(); ?>"
-  class="icon-tabs background-dark-blue padding-y-100 background-pattern-circle-row-bottom">
+  class="icon-tabs <?php echo $background_color; ?> padding-y-100 background-pattern-circle-row-bottom">
   <span class="badge text-bg-danger">Icon Tabs</span>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-light mb-5">
+      <?php if (get_sub_field('headline')): ?>
+      <div class="col-lg-12 mb-5 <?php echo $text_color; ?>">
         <?php the_sub_field('headline'); ?>
       </div>
+      <?php endif; ?>
 
       <div class="col-lg-2">
         <ul class="nav nav-tabs h-100" id="myTab" role="tablist">
@@ -31,15 +42,15 @@
         <div class="tab-content" id="myTabContent">
           <?php if( have_rows('tab_content') ): ?>
           <?php while( have_rows('tab_content') ): the_row(); 
-           $tab_content = get_sub_field('tab_content'); 
-           $tab_content_image = get_sub_field('tab_content_image'); 
-          $tab_content_headline = get_sub_field('tab_content_headline');
+            $tab_content = get_sub_field('tab_content'); 
+            $tab_content_image = get_sub_field('tab_content_image'); 
+            $tab_content_headline = get_sub_field('tab_content_headline');
           ?>
           <?php $is_first_tab_content = (get_row_index() == 1); ?>
           <div class="tab-pane fade <?php if ($is_first_tab_content) echo ' active show'; ?>"
             id="tab-pane-<?php echo get_row_index(); ?>" role="tabpanel"
             aria-labelledby="tab-<?php echo get_row_index(); ?>" tabindex="0">
-            <div class="island background-white h-100">
+            <div class="island background-white text-dark h-100">
               <div class="row">
                 <div class="col-lg-4">
                   <img src="<?php echo esc_url($tab_content_image['url']); ?>"
