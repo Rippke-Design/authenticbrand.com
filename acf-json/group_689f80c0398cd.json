@@ -1343,6 +1343,35 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68a8ed8383f14",
+                            "label": "Slide Source Selection Type",
+                            "name": "slide_source_selection_type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "manual": "Manual - select specific Client Stories, Blogs, Events etc",
+                                "automatic": "Automatically pull in a specific number of content items"
+                            },
+                            "default_value": "manual",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a36d138f816",
                             "label": "Slides",
                             "name": "slides",
@@ -1350,7 +1379,15 @@
                             "type": "relationship",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a8ed8383f14",
+                                        "operator": "==",
+                                        "value": "manual"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1371,6 +1408,88 @@
                             "elements": "",
                             "bidirectional": 0,
                             "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_68a8eda183f17",
+                            "label": "Automatic Slide Selection",
+                            "name": "slide_source",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Pulls in X of latest content type",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a8ed8383f14",
+                                        "operator": "==",
+                                        "value": "automatic"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "34": "Article",
+                                "54": "Article|Event",
+                                "84": "Article|Event|News",
+                                "79": "Article|Guide",
+                                "66": "Article|Podcast",
+                                "99": "Article|Webinar",
+                                "71": "Client Story",
+                                "35": "Event",
+                                "38": "Event|News",
+                                "80": "Event|Podcast",
+                                "113": "Guide",
+                                "48": "News",
+                                "81": "Podcast",
+                                "1": "Uncategorized",
+                                "112": "Video",
+                                "98": "Webinar"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68a8ed8f83f16",
+                            "label": "Number of Slides",
+                            "name": "number_of_slides",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68a8ed8383f14",
+                                        "operator": "==",
+                                        "value": "automatic"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": "",
+                            "prepend": "",
+                            "append": ""
                         }
                     ],
                     "min": "",
@@ -3582,5 +3701,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755898675
+    "modified": 1755902319
 }

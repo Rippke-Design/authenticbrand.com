@@ -52,7 +52,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
             </div>
             <div class="splide__track">
               <ul class="splide__list">
-
+                <?php if (get_sub_field('slide_source_selection_type') == 'manual'): ?>
                 <?php 
                   $slides = get_sub_field('slides');
                   if ($slides): 
@@ -78,6 +78,42 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
                   </div>
                 </li>
                 <?php endforeach; ?>
+                <?php endif; ?>
+                <?php endif; ?>
+
+                <?php if (get_sub_field('slide_source_selection_type') == 'automatic'): ?>
+                <!-- automatic slide selection -->
+                <?php
+                  $category_id = get_sub_field('slide_source');
+                  $posts = get_posts(array(
+                    'category' => $category_id,
+                    'numberposts' => get_sub_field('number_of_slides'),
+                  ));
+                  ?>
+
+                <?php if ($posts) : ?>
+                <?php foreach ($posts as $post) : ?>
+                <?php setup_postdata($post); 
+                $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
+
+                <li class="splide__slide">
+                  <div class="card">
+                    <?php if ($featured_image): ?>
+                    <div class="card-image">
+                      <img src="<?php echo esc_url($featured_image); ?>"
+                        alt="<?php echo esc_attr(get_the_title($post->ID)); ?>" class="card-img-top">
+                    </div>
+                    <?php endif; ?>
+                    <div class="card-body">
+                      <h3 class="card-title"><?php echo esc_html(get_the_title($post->ID)); ?></h3>
+                      <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">Read More &raquo;</a>
+                    </div>
+                  </div>
+                </li>
+                <?php endforeach; wp_reset_postdata(); ?>
+                <?php endif; ?>
+
+
                 <?php endif; ?>
               </ul>
             </div>
@@ -164,6 +200,9 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="splide__track">
             <ul class="splide__list">
+
+              <?php if (get_sub_field('slide_source_selection_type') == 'manual'): ?>
+              <!-- manual slide selection -->
               <?php 
                 $slides = get_sub_field('slides');
                 if ($slides): 
@@ -188,8 +227,46 @@ document.addEventListener('DOMContentLoaded', function() {
                   </div>
                 </div>
               </li>
-              <?php endforeach; ?>
+              <?php endforeach; wp_reset_postdata(); ?>
               <?php endif; ?>
+
+              <?php endif; ?>
+
+              <?php if (get_sub_field('slide_source_selection_type') == 'automatic'): ?>
+              <!-- automatic slide selection -->
+              <?php
+              $category_id = get_sub_field('slide_source');
+              $posts = get_posts(array(
+                'category' => $category_id,
+                'numberposts' => get_sub_field('number_of_slides'),
+              ));
+              ?>
+
+              <?php if ($posts) : ?>
+              <?php foreach ($posts as $post) : ?>
+              <?php setup_postdata($post); 
+                $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
+
+              <li class="splide__slide">
+                <div class="card">
+                  <?php if ($featured_image): ?>
+                  <div class="card-image">
+                    <img src="<?php echo esc_url($featured_image); ?>"
+                      alt="<?php echo esc_attr(get_the_title($post->ID)); ?>" class="card-img-top">
+                  </div>
+                  <?php endif; ?>
+                  <div class="card-body">
+                    <h3 class="card-title"><?php echo esc_html(get_the_title($post->ID)); ?></h3>
+                    <a href="<?php echo esc_url(get_permalink($post->ID)); ?>">Read More &raquo;</a>
+                  </div>
+                </div>
+              </li>
+              <?php endforeach; wp_reset_postdata(); ?>
+              <?php endif; ?>
+
+              <?php endif; ?>
+
+
             </ul>
           </div>
         </div>

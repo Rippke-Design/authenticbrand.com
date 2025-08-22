@@ -28,7 +28,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           if ($cards) :
             foreach ($cards as $post) :
               setup_postdata($post);
-              $featured_image = get_the_post_thumbnail_url($post->ID, 'medium');
+              $featured_image = get_the_post_thumbnail_url($post->ID, 'large');
               ?>
       <div class="col-lg-4 mb-5">
         <div class="card success-story-card">
@@ -66,7 +66,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       <?php if ($posts) : ?>
       <?php foreach ($posts as $post) : ?>
       <?php setup_postdata($post); 
-      $featured_image = get_the_post_thumbnail_url($post->ID, 'medium'); ?>
+      $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
 
       <div class="col-lg-4 mb-5">
         <div class="card success-story-card">
