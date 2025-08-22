@@ -201,3 +201,75 @@ add_filter('body_class', function($classes) {
     }
     return $classes;
 });
+
+
+// Simple WordPress Breadcrumb Function
+function get_simple_breadcrumbs() {
+    // Don't show breadcrumbs on homepage
+    if (is_front_page() || is_home()) {
+        return '';
+    }
+    
+    $breadcrumbs = array();
+    
+    
+    if (is_page()) {
+        // Page breadcrumbs - only show if there are ancestors
+        $ancestors = array_reverse(get_post_ancestors(get_the_ID()));
+        if (empty($ancestors)) {
+            return ''; // No parent pages, don't show breadcrumbs
+        }
+        
+        foreach ($ancestors as $ancestor_id) {
+            $breadcrumbs[] = '<a href="' . get_permalink($ancestor_id) . '">' . get_the_title($ancestor_id) . '</a>';
+        }
+        // Current page (not linked)
+        $breadcrumbs[] = get_the_title();
+    } elseif (is_single()) {
+        // Single post breadcrumbs
+        if (has_category()) {
+            $categories = get_the_category();
+            $breadcrumbs[] = '<a href="' . get_category_link($categories[0]->term_id) . '">' . $categories[0]->name . '</a>';
+        }
+        $breadcrumbs[] = get_the_title();
+    } elseif (is_category()) {
+        // Category breadcrumbs
+        $breadcrumbs[] = single_cat_title('', false);
+    } elseif (is_tag()) {
+        // Tag breadcrumbs
+        $breadcrumbs[] = single_tag_title('', false);
+    } elseif (is_archive()) {
+        // Archive breadcrumbs
+        $breadcrumbs[] = get_the_archive_title();
+    } elseif (is_search()) {
+        // Search breadcrumbs
+        $breadcrumbs[] = 'Search Results for: ' . get_search_query();
+    } elseif (is_404()) {
+        // 404 breadcrumbs
+        $breadcrumbs[] = 'Page Not Found';
+    }
+    
+    // Build the breadcrumb HTML
+    $breadcrumb_html = '<nav aria-label="breadcrumb">';
+    $breadcrumb_html .= '<ol class="breadcrumb">';
+    
+    foreach ($breadcrumbs as $index => $crumb) {
+        if ($index === count($breadcrumbs) - 1) {
+            // Last item (current page) - no link, add active class
+            $breadcrumb_html .= '<li class="breadcrumb-item active" aria-current="page">' . $crumb . '</li>';
+        } else {
+            // Regular breadcrumb item
+            $breadcrumb_html .= '<li class="breadcrumb-item">' . $crumb . '</li>';
+        }
+    }
+    
+    $breadcrumb_html .= '</ol>';
+    $breadcrumb_html .= '</nav>';
+    
+    return $breadcrumb_html;
+}
+
+// Echo version of the function
+function breadcrumbs() {
+    echo get_simple_breadcrumbs();
+}

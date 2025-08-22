@@ -4,6 +4,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7">
+        <?php if ( ! get_sub_field('homepage_hero') ) { breadcrumbs(); } ?>
+
+
         <h1><?php the_sub_field('hero_headline'); ?></h1>
         <p class="tagline">
           <?php the_sub_field('hero_sub_headline'); ?>

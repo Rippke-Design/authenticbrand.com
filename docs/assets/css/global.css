@@ -12242,6 +12242,38 @@ footer a:not(.btn):hover {
   text-underline-offset: 5px;
 }
 
+.breadcrumb {
+  --bs-breadcrumb-divider: ">";
+  --bs-breadcrumb-font-size: 15px;
+  --bs-breadcrumb-item-active-color: var(--c-white);
+  margin-bottom: 70px !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider) !important;
+}
+
+.breadcrumb a,
+.breadcrumb,
+.breadcrumb-item.active {
+  color: var(--c-white) !important;
+  text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider) !important;
+  color: var(--c-white) !important;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: var(--c-white) !important;
+  text-decoration: none;
+}
+
+.breadcrumb .breadcrumb-item.active {
+  color: var(--c-white) !important;
+}
+
 .btn {
   border: none;
   border-radius: 35px;
