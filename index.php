@@ -43,6 +43,8 @@ if( have_rows('components') ):
             get_template_part('inc/accordion-columns');
         elseif( get_row_layout() == 'video-section' ):
             get_template_part('inc/video-section');
+        elseif( get_row_layout() == 'testimonials-section' ):
+            get_template_part('inc/testimonials-section');
         endif;
     endwhile;
 endif;

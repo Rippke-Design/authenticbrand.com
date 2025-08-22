@@ -13743,3 +13743,24 @@ body:not(.page-all-components-page) .dev-mode {
   width: 100%;
   height: 100%;
 }
+
+.testimonials-section {
+  padding-bottom: 165px;
+}
+.testimonials-section strong {
+  color: var(--c-dark-blue);
+}
+.testimonials-section .splide__pagination {
+  bottom: -125px;
+}
+.testimonials-section .splide__pagination__page {
+  background-color: var(--c-teal);
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+}
+.testimonials-section .splide__pagination__page.is-active {
+  background: var(--c-teal-darker);
+  transform: scale(1);
+  z-index: 1;
+}

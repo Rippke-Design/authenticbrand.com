@@ -302,3 +302,25 @@ function get_simple_breadcrumbs() {
 function breadcrumbs() {
     echo get_simple_breadcrumbs();
 }
+
+
+
+// Register custom image size for testimonial headshots
+function ab_register_testimonial_headshot_size() {
+    add_image_size('testimonial-headshot', 100, 100, true);
+}
+add_action('after_setup_theme', 'ab_register_testimonial_headshot_size');
+
+// Only show the "Testimonial Headshot" size in the admin for the testimonials post type
+function ab_limit_image_sizes_for_testimonials($sizes, $post_id = null) {
+    // Only proceed if we have a post_id and it's a testimonials post type
+    if ($post_id && get_post_type($post_id) === 'testimonials') {
+        // Only show the custom size and the full/original
+        return array(
+            'testimonial-headshot' => __('Testimonial Headshot (100x100)'),
+            'full' => __('Full Size'),
+        );
+    }
+    return $sizes;
+}
+add_filter('image_size_names_choose', 'ab_limit_image_sizes_for_testimonials', 10, 2);

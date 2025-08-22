@@ -1,0 +1,24 @@
+.testimonials-section {
+	padding-bottom: 165px;
+
+	strong {
+		color: var(--c-dark-blue);
+	}
+
+	.splide__pagination {
+		bottom: -125px;
+	}
+
+	.splide__pagination__page {
+		background-color: var(--c-teal);
+		width: 15px;
+		height: 15px;
+		margin: 10px;
+
+		&.is-active {
+			background: var(--c-teal-darker);
+			transform: scale(1);
+			z-index: 1;
+		}
+	}
+}
