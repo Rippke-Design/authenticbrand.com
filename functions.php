@@ -79,9 +79,10 @@ function add_tinymce_plugin($plugin_array) {
     return $plugin_array;
 }
 
-// Register the button
+// Register the buttons
 function register_tinymce_button($buttons) {
     array_push($buttons, 'authentic_buttons');
+    array_push($buttons, 'check_mark_list');
     return $buttons;
 }
 
