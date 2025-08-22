@@ -49,7 +49,10 @@
 	.col-left {
 		.content-inner {
 			padding-right: 50px;
+			// account for the bleed-img
+			padding-bottom: 540px;
 			@include media-breakpoint-down(lg) {
+				padding-bottom: 50px;
 				padding-left: 2rem !important;
 				padding-right: 2rem !important;
 			}

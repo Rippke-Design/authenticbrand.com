@@ -12440,9 +12440,11 @@ body .gform_wrapper select:focus {
 }
 .faq .col-left .content-inner {
   padding-right: 50px;
+  padding-bottom: 540px;
 }
 @media (max-width: 991.98px) {
   .faq .col-left .content-inner {
+    padding-bottom: 50px;
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
