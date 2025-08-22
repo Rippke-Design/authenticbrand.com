@@ -35,7 +35,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           <?php endif; ?>
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <!-- <p>April 29, 2025</p> -->
+              <p><?php echo get_the_date('', $post->ID); ?></p>
               <h3><?php echo esc_html(get_the_title($post->ID)); ?></h3>
             </div>
 
