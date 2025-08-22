@@ -33,9 +33,13 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr(get_the_title($post->ID)); ?>"
             class="card-img-top">
           <?php endif; ?>
-          <div class="card-body">
-            <h3><?php echo esc_html(get_the_title($post->ID)); ?></h3>
-            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="">Read More</a>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <!-- <p>April 29, 2025</p> -->
+              <h3><?php echo esc_html(get_the_title($post->ID)); ?></h3>
+            </div>
+
+            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="">Read More &raquo;</a>
           </div>
         </div>
       </div>

@@ -160,6 +160,18 @@
 	transform: translateZ(0); // Force GPU acceleration
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+	a {
+		color: var(--c-teal);
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		text-decoration-thickness: 2px;
+		transition: color 0.2s ease;
+		text-transform: uppercase;
+		&:hover {
+			color: var(--c-teal-darker);
+		}
+	}
+
 	h3 {
 		color: var(--c-dark-blue);
 	}
