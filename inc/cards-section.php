@@ -55,13 +55,41 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
       <?php if (get_sub_field('card_source_selection_type') == 'automatic'): ?>
       <!-- automatic card selection -->
+      <?php
+      $category_id = get_sub_field('card_source');
+      $posts = get_posts(array(
+        'category' => $category_id,
+        'numberposts' => get_sub_field('number_of_cards'),
+      ));
+      ?>
 
+      <?php if ($posts) : ?>
+      <?php foreach ($posts as $post) : ?>
+      <?php setup_postdata($post); 
+      $featured_image = get_the_post_thumbnail_url($post->ID, 'medium'); ?>
+
+      <div class="col-lg-4 mb-5">
+        <div class="card success-story-card">
+          <?php if ($featured_image) : ?>
+          <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr(get_the_title($post->ID)); ?>"
+            class="card-img-top">
+          <?php endif; ?>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <p><?php echo get_the_date('', $post->ID); ?></p>
+              <h3><?php echo esc_html(get_the_title($post->ID)); ?></h3>
+            </div>
+
+            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="">Read More &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <?php endforeach; wp_reset_postdata(); ?>
       <?php endif; ?>
-
+      <?php endif; ?>
 
     </div>
 
-  </div>
   </div>
 </section>
 
