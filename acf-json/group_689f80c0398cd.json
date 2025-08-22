@@ -1432,6 +1432,7 @@
                                 "id": ""
                             },
                             "choices": {
+                                "121": "aaaaatest",
                                 "34": "Article",
                                 "54": "Article|Event",
                                 "84": "Article|Event|News",
@@ -1739,7 +1740,8 @@
                             },
                             "choices": {
                                 "col1": "One Column",
-                                "col2": "Two Columns"
+                                "col2": "Two Columns",
+                                "island": "One Column in Island"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -1814,6 +1816,41 @@
                                     "ui": 0,
                                     "ui_on_text": "",
                                     "ui_off_text": "",
+                                    "parent_repeater": "field_68a755b9f372f"
+                                },
+                                {
+                                    "key": "field_68a8fb4e24331",
+                                    "label": "Accordion Icon",
+                                    "name": "accordion_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_68a768267e314",
+                                                "operator": "==",
+                                                "value": "island"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "allow_in_bindings": 0,
+                                    "preview_size": "medium",
                                     "parent_repeater": "field_68a755b9f372f"
                                 },
                                 {
@@ -3599,6 +3636,7 @@
                                 "id": ""
                             },
                             "choices": {
+                                "121": "aaaaatest",
                                 "34": "Article",
                                 "54": "Article|Event",
                                 "84": "Article|Event|News",
@@ -3701,5 +3739,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755902319
+    "modified": 1755904896
 }

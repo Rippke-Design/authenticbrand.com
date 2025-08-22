@@ -22,32 +22,82 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       </div>
       <?php endif; ?>
 
-      <!-- Accordion Items -->
+
+
+
+      <?php if ($accordion_columns_layout == 'col2'): ?>
+
       <?php if (have_rows('accordion_items')) : ?>
       <?php while (have_rows('accordion_items')) : the_row(); 
         $accordion_headline = get_sub_field('accordion_headline');
         $accordion_content = get_sub_field('accordion_content');
         $is_open = get_sub_field('open');
       ?>
-
-      <?php if ($accordion_columns_layout == 'col2'): ?>
       <div class="col-lg-6 mb-5">
-        <?php else: ?>
-        <div class="col-lg-12 mb-5">
-          <?php endif; ?>
+        <div class="island background-white text-dark">
+          <details <?php echo $is_open ? 'open' : ''; ?>>
+            <summary><?php echo esc_html($accordion_headline); ?></summary>
+            <div class="details-inner">
+              <?php echo wp_kses_post($accordion_content); ?>
+            </div>
+          </details>
+        </div>
+      </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
+      <?php endif; ?>
 
-          <div class="island background-white text-dark">
+      <?php if ($accordion_columns_layout == 'col1'): ?>
+      <?php if (have_rows('accordion_items')) : ?>
+      <?php while (have_rows('accordion_items')) : the_row(); 
+        $accordion_headline = get_sub_field('accordion_headline');
+        $accordion_content = get_sub_field('accordion_content');
+        $is_open = get_sub_field('open');
+      ?>
+      <div class="col-lg-12 mb-5">
+        <div class="island background-white text-dark">
+          <details <?php echo $is_open ? 'open' : ''; ?>>
+            <summary><?php echo esc_html($accordion_headline); ?></summary>
+            <div class="details-inner">
+              <?php echo wp_kses_post($accordion_content); ?>
+            </div>
+          </details>
+        </div>
+      </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
+      <?php endif; ?>
+
+      <?php if ($accordion_columns_layout == 'island'): ?>
+      <?php if (have_rows('accordion_items')) : ?>
+      <div class="col-lg-12">
+        <div class="island background-white accordion-icon ">
+          <div class="island-content">
+            <?php while (have_rows('accordion_items')) : the_row(); 
+              $accordion_headline = get_sub_field('accordion_headline');
+              $accordion_content = get_sub_field('accordion_content');
+              $is_open = get_sub_field('open');
+            ?>
             <details <?php echo $is_open ? 'open' : ''; ?>>
-              <summary><?php echo esc_html($accordion_headline); ?></summary>
+              <summary>
+                <?php 
+                $accordion_icon = get_sub_field('accordion_icon');
+                if ($accordion_icon): ?>
+                <img src="<?php echo esc_url($accordion_icon['url']); ?>"
+                  alt="<?php echo esc_html($accordion_headline); ?>" class="icon" style="width: 50px; height: auto;">
+                <?php endif; ?>
+                <?php echo esc_html($accordion_headline); ?>
+              </summary>
               <div class="details-inner">
                 <?php echo wp_kses_post($accordion_content); ?>
               </div>
             </details>
+            <?php endwhile; ?>
           </div>
         </div>
-        <?php endwhile; ?>
-        <?php endif; ?>
       </div>
+      <?php endif; ?>
+      <?php endif; ?>
     </div>
   </div>
 </section>

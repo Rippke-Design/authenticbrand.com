@@ -12644,6 +12644,7 @@ details[open] summary::after {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding-bottom: 36px;
 }
 @media (max-width: 991.98px) {
   .accordion-icon summary {
@@ -12654,6 +12655,7 @@ details[open] summary::after {
 }
 .accordion-icon .details-inner {
   padding-left: 90px;
+  padding-bottom: 36px;
 }
 @media (max-width: 991.98px) {
   .accordion-icon .details-inner {

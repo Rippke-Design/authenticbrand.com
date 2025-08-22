@@ -175,6 +175,7 @@ details {
 		display: flex;
 		align-items: center;
 		gap: 40px;
+		padding-bottom: 36px;
 		@include media-breakpoint-down(lg) {
 			flex-direction: column;
 			align-items: center;
@@ -184,6 +185,7 @@ details {
 
 	.details-inner {
 		padding-left: 90px;
+		padding-bottom: 36px;
 		@include media-breakpoint-down(lg) {
 			padding-left: 0;
 		}
