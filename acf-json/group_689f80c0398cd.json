@@ -97,6 +97,27 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68a8921f3fe9b",
+                            "label": "Hero Headline Eyebrow",
+                            "name": "hero_headline_eyebrow",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Smaller text above main hero headline",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_689f81715b50c",
                             "label": "Hero Headline",
                             "name": "hero_headline",
@@ -171,6 +192,79 @@
                             "mime_types": "",
                             "allow_in_bindings": 0,
                             "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_68a8919ed5f46",
+                            "label": "CTA Buttons",
+                            "name": "cta_buttons",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Button",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68a8919ed5f47",
+                                    "label": "CTA Button",
+                                    "name": "cta_button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "allow_in_bindings": 0,
+                                    "parent_repeater": "field_68a8919ed5f46"
+                                },
+                                {
+                                    "key": "field_68a8919ed5f48",
+                                    "label": "Button Color",
+                                    "name": "button_color",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "btn-yellow": "Yellow",
+                                        "btn-outline": "White Outline",
+                                        "btn-white": "White",
+                                        "btn-blue": "Blue"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68a8919ed5f46"
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -3376,5 +3470,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755875343
+    "modified": 1755877942
 }

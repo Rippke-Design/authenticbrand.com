@@ -7,10 +7,33 @@
         <?php if ( ! get_sub_field('homepage_hero') ) { breadcrumbs(); } ?>
 
 
-        <h1><?php the_sub_field('hero_headline'); ?></h1>
+        <h1>
+          <span class="eyebrow">
+            <?php the_sub_field('hero_headline_eyebrow'); ?>
+          </span>
+          <?php the_sub_field('hero_headline'); ?>
+        </h1>
         <p class="tagline">
           <?php the_sub_field('hero_sub_headline'); ?>
         </p>
+
+        <?php if( have_rows('cta_buttons') ): ?>
+        <?php while( have_rows('cta_buttons') ): the_row(); 
+            $button = get_sub_field('cta_button');
+            $button_color = get_sub_field('button_color');
+            if( $button ):
+              $button_url = $button['url'];
+              $button_title = $button['title'];
+              $button_target = $button['target'] ? $button['target'] : '_self';
+          ?>
+        <a href="<?php echo esc_url($button_url); ?>" class="btn <?php echo ($button_color); ?>"
+          target="<?php echo esc_attr($button_target); ?>">
+          <?php echo esc_html($button_title); ?>
+        </a>
+        <?php 
+            endif;
+          endwhile; ?>
+        <?php endif; ?>
       </div>
       <div class="col-lg-5">
         <?php

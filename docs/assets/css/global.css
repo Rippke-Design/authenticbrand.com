@@ -226,7 +226,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, p.intro, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, .hero.hero-homepage p.tagline, .hero h1 .eyebrow, .hero .h1 .eyebrow, p.intro, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -242,7 +242,7 @@ h2, .h2 {
   font-size: clamp(1.333rem, 1vw + 1rem, 1.889rem);
 }
 
-h3, .h3, p.intro {
+h3, .h3, .hero.hero-homepage p.tagline, .hero h1 .eyebrow, .hero .h1 .eyebrow, p.intro {
   font-size: clamp(1.111rem, 0.5vw + 1rem, 1.333rem);
 }
 
@@ -11948,6 +11948,9 @@ h1, .h1 {
 h2, .h2,
 h3,
 .h3,
+.hero.hero-homepage p.tagline,
+.hero h1 .eyebrow,
+.hero .h1 .eyebrow,
 p.intro,
 h4,
 .h4 {
@@ -11983,7 +11986,7 @@ article h1, article .h1 {
 article h2, article .h2 {
   color: var(--c-dark-blue);
 }
-article h3, article .h3, article p.intro {
+article h3, article .h3, article .hero.hero-homepage p.tagline, .hero.hero-homepage article p.tagline, article .hero h1 .eyebrow, .hero h1 article .eyebrow, article .hero .h1 .eyebrow, .hero .h1 article .eyebrow, article p.intro {
   color: var(--c-teal);
 }
 
@@ -12394,30 +12397,40 @@ body .gform_wrapper select {
 .hero {
   color: var(--c-white);
   position: relative;
+}
+.hero.hero-homepage {
   min-height: 500px;
 }
+.hero.hero-homepage .row {
+  align-items: center;
+  height: 500px;
+}
 @media (max-width: 991.98px) {
-  .hero {
+  .hero.hero-homepage .row {
     min-height: auto;
-    padding: 150px 0;
   }
+}
+.hero.hero-inner {
+  min-height: auto;
+  padding: 150px 0;
+}
+.hero.hero-inner .row {
+  align-items: center;
+  min-height: auto;
 }
 @media (max-width: 767.98px) {
   .hero {
     padding: 100px 0;
   }
 }
-.hero .row {
-  align-items: center;
-  min-height: 500px;
-}
-@media (max-width: 991.98px) {
-  .hero .row {
-    min-height: auto;
-  }
-}
 .hero h1, .hero .h1 {
   margin-bottom: 16px;
+  line-height: 1.15;
+}
+.hero h1 .eyebrow, .hero .h1 .eyebrow {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 @media (max-width: 991.98px) {
   .hero img {
@@ -13042,7 +13055,7 @@ details[open] summary::after {
   color: var(--c-teal);
 }
 
-.what-we-offer h3, .what-we-offer .h3, .what-we-offer p.intro {
+.what-we-offer h3, .what-we-offer .h3, .what-we-offer p.intro, .what-we-offer .hero h1 .eyebrow, .hero h1 .what-we-offer .eyebrow, .what-we-offer .hero .h1 .eyebrow, .hero .h1 .what-we-offer .eyebrow, .what-we-offer .hero.hero-homepage p.tagline, .hero.hero-homepage .what-we-offer p.tagline {
   color: var(--c-dark-blue);
 }
 .what-we-offer .row {
@@ -13088,7 +13101,7 @@ details[open] summary::after {
 .success-story-card a:hover {
   color: var(--c-teal-darker);
 }
-.success-story-card h3, .success-story-card .h3, .success-story-card p.intro {
+.success-story-card h3, .success-story-card .h3, .success-story-card p.intro, .success-story-card .hero h1 .eyebrow, .hero h1 .success-story-card .eyebrow, .success-story-card .hero .h1 .eyebrow, .hero .h1 .success-story-card .eyebrow, .success-story-card .hero.hero-homepage p.tagline, .hero.hero-homepage .success-story-card p.tagline {
   color: var(--c-dark-blue);
 }
 .success-story-card:hover {
