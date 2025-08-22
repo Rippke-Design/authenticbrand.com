@@ -2,7 +2,9 @@
 
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<?php
+
+<main>
+  <?php
 if( have_rows('components') ):
     while( have_rows('components') ): the_row();
         if( get_row_layout() == 'hero' ):
@@ -49,9 +51,9 @@ endif;
 
 
 
-<?php endwhile; ?>
-<?php else : ?>
-<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'authenticbrand-com' ); ?></p>
-<?php endif; ?>
+  <?php endwhile; ?>
+  <?php else : ?>
+  <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'authenticbrand-com' ); ?></p>
+  <?php endif; ?>
 
-<?php get_footer(); ?>
+  <?php get_footer(); ?>

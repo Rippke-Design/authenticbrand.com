@@ -72,6 +72,17 @@ article {
 	border-top: 15px solid var(--c-dark-blue);
 }
 
+main {
+	ul,
+	ol {
+		padding-left: 0;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+}
+
 .lead {
 }
 
