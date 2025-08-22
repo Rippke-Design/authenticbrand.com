@@ -16,3 +16,26 @@ body .gform_wrapper select {
 body .gform_wrapper select {
 	padding: 0 16px;
 }
+
+.form-section.full-bleed-25-75 {
+	.gfield_label {
+		@extend .text-light;
+	}
+}
+
+.gform_required_legend {
+	display: none;
+}
+
+body .gform_wrapper {
+	.gfield_label {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+
+body .gform_wrapper input::placeholder,
+body .gform_wrapper textarea::placeholder {
+	color: #d1d3d4 !important;
+	opacity: 1; // Ensures color is not faded in some browsers
+}

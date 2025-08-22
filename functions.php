@@ -196,6 +196,7 @@ function custom_gform_button_classes($button, $form) {
 }
 
 
+
 // tinyMCE remove buttons from toolbar
 function disable_tinymce_buttons_row1($buttons) {
     $buttons = array_diff($buttons, array('wp_more', 'wp_full_screen', 'fullscreen', 'blockquote'));

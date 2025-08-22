@@ -12,7 +12,6 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
   $right_column_text_color = "text-dark";
 }
 
-
 ?>
 
 <?php if (get_sub_field("form_section_layout") == "form-25-75"): ?>

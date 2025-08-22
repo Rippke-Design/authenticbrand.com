@@ -8447,7 +8447,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-light {
+.text-light, .form-section.full-bleed-25-75 .gfield_label {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11961,7 +11961,7 @@ h4,
 h2, .h2 {
   color: var(--c-dark-blue);
 }
-.text-light h2, .text-light .h2 {
+.text-light h2, .form-section.full-bleed-25-75 .gfield_label h2, .text-light .h2, .form-section.full-bleed-25-75 .gfield_label .h2 {
   color: var(--c-white) !important;
 }
 @media (max-width: 767.98px) {
@@ -12392,6 +12392,21 @@ body .gform_wrapper select:focus {
 
 body .gform_wrapper select {
   padding: 0 16px;
+}
+
+.gform_required_legend {
+  display: none;
+}
+
+body .gform_wrapper .gfield_label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body .gform_wrapper input::placeholder,
+body .gform_wrapper textarea::placeholder {
+  color: #d1d3d4 !important;
+  opacity: 1;
 }
 
 .hero {
