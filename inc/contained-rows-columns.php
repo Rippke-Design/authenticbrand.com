@@ -21,12 +21,11 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
       <?php if (get_sub_field('before_columns_content')): ?>
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 mb-5">
           <?php the_sub_field('before_columns_content'); ?>
         </div>
       </div>
       <?php endif; ?>
-
 
 
       <?php if (have_rows('rows')): ?>
@@ -40,7 +39,6 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         <div class="<?php the_sub_field('column_width'); ?>">
           <div class="card h-100 card-padding-large">
             <div class="card-body">
-
               <?php if (have_rows('inner_rows')): ?>
               <?php while (have_rows('inner_rows')): the_row(); ?>
               <!-- inner rows -->
@@ -62,7 +60,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           </div>
         </div>
         <?php else: ?>
-        <div class="col">
+        <div class="<?php the_sub_field('column_width'); ?>">
           <?php the_sub_field('column_content'); ?>
         </div>
         <?php endif; ?>
@@ -72,9 +70,6 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       <?php endwhile; ?>
       <?php endif; ?>
 
-
-
-
       <?php if (get_sub_field('after_columns_content')): ?>
       <div class="row">
         <div class="col-lg-12">
@@ -82,7 +77,6 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         </div>
       </div>
       <?php endif; ?>
-
     </div>
   </div>
 </section>
