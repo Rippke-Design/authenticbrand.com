@@ -35,6 +35,8 @@ if( have_rows('components') ):
             get_template_part('inc/solutions-section');
         elseif( get_row_layout() == 'contained-columns' ):
             get_template_part('inc/contained-columns-section');
+        elseif( get_row_layout() == 'contained-rows-columns' ):
+            get_template_part('inc/contained-rows-columns');
         elseif( get_row_layout() == 'graphic-divider-section' ):
             get_template_part('inc/graphic-divider-section');
         elseif( get_row_layout() == 'cards-section' ):
