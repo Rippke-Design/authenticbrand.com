@@ -3289,7 +3289,7 @@
                 "layout_68a9bff16488d": {
                     "key": "layout_68a9bff16488d",
                     "name": "contained-rows-columns",
-                    "label": "Contained Rows Columns",
+                    "label": "Contained Rows Columns With Islands",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -4186,5 +4186,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755979660
+    "modified": 1755981408
 }

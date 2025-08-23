@@ -12,12 +12,12 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 <section id="card-rows-<?php echo get_row_index(); ?>"
   class="card-rows <?php echo $background_color; ?> <?php echo $text_color; ?> background-pattern-stripe-circle-dark background-position-left-top-offscreen"
   style="--bg-img-width: 460px; --bg-img-height: 460px;">
-  <div class="background-pattern-circle-dot background-position-right-bottom-offscreen  padding-y-100"
+  <div class="background-pattern-circle-dot background-position-right-bottom-offscreen padding-y-100"
     style="--bg-img-width: 490px; --bg-img-height: 490px;">
 
 
     <!-- Need to be able to add rows, and columns and toggle if you want it to be an island / card -->
-    <span class="badge text-bg-danger">Card Rows</span>
+    <span class="badge text-bg-danger">Contained Rows and Columns with Islands</span>
     <div class="container">
 
       <?php if (get_sub_field('before_columns_content')): ?>
