@@ -3159,6 +3159,27 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68aa2fcb91d4f",
+                            "label": "Add Curved Bottom?",
+                            "name": "has_curved_bottom",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "Curved bottom will only show up if a background color other than white is selected.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_68a633309c914",
                             "label": "Before columns Content",
                             "name": "before_columns_content",
@@ -4186,5 +4207,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755981408
+    "modified": 1755983920
 }

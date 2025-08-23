@@ -1,6 +1,6 @@
 .background-curved-bottom {
-	overflow: visible;
 	margin-bottom: 40px;
+	padding-bottom: 40px !important;
 	position: relative;
 	z-index: 1;
 
@@ -8,12 +8,13 @@
 		content: "";
 		position: absolute;
 		bottom: 0;
-		left: 0;
-		width: 100%;
+		left: 50%;
+		width: 125%;
 		background-color: var(--bg-color);
+		// background-color: orange;
 		height: 80px;
-		border-radius: 88% / 100%;
-		transform: translateY(40px);
+		border-radius: 0 0 50% 50% / 0 0 100% 100%;
+		transform: translateX(-50%) translateY(80px);
 		z-index: 0;
 	}
 
@@ -89,6 +90,19 @@
 }
 
 /* Patterns */
+
+/* Graphic Dividers */
+.background-divider-squares {
+	background-image: url("../img/graphic-divider-squares.webp");
+	background-repeat: repeat-x;
+	height: 76px;
+}
+
+.background-divider-circles {
+	background-image: url("../img/graphic-divider-circles.webp");
+	background-repeat: repeat-x;
+	height: 116px;
+}
 
 .background-pattern-circle-row-top {
 	background-image: url("../img/3-circle.svg");
@@ -174,4 +188,10 @@
 
 .background-pattern-left {
 	background-position: bottom 0 left 0;
+}
+
+/* Hide horizontal scrollbar globally */
+html,
+body {
+	overflow-x: hidden;
 }

@@ -12,7 +12,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="contained-columns-section-<?php echo get_row_index(); ?>"
-  class="contained-columns-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> padding-y-100 background-pattern-cubes background-pattern-right"
+  class="contained-columns-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> padding-y-100 background-pattern-right <?php if (get_sub_field('has_curved_bottom')): ?>background-curved-bottom<?php endif; ?>"
   style="--bg-img-width: 457px; --bg-img-height: 1115px;">
   <span class="badge text-bg-danger">Contained Columns</span>
   <div class="container">
