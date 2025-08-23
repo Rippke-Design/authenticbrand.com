@@ -350,3 +350,23 @@ function ab_limit_image_sizes_for_testimonials($sizes, $post_id = null) {
     return $sizes;
 }
 add_filter('image_size_names_choose', 'ab_limit_image_sizes_for_testimonials', 10, 2);
+
+
+// Allow SVG uploads
+function allow_svg_uploads($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_uploads');
+
+// Fix SVG display in admin
+function fix_svg_admin_display() {
+    echo '<style>
+        .attachment-266x266, .thumbnail img {
+            width: 100% !important;
+            height: auto !important;
+        }
+    </style>';
+}
+add_action('admin_head', 'fix_svg_admin_display');

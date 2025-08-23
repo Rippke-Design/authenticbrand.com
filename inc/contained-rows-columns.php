@@ -8,6 +8,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
 ?>
 
+
 <section id="card-rows-<?php echo get_row_index(); ?>"
   class="card-rows <?php echo $background_color; ?> <?php echo $text_color; ?> background-pattern-stripe-circle-dark background-position-left-top-offscreen"
   style="--bg-img-width: 460px; --bg-img-height: 460px;">
@@ -37,7 +38,15 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         <?php if (get_sub_field('island_column')): ?>
         <!-- repeater called columns -->
         <div class="<?php the_sub_field('column_width'); ?>">
-          <div class="card h-100 card-padding-large">
+          <?php 
+            $island_background_color = get_sub_field('island_background_color');
+            $island_text_color = "text-dark";
+            if ($island_background_color == "background-dark-blue" || $island_background_color == "background-teal" || $island_background_color == "background-teal-darker") {
+              $island_text_color = "text-light";
+            }
+          ?>
+          <div
+            class="card h-100 card-padding-large <?php echo $island_background_color; ?> <?php echo $island_text_color; ?>">
             <div class="card-body">
               <?php if (have_rows('inner_rows')): ?>
               <?php while (have_rows('inner_rows')): the_row(); ?>
