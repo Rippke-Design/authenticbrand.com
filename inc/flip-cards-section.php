@@ -7,7 +7,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
 ?>
 <section id="flip-cards-<?php echo get_row_index(); ?>"
-  class="flip-cards <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100">
+  class="flip-cards <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100 border-bottom-yellow">
   <span class="badge text-bg-danger">Flip Cards</span>
   <div class="container">
     <div class="row gy-4">

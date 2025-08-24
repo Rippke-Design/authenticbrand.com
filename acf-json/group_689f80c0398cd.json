@@ -3159,6 +3159,105 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68aa4200b080e",
+                            "label": "Background Patterns",
+                            "name": "background_patterns",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68aa4217b080f",
+                                    "label": "Background Pattern",
+                                    "name": "background_pattern",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "background-pattern-circle-row": "Circle Row",
+                                        "background-pattern-cubes": "Cubes",
+                                        "background-pattern-cubes-reverse": "Cubes Reverse",
+                                        "background-pattern-diamond": "Diamond",
+                                        "background-pattern-red-dots": "Red Dots",
+                                        "background-pattern-stripe-circle": "Stripe Circle",
+                                        "background-pattern-stripe-circle-dark": "Stripe Circle Dark",
+                                        "background-pattern-circle-dot": "Circle Dot"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68aa4200b080e"
+                                },
+                                {
+                                    "key": "field_68aa4224b0810",
+                                    "label": "Background Position",
+                                    "name": "background_position",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "background-position-right-top": "Right Top",
+                                        "background-position-right-center": "Right Center",
+                                        "background-position-right-bottom": "Right Bottom",
+                                        "background-position-left-top": "Left Top",
+                                        "background-position-left-center": "Left Center",
+                                        "background-position-left-bottom": "Left Bottom",
+                                        "background-position-right-top-offscreen": "Right Top Offscreen",
+                                        "background-position-right-center-offscreen": "Right Center Offscreen",
+                                        "background-position-right-bottom-offscreen": "Right Bottom Offscreen",
+                                        "background-position-left-top-offscreen": "Left Top Offscreen",
+                                        "background-position-left-center-offscreen": "Left Center Offscreen",
+                                        "background-position-left-bottom-offscreen": "Left Bottom Offscreen"
+                                    },
+                                    "default_value": false,
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68aa4200b080e"
+                                }
+                            ]
+                        },
+                        {
                             "key": "field_68aa2fcb91d4f",
                             "label": "Add Curved Bottom?",
                             "name": "has_curved_bottom",
@@ -4207,5 +4306,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755983920
+    "modified": 1755988997
 }

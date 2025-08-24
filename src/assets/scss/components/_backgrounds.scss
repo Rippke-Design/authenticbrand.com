@@ -89,9 +89,24 @@
 	--bg-color: var(--c-black);
 }
 
-/* Patterns */
+/********** Patterns **********/
+
+/*  Borders */
+
+.border-bottom-yellow {
+	border-bottom: 25px solid var(--c-yellow);
+}
+
+.border-bottom-teal {
+	border-bottom: 25px solid var(--c-teal);
+}
+
+.border-bottom-blue {
+	border-bottom: 25px solid var(--c-blue);
+}
 
 /* Graphic Dividers */
+
 .background-divider-squares {
 	background-image: url("../img/graphic-divider-squares.webp");
 	background-repeat: repeat-x;
@@ -118,6 +133,20 @@
 	background-size: calc(24px + 2px) 76px; // 24px SVG width + 2px gap
 }
 
+.background-pattern-circle-row-top-2 {
+	background-image: url("../img/2-circle.svg");
+	background-repeat: repeat-x;
+	background-position: 2px 2px;
+	background-size: calc(24px + 2px) 50px; // 24px SVG width + 2px gap
+}
+
+.background-pattern-circle-row-bottom-2 {
+	background-image: url("../img/2-circle.svg");
+	background-repeat: repeat-x;
+	background-position: 2px bottom;
+	background-size: calc(24px + 2px) 50px; // 24px SVG width + 2px gap
+}
+
 .background-pattern-cubes {
 	background-image: url("../img/pattern-cubes-light-blue.svg");
 	background-size: 262px 840px;
@@ -141,13 +170,25 @@
 .background-pattern-red-dots {
 	background-image: url("../img/red-dots-pattern.svg");
 	background-repeat: no-repeat;
-	background-size: var(--bg-img-width) var(--bg-img-height);
+	// vars for passing into background positioning classes
+	--background-width: 187px;
+	--background-height: 194px;
+	background-size: var(--background-width) var(--background-height);
+	@include media-breakpoint-down(md) {
+		background-image: none;
+	}
 }
 
 .background-pattern-stripe-circle {
-	background-image: url("../img/half-circle-stripe-pattern.svg");
+	background-image: url("../img/stripe-circle.svg");
 	background-repeat: no-repeat;
-	background-size: var(--bg-img-width) var(--bg-img-height);
+	// vars for passing into background positioning classes
+	--background-width: 320px;
+	--background-height: 320px;
+	background-size: var(--background-width) var(--background-height);
+	@include media-breakpoint-down(md) {
+		background-image: none;
+	}
 }
 
 .background-pattern-stripe-circle-dark {
@@ -163,11 +204,13 @@
 }
 
 .background-position-right-center-offscreen {
-	background-position: top 50% right -40px;
+	//background-position: top 50% right -40px;
+	background-position: top 50% right calc((var(--background-width) / 4) * -1);
 }
 
 .background-position-left-bottom-offscreen {
-	background-position: bottom 100px left -100px;
+	//background-position: bottom 100px left -100px;
+	background-position: bottom 100px left calc((var(--background-width) / 2) * -1);
 }
 
 .background-position-left-top-offscreen {
@@ -178,6 +221,12 @@
 .background-position-right-bottom-offscreen {
 	background-position: bottom calc((var(--bg-img-height) / 2) * -1) right calc((var(--bg-img-width) / 2) * -1);
 	//background-size: var(--bg-img-width) var(--bg-img-height);
+}
+
+.background-pattern-repeated-stars {
+	background-image: url("../img/star-pattern.webp");
+	background-repeat: repeat;
+	background-size: 187px 347px;
 }
 
 /* Background positioning */
@@ -195,3 +244,50 @@ html,
 body {
 	overflow-x: hidden;
 }
+
+/* 
+
+Background images - i could have an ACF repeater field and a select menu to choose the background image, and then positioning? And then add classes to a coresponding div that gets created. 
+
+Repeater field name: Background Images
+
+Select menu: Background Image
+
+✅ background-pattern-repeated-stars : Repeated Stars
+✅ background-pattern-circle-row-top : Circle Row Top (3 circle rows)
+✅ background-pattern-circle-row-bottom : Circle Row Bottom (3 circle rows)
+✅ background-pattern-circle-row-top-2 : Circle Row Top (2 circle rows)
+✅ background-pattern-circle-row-bottom-2 : Circle Row Bottom (2 circle rows)
+
+background-pattern-red-dots : Red Dots
+
+
+background-pattern-cubes : Cubes
+background-pattern-cubes-reverse : Cubes Reverse
+background-pattern-diamond : Diamond
+
+background-pattern-stripe-circle : Stripe Circle
+background-pattern-stripe-circle-dark : Stripe Circle Dark
+background-pattern-circle-dot : Circle Dot
+
+
+
+
+
+
+Select menu: Background Image Position
+
+no-positioning : No Positioning (for repeated patterns)
+background-position-right-top : Right Top
+background-position-right-center : Right Center
+background-position-right-bottom : Right Bottom
+background-position-left-top : Left Top
+background-position-left-center : Left Center
+background-position-left-bottom : Left Bottom
+background-position-right-top-offscreen : Right Top Offscreen
+background-position-right-center-offscreen : Right Center Offscreen
+background-position-right-bottom-offscreen : Right Bottom Offscreen
+background-position-left-top-offscreen : Left Top Offscreen
+background-position-left-center-offscreen : Left Center Offscreen
+background-position-left-bottom-offscreen : Left Bottom Offscreen
+*/
