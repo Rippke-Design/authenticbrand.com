@@ -6,6 +6,7 @@
   --c-blue-light: #bfcedb;
   --c-blue-lighter: #f2f5f8;
   --c-teal: #00b4ad;
+  --c-teal-lighter: #e5f7f7;
   --c-teal-darker: #007481;
   --c-yellow: #faa400;
   --c-yellow-lighter: #feedcc;
@@ -12835,6 +12836,11 @@ details[open] summary::after {
   --bg-color: var(--c-teal);
 }
 
+.background-teal-lighter {
+  background-color: var(--c-teal-lighter);
+  --bg-color: var(--c-teal-lighter);
+}
+
 .background-teal-darker {
   background-color: var(--c-teal-darker);
   --bg-color: var(--c-teal-darker);
@@ -12951,6 +12957,32 @@ details[open] summary::after {
   }
 }
 
+.background-pattern-teal-dots {
+  background-image: url("../img/teal-dots-pattern.svg");
+  background-repeat: no-repeat;
+  --background-width: 187px;
+  --background-height: 194px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-teal-dots {
+    background-image: none;
+  }
+}
+
+.background-pattern-yellow-dots {
+  background-image: url("../img/yellow-dots-pattern.svg");
+  background-repeat: no-repeat;
+  --background-width: 187px;
+  --background-height: 194px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-yellow-dots {
+    background-image: none;
+  }
+}
+
 .background-pattern-stripe-circle {
   background-image: url("../img/stripe-circle.svg");
   background-repeat: no-repeat;
@@ -12965,15 +12997,147 @@ details[open] summary::after {
 }
 
 .background-pattern-stripe-circle-dark {
+  background-image: url("../img/stripe-circle-dark.svg");
+  background-repeat: no-repeat;
+  --background-width: 320px;
+  --background-height: 320px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-stripe-circle-dark {
+    background-image: none;
+  }
+}
+
+.background-pattern-stripe-circle-red {
+  background-image: url("../img/stripe-circle-red.svg");
+  background-repeat: no-repeat;
+  --background-width: 320px;
+  --background-height: 320px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-stripe-circle-red {
+    background-image: none;
+  }
+}
+
+.background-pattern-stripe-circle-yellow {
+  background-image: url("../img/stripe-circle-yellow.svg");
+  background-repeat: no-repeat;
+  --background-width: 320px;
+  --background-height: 320px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-stripe-circle-yellow {
+    background-image: none;
+  }
+}
+
+.background-pattern-stripe-circle-white {
+  background-image: url("../img/stripe-circle-white.svg");
+  background-repeat: no-repeat;
+  --background-width: 320px;
+  --background-height: 320px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-stripe-circle-white {
+    background-image: none;
+  }
+}
+
+.background-pattern-dotted-circles-vertical {
+  background-image: url("../img/dotted-circles-vertical.webp");
+  background-repeat: repeat-y;
+  --background-width: 491px;
+  --background-height: 485px;
+  background-size: var(--background-width) var(--background-height);
+  background-position: top right;
+}
+@media (max-width: 767.98px) {
+  .background-pattern-dotted-circles-vertical {
+    background-image: none;
+  }
+}
+
+.background-pattern-overlapping-circles-vertical {
+  background-image: url("../img/vertical-overlapping-circles.svg");
+  background-repeat: repeat-y;
+  --background-width: 188px;
+  --background-height: 159px;
+  background-size: var(--background-width) var(--background-height);
+  background-position: top right calc(var(--background-width) / 2 * -1);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-overlapping-circles-vertical {
+    background-image: none;
+  }
+}
+
+.background-pattern-teal-circle {
+  background-image: url("../img/teal-circle.svg");
+  background-repeat: no-repeat;
+  --background-width: 553px;
+  --background-height: 553px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-teal-circle {
+    background-image: none;
+  }
+}
+
+.background-pattern-yellow-circle {
+  background-image: url("../img/yellow-circle.svg");
+  background-repeat: no-repeat;
+  --background-width: 553px;
+  --background-height: 553px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-yellow-circle {
+    background-image: none;
+  }
+}
+
+.background-pattern-red-stripes-vertical {
+  background-image: url("../img/red-stripes-vertical.svg");
+  background-repeat: repeat-y;
+  --background-width: 100px;
+  --background-height: 5px;
+  background-size: var(--background-width) var(--background-height);
+  background-position: top 0 right 100px;
+}
+@media (max-width: 767.98px) {
+  .background-pattern-red-stripes-vertical {
+    background-image: none;
+  }
+}
+
+.background-pattern-stripe-circle-dark {
   background-image: url("../img/half-circle-stripe-pattern-dark.svg");
   background-repeat: no-repeat;
   background-size: var(--bg-img-width) var(--bg-img-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-stripe-circle-dark {
+    background-image: none;
+  }
 }
 
 .background-pattern-circle-dot {
   background-image: url("../img/circle-dot.svg");
   background-repeat: no-repeat;
-  background-size: var(--bg-img-width) var(--bg-img-height);
+  --background-width: 496px;
+  --background-height: 496px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-circle-dot {
+    background-image: none;
+  }
 }
 
 .background-position-right-center-offscreen {
@@ -12988,8 +13152,16 @@ details[open] summary::after {
   background-position: top calc(var(--bg-img-height) / 2 * -1) left calc(var(--bg-img-width) / 2 * -1);
 }
 
+.background-position-left-top-offscreen-2 {
+  background-position: top calc(var(--background-height) / 2 * -1) left calc(var(--background-width) / 2 * -1);
+}
+
 .background-position-right-bottom-offscreen {
   background-position: bottom calc(var(--bg-img-height) / 2 * -1) right calc(var(--bg-img-width) / 2 * -1);
+}
+
+.background-position-right-bottom-offscreen-2 {
+  background-position: bottom calc(var(--background-height) / 2 * -1) right calc(var(--background-width) / 2 * -1);
 }
 
 .background-pattern-repeated-stars {
