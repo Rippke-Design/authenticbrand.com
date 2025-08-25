@@ -53,9 +53,6 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       <!-- close padding div -->
     </div>
 
-
-
-
     <?php if( have_rows('background_images') ): ?>
     <?php while( have_rows('background_images') ): the_row();  ?>
   </div>

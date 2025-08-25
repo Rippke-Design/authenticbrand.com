@@ -3369,9 +3369,9 @@
                             "save_options": 0
                         },
                         {
-                            "key": "field_68aa4200b080e",
-                            "label": "Background Patterns",
-                            "name": "background_patterns",
+                            "key": "field_68abd8858e8b7",
+                            "label": "Background Images",
+                            "name": "background_images",
                             "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
@@ -3382,17 +3382,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "row",
                             "min": 0,
-                            "max": 0,
+                            "max": 2,
                             "collapsed": "",
-                            "button_label": "Add Row",
+                            "button_label": "Add Background Image",
                             "rows_per_page": 20,
                             "sub_fields": [
                                 {
-                                    "key": "field_68aa4217b080f",
-                                    "label": "Background Pattern",
-                                    "name": "background_pattern",
+                                    "key": "field_68abd8858e8b8",
+                                    "label": "Background Image",
+                                    "name": "background_image",
                                     "aria-label": "",
                                     "type": "select",
                                     "instructions": "",
@@ -3404,16 +3404,27 @@
                                         "id": ""
                                     },
                                     "choices": {
-                                        "background-pattern-circle-row": "Circle Row",
-                                        "background-pattern-cubes": "Cubes",
-                                        "background-pattern-cubes-reverse": "Cubes Reverse",
-                                        "background-pattern-diamond": "Diamond",
-                                        "background-pattern-red-dots": "Red Dots",
-                                        "background-pattern-stripe-circle": "Stripe Circle",
-                                        "background-pattern-stripe-circle-dark": "Stripe Circle Dark",
-                                        "background-pattern-circle-dot": "Circle Dot"
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
                                     },
-                                    "default_value": false,
+                                    "default_value": "no-background-image",
                                     "return_format": "value",
                                     "multiple": 0,
                                     "allow_null": 0,
@@ -3423,47 +3434,7 @@
                                     "placeholder": "",
                                     "create_options": 0,
                                     "save_options": 0,
-                                    "parent_repeater": "field_68aa4200b080e"
-                                },
-                                {
-                                    "key": "field_68aa4224b0810",
-                                    "label": "Background Position",
-                                    "name": "background_position",
-                                    "aria-label": "",
-                                    "type": "select",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "choices": {
-                                        "background-position-right-top": "Right Top",
-                                        "background-position-right-center": "Right Center",
-                                        "background-position-right-bottom": "Right Bottom",
-                                        "background-position-left-top": "Left Top",
-                                        "background-position-left-center": "Left Center",
-                                        "background-position-left-bottom": "Left Bottom",
-                                        "background-position-right-top-offscreen": "Right Top Offscreen",
-                                        "background-position-right-center-offscreen": "Right Center Offscreen",
-                                        "background-position-right-bottom-offscreen": "Right Bottom Offscreen",
-                                        "background-position-left-top-offscreen": "Left Top Offscreen",
-                                        "background-position-left-center-offscreen": "Left Center Offscreen",
-                                        "background-position-left-bottom-offscreen": "Left Bottom Offscreen"
-                                    },
-                                    "default_value": false,
-                                    "return_format": "value",
-                                    "multiple": 0,
-                                    "allow_null": 0,
-                                    "allow_in_bindings": 0,
-                                    "ui": 0,
-                                    "ajax": 0,
-                                    "placeholder": "",
-                                    "create_options": 0,
-                                    "save_options": 0,
-                                    "parent_repeater": "field_68aa4200b080e"
+                                    "parent_repeater": "field_68abd8858e8b7"
                                 }
                             ]
                         },
@@ -4516,5 +4487,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756092438
+    "modified": 1756092822
 }
