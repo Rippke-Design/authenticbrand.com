@@ -18,54 +18,72 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="island-section-<?php echo get_row_index(); ?>"
-  class="<?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> island-section padding-y-100">
-  <span class="badge text-bg-danger">Island Section</span>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <?php if (get_sub_field('before_island_content')): ?>
-        <div class="mb-5">
-          <?php the_sub_field('before_island_content'); ?>
-        </div>
-        <?php endif; ?>
+  class="<?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> island-section">
 
-        <div class="island <?php the_sub_field('island_background_color'); ?>  <?php echo $island_text_color; ?>">
-          <div class="island-content">
-            <?php if (get_sub_field('island_content_top')): ?>
-            <div class="row">
-              <div class="col-lg-12 mb-5">
-                <?php the_sub_field('island_content_top'); ?>
-              </div>
+  <?php if( have_rows('background_images') ): ?>
+  <?php while( have_rows('background_images') ): the_row();  
+    $background_image = get_sub_field('background_image');
+  ?>
+  <div class="<?php echo $background_image; ?>">
+    <?php endwhile; ?>
+    <?php endif; ?>
+    <div class="padding-y-100">
+      <span class="badge text-bg-danger">Island Section</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <?php if (get_sub_field('before_island_content')): ?>
+            <div class="mb-5">
+              <?php the_sub_field('before_island_content'); ?>
             </div>
             <?php endif; ?>
 
+            <div class="island <?php the_sub_field('island_background_color'); ?>  <?php echo $island_text_color; ?>">
+              <div class="island-content">
+                <?php if (get_sub_field('island_content_top')): ?>
+                <div class="row">
+                  <div class="col-lg-12 mb-5">
+                    <?php the_sub_field('island_content_top'); ?>
+                  </div>
+                </div>
+                <?php endif; ?>
 
-            <?php if( have_rows('columns') ): ?>
-            <div class="row island-columns <?php echo $column_alignment; ?>">
-              <?php while( have_rows('columns') ): the_row(); ?>
-              <div class="col">
-                <?php the_sub_field('column_content'); ?>
+
+                <?php if( have_rows('columns') ): ?>
+                <div class="row island-columns <?php echo $column_alignment; ?>">
+                  <?php while( have_rows('columns') ): the_row(); ?>
+                  <div class="col">
+                    <?php the_sub_field('column_content'); ?>
+                  </div>
+                  <?php endwhile; ?>
+                </div>
+                <?php endif; ?>
+
+                <?php if (get_sub_field('island_content_bottom')): ?>
+                <div class="row">
+                  <div class="col-lg-12 mt-5">
+                    <?php the_sub_field('island_content_bottom'); ?>
+                  </div>
+                </div>
+                <?php endif; ?>
               </div>
-              <?php endwhile; ?>
             </div>
-            <?php endif; ?>
 
-            <?php if (get_sub_field('island_content_bottom')): ?>
-            <div class="row">
-              <div class="col-lg-12 mt-5">
-                <?php the_sub_field('island_content_bottom'); ?>
-              </div>
+            <?php if (get_sub_field('after_island_content')): ?>
+            <div class="mt-5">
+              <?php the_sub_field('after_island_content'); ?>
             </div>
             <?php endif; ?>
           </div>
         </div>
-
-        <?php if (get_sub_field('after_island_content')): ?>
-        <div class="mt-5">
-          <?php the_sub_field('after_island_content'); ?>
-        </div>
-        <?php endif; ?>
       </div>
+
+      <!-- close padding div -->
     </div>
+
+    <?php if( have_rows('background_images') ): ?>
+    <?php while( have_rows('background_images') ): the_row();  ?>
   </div>
+  <?php endwhile; ?>
+  <?php endif; ?>
 </section>

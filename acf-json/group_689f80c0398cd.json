@@ -1865,6 +1865,76 @@
                             "save_options": 0
                         },
                         {
+                            "key": "field_68abddb0f4d9b",
+                            "label": "Background Images",
+                            "name": "background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68abddb0f4d9c",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68abddb0f4d9b"
+                                }
+                            ]
+                        },
+                        {
                             "key": "field_68a768267e314",
                             "label": "Accordion Columns Layout",
                             "name": "accordion_columns_layout",
@@ -2347,6 +2417,76 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68abdaa6ae8b7",
+                            "label": "Background Images",
+                            "name": "background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68abdaa6ae8b8",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68abdaa6ae8b7"
+                                }
+                            ]
                         },
                         {
                             "key": "field_68a4be5cb6b40",
@@ -2991,6 +3131,76 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68abdee25c7cf",
+                            "label": "Background Images",
+                            "name": "background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68abdee25c7d0",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68abdee25c7cf"
+                                }
+                            ]
                         },
                         {
                             "key": "field_68a4d4aee0660",
@@ -3644,6 +3854,76 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68abd9b3249ae",
+                            "label": "Background Images",
+                            "name": "background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68abd9b3249af",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68abd9b3249ae"
+                                }
+                            ]
                         },
                         {
                             "key": "field_68a9bff164890",
@@ -4487,5 +4767,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756092822
+    "modified": 1756094215
 }
