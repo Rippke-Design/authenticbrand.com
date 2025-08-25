@@ -12937,13 +12937,6 @@ details[open] summary::after {
   background-repeat: no-repeat;
 }
 
-.background-pattern-diamond {
-  background-image: url("../img/diamond-pattern.svg");
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 .background-pattern-red-dots {
   background-image: url("../img/red-dots-pattern.svg");
   background-repeat: no-repeat;
@@ -13112,30 +13105,6 @@ details[open] summary::after {
 }
 @media (max-width: 767.98px) {
   .background-pattern-red-stripes-vertical {
-    background-image: none;
-  }
-}
-
-.background-pattern-stripe-circle-dark {
-  background-image: url("../img/half-circle-stripe-pattern-dark.svg");
-  background-repeat: no-repeat;
-  background-size: var(--bg-img-width) var(--bg-img-height);
-}
-@media (max-width: 767.98px) {
-  .background-pattern-stripe-circle-dark {
-    background-image: none;
-  }
-}
-
-.background-pattern-circle-dot {
-  background-image: url("../img/circle-dot.svg");
-  background-repeat: no-repeat;
-  --background-width: 496px;
-  --background-height: 496px;
-  background-size: var(--background-width) var(--background-height);
-}
-@media (max-width: 767.98px) {
-  .background-pattern-circle-dot {
     background-image: none;
   }
 }
