@@ -53,7 +53,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       </div>
       <?php if (get_sub_field('stat_bottom_cta')) : ?>
       <div class="row">
-        <div class="col-lg-8 offset-lg-2 mt-5">
+        <div class="col-lg-12 mt-5">
           <?php the_sub_field('stat_bottom_cta'); ?>
         </div>
       </div>
@@ -103,7 +103,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 
       <?php if (get_sub_field('stat_bottom_cta')) : ?>
       <div class="row">
-        <div class="col-lg-8 offset-lg-2 mt-5">
+        <div class="col-lg-12 mt-5">
           <?php the_sub_field('stat_bottom_cta'); ?>
         </div>
       </div>
@@ -117,7 +117,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
   <div class="stats-section-inner stats-section-right" style=" --c-left: <?php the_sub_field('left_column_background_color'); ?>; --c-right:
     <?php the_sub_field('right_column_background_color'); ?>;">
     <div class="container">
-      <div class="row mb-4">
+      <div class="row">
         <div class="col-lg-8 col-left">
           <div class="col-inner padding-y-100">
             <?php the_sub_field('left_column_content'); ?>
@@ -163,9 +163,9 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
     </div>
   </div>
   <?php if (get_sub_field('stat_bottom_cta')) : ?>
-  <div class="container">
+  <div class="container padding-y-100">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2  mt-5">
+      <div class="col-lg-12 mt-5">
         <?php the_sub_field('stat_bottom_cta'); ?>
       </div>
     </div>
