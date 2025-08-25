@@ -9,36 +9,53 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="solutions-section-<?php echo get_row_index(); ?>"
-  class="section-50-50 <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100 background-pattern-red-dots background-position-right-center-offscreen"
-  style="--bg-img-width: 264px; --bg-img-height: 194px;">
-  <div class="background-pattern-stripe-circle background-position-left-bottom-offscreen">
-    <span class="badge text-bg-danger">Solutions</span>
-    <div class="container">
-      <div class="row gy-4">
-        <?php if (get_sub_field('headline')): ?>
-        <div class="col-lg-12 mb-4">
-          <h2><?php the_sub_field('headline'); ?></h2>
-        </div>
-        <?php endif; ?>
+  class="section-50-50 <?php echo $background_color; ?> <?php echo $text_color; ?>">
 
-        <?php if( have_rows('solution_cards') ): ?>
-        <?php while( have_rows('solution_cards') ): the_row(); ?>
-        <div class="col-lg-6 col-md-12">
-          <div class="card text-center">
-            <div class="card-body">
-              <?php the_sub_field('card_content'); ?>
+  <?php if( have_rows('background_images') ): ?>
+  <?php while( have_rows('background_images') ): the_row();  
+    $background_image = get_sub_field('background_image');
+  ?>
+  <div class="<?php echo $background_image; ?>">
+    <?php endwhile; ?>
+    <?php endif; ?>
+    <div class="padding-y-100">
+
+      <span class="badge text-bg-danger">Solutions</span>
+      <div class="container">
+        <div class="row gy-4">
+          <?php if (get_sub_field('headline')): ?>
+          <div class="col-lg-12 mb-4">
+            <h2><?php the_sub_field('headline'); ?></h2>
+          </div>
+          <?php endif; ?>
+
+          <?php if( have_rows('solution_cards') ): ?>
+          <?php while( have_rows('solution_cards') ): the_row(); ?>
+          <div class="col-lg-6 col-md-12">
+            <div class="card text-center">
+              <div class="card-body">
+                <?php the_sub_field('card_content'); ?>
+              </div>
             </div>
           </div>
-        </div>
-        <?php endwhile; ?>
-        <?php endif; ?>
+          <?php endwhile; ?>
+          <?php endif; ?>
 
-        <?php if (get_sub_field('bottom_content')): ?>
-        <div class="col-lg-12 mt-4">
-          <?php the_sub_field('bottom_content'); ?>
+          <?php if (get_sub_field('bottom_content')): ?>
+          <div class="col-lg-12 mt-4">
+            <?php the_sub_field('bottom_content'); ?>
+          </div>
+          <?php endif; ?>
         </div>
-        <?php endif; ?>
       </div>
     </div>
+
+    <!-- close padding div -->
   </div>
+
+  <?php if( have_rows('background_images') ): ?>
+  <?php while( have_rows('background_images') ): the_row();  ?>
+  </div>
+  <?php endwhile; ?>
+  <?php endif; ?>
 </section>
