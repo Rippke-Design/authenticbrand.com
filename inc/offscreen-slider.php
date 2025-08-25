@@ -97,7 +97,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
                 $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
 
                 <li class="splide__slide">
-                  <div class="card">
+                  <div class="card h-100">
                     <?php if ($featured_image): ?>
                     <div class="card-image">
                       <img src="<?php echo esc_url($featured_image); ?>"
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
                 ?>
               <li class="splide__slide">
-                <div class="card">
+                <div class="card h-100">
                   <?php if ($slide_image): ?>
                   <div class="card-image">
                     <img src="<?php echo esc_url($slide_image); ?>" alt="<?php echo esc_attr($slide_title); ?>"
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
 
               <li class="splide__slide">
-                <div class="card">
+                <div class="card h-100">
                   <?php if ($featured_image): ?>
                   <div class="card-image">
                     <img src="<?php echo esc_url($featured_image); ?>"
@@ -263,10 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </li>
               <?php endforeach; wp_reset_postdata(); ?>
               <?php endif; ?>
-
               <?php endif; ?>
-
-
             </ul>
           </div>
         </div>
