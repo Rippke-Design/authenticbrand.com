@@ -9,7 +9,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="cards-section-<?php echo get_row_index(); ?>"
-  class="cards-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> background-pattern-cubes background-pattern-right padding-y-100">
+  class="cards-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?>">
 
   <?php if( have_rows('background_images') ): ?>
   <?php while( have_rows('background_images') ): the_row();  
