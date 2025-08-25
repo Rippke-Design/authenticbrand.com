@@ -1,6 +1,7 @@
 <?php
 
 $column_alignment = get_sub_field('column_alignment');
+$border_bottom = get_sub_field('border_bottom');
 
 // Set text color based on background
 $background_color = get_sub_field('background_color');
@@ -12,7 +13,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="contained-columns-section-<?php echo get_row_index(); ?>"
-  class="contained-columns-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> <?php if (get_sub_field('has_curved_bottom')): ?>background-curved-bottom<?php endif; ?>">
+  class="contained-columns-section <?php the_sub_field('background_color'); ?> <?php echo $text_color; ?> <?php if (get_sub_field('has_curved_bottom')): ?>background-curved-bottom<?php endif; ?> <?php echo $border_bottom; ?>">
 
   <?php if( have_rows('background_images') ): ?>
   <?php while( have_rows('background_images') ): the_row();  

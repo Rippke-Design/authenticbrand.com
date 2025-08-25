@@ -1,6 +1,8 @@
 <?php 
 
 $background_color = get_sub_field('background_color');
+$border_bottom = get_sub_field('border_bottom');
+
 $text_color = "text-dark";
 if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
   $text_color = "text-light";
@@ -9,7 +11,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
 ?>
 
 <section id="card-rows-<?php echo get_row_index(); ?>"
-  class="card-rows <?php echo $background_color; ?> <?php echo $text_color; ?>">
+  class="card-rows <?php echo $background_color; ?> <?php echo $text_color; ?> <?php echo $border_bottom; ?>">
 
   <?php if( have_rows('background_images') ): ?>
   <?php while( have_rows('background_images') ): the_row();  
