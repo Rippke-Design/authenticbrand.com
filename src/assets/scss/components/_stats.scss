@@ -52,4 +52,43 @@
 			}
 		}
 	}
+
+	.stats-section-right {
+		background: linear-gradient(
+			to right,
+			var(--c-left) 0%,
+			var(--c-left) 66%,
+			var(--c-right) 66%,
+			var(--c-right) 100%
+		);
+		@include media-breakpoint-down(lg) {
+			background: none;
+		}
+
+		.col-left {
+			background-color: var(--c-left);
+		}
+
+		.col-right {
+			background-color: var(--c-right);
+		}
+
+		@include media-breakpoint-down(lg) {
+			.container {
+				padding-left: 0;
+				padding-right: 0;
+				max-width: 100%;
+			}
+
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.col-inner {
+				padding-left: 2rem !important;
+				padding-right: 2rem !important;
+			}
+		}
+	}
 }

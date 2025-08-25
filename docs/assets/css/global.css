@@ -13514,6 +13514,35 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   color: var(--c-red);
   --after-color: var(--c-red);
 }
+.stats-section .stats-section-right {
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 66%, var(--c-right) 66%, var(--c-right) 100%);
+}
+@media (max-width: 991.98px) {
+  .stats-section .stats-section-right {
+    background: none;
+  }
+}
+.stats-section .stats-section-right .col-left {
+  background-color: var(--c-left);
+}
+.stats-section .stats-section-right .col-right {
+  background-color: var(--c-right);
+}
+@media (max-width: 991.98px) {
+  .stats-section .stats-section-right .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .stats-section .stats-section-right .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .stats-section .stats-section-right .col-inner {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
 
 section {
   position: relative;
