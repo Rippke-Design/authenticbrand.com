@@ -13472,12 +13472,20 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   border: none;
   padding: 20px;
 }
+@media (max-width: 767.98px) {
+  .stats-section .stat-card {
+    text-align: center;
+  }
+}
 .stats-section .stat-card .stat-card-title {
   font-size: 40px;
   position: relative;
   margin-bottom: 30px;
 }
-.stats-section .stat-card .stat-card-title:after {
+.stats-section .stat-card .stat-card-title .number-flow {
+  position: relative;
+}
+.stats-section .stat-card .stat-card-title .number-flow:after {
   position: absolute;
   bottom: -15px;
   left: 0;

@@ -4413,6 +4413,36 @@
                             "esc_html": 0
                         },
                         {
+                            "key": "field_68accfada0ddb",
+                            "label": "Stats Section Layout",
+                            "name": "stats_section_layout",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "stats-bottom-5": "Stats Bottom (5 Stat columns)",
+                                "stats-bottom-3": "Stats Bottom (3 Stat Columns)",
+                                "stats-right": "Stats Right (3 Stat columns)"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
                             "key": "field_68a4b803e9675",
                             "label": "Background Color",
                             "name": "background_color",
@@ -5010,5 +5040,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756151537
+    "modified": 1756156107
 }
