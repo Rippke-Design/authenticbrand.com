@@ -12022,12 +12022,24 @@ main li {
   background-size: contain;
 }
 
+/* Links in main content area */
 main a:not(.btn) {
   color: var(--c-teal-darker);
-  transition: color 0.3s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 main a:not(.btn):hover {
-  color: #00464e;
+  filter: brightness(0.9);
+}
+main .background-dark-blue a:not(.btn),
+main .background-teal a:not(.btn),
+main .background-teal-darker a:not(.btn) {
+  color: var(--c-white);
+  transition: filter 0.2s ease-in-out;
+}
+main .background-dark-blue a:not(.btn):hover,
+main .background-teal a:not(.btn):hover,
+main .background-teal-darker a:not(.btn):hover {
+  filter: brightness(0.7);
 }
 
 .poppins-regular {

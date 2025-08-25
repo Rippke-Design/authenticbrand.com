@@ -115,11 +115,26 @@ main {
 	}
 }
 
-main a:not(.btn) {
-	color: var(--c-teal-darker);
-	transition: color 0.3s ease-in-out;
-	&:hover {
-		color: darken(#007481, 10%);
+/* Links in main content area */
+main {
+	a:not(.btn) {
+		color: var(--c-teal-darker);
+		transition: filter 0.2s ease-in-out;
+		&:hover {
+			filter: brightness(0.9);
+		}
+	}
+
+	.background-dark-blue,
+	.background-teal,
+	.background-teal-darker {
+		a:not(.btn) {
+			color: var(--c-white);
+			transition: filter 0.2s ease-in-out;
+			&:hover {
+				filter: brightness(0.7);
+			}
+		}
 	}
 }
 
