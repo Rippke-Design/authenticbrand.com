@@ -64,7 +64,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
                       $slide_image = get_the_post_thumbnail_url($slide_id, 'large');
                 ?>
                 <li class="splide__slide">
-                  <div class="card">
+                  <div class="card h-100">
                     <?php if ($slide_image): ?>
                     <div class="card-image">
                       <img src="<?php echo esc_url($slide_image); ?>" alt="<?php echo esc_attr($slide_title); ?>"
