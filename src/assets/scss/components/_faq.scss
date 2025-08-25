@@ -1,17 +1,47 @@
 .faq {
-	background: linear-gradient(
-		to right,
-		var(--c-teal-darker) 0%,
-		var(--c-teal-darker) 50%,
-		var(--c-white) 50%,
-		var(--c-white) 100%
-	);
+	&.background-teal-white {
+		background: linear-gradient(
+			to right,
+			var(--c-teal-darker) 0%,
+			var(--c-teal-darker) 50%,
+			var(--c-white) 50%,
+			var(--c-white) 100%
+		);
+		@include media-breakpoint-down(lg) {
+			background: none;
+		}
+
+		.col-left {
+			background-color: var(--c-teal-darker);
+		}
+
+		.col-right {
+			background-color: var(--c-white);
+		}
+	}
+
+	&.background-dark-blue-light-teal {
+		background: linear-gradient(
+			to right,
+			var(--c-dark-blue) 0%,
+			var(--c-dark-blue) 50%,
+			var(--c-teal-lighter) 50%,
+			var(--c-teal-lighter) 100%
+		);
+		@include media-breakpoint-down(lg) {
+			background: none;
+		}
+
+		.col-left {
+			background-color: var(--c-dark-blue);
+		}
+
+		.col-right {
+			background-color: var(--c-teal-lighter);
+		}
+	}
 
 	position: relative;
-
-	@include media-breakpoint-down(lg) {
-		background: none;
-	}
 
 	details {
 		summary {

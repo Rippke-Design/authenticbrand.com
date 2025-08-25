@@ -12516,13 +12516,35 @@ body .gform_wrapper textarea::placeholder {
   }
 }
 .faq {
-  background: linear-gradient(to right, var(--c-teal-darker) 0%, var(--c-teal-darker) 50%, var(--c-white) 50%, var(--c-white) 100%);
   position: relative;
 }
+.faq.background-teal-white {
+  background: linear-gradient(to right, var(--c-teal-darker) 0%, var(--c-teal-darker) 50%, var(--c-white) 50%, var(--c-white) 100%);
+}
 @media (max-width: 991.98px) {
-  .faq {
+  .faq.background-teal-white {
     background: none;
   }
+}
+.faq.background-teal-white .col-left {
+  background-color: var(--c-teal-darker);
+}
+.faq.background-teal-white .col-right {
+  background-color: var(--c-white);
+}
+.faq.background-dark-blue-light-teal {
+  background: linear-gradient(to right, var(--c-dark-blue) 0%, var(--c-dark-blue) 50%, var(--c-teal-lighter) 50%, var(--c-teal-lighter) 100%);
+}
+@media (max-width: 991.98px) {
+  .faq.background-dark-blue-light-teal {
+    background: none;
+  }
+}
+.faq.background-dark-blue-light-teal .col-left {
+  background-color: var(--c-dark-blue);
+}
+.faq.background-dark-blue-light-teal .col-right {
+  background-color: var(--c-teal-lighter);
 }
 .faq details summary {
   padding-bottom: 36px;

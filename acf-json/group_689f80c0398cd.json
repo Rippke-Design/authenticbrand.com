@@ -1931,13 +1931,10 @@
                                 "id": ""
                             },
                             "choices": {
-                                "background-dark-blue": "Dark Blue",
-                                "background-teal": "Teal",
-                                "background-teal-darker": "Dark Teal",
-                                "background-yellow": "Yellow",
-                                "background-white": "White"
+                                "background-teal-white": "Left Dark Teal, Right White",
+                                "background-dark-blue-light-teal": "Left Dark Blue, Right Light Teal"
                             },
-                            "default_value": false,
+                            "default_value": "background-teal-white",
                             "return_format": "value",
                             "multiple": 0,
                             "allow_null": 0,
@@ -2057,6 +2054,27 @@
                                     "parent_repeater": "field_68a4adff193c4"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_68ac9c89f0651",
+                            "label": "After FAQ Content",
+                            "name": "after_faq_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Content will be in an island container.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -4973,5 +4991,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756141774
+    "modified": 1756143512
 }

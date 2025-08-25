@@ -1,15 +1,18 @@
-<section id="faq-full-bleed-<?php echo get_row_index(); ?>" class="faq">
+<?php 
+$background_color = get_sub_field('background_color');
+?>
+<section id="faq-full-bleed-<?php echo get_row_index(); ?>" class="faq <?php echo $background_color; ?>">
   <span class="badge text-bg-danger">FAQ</span>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-12 faq-bg-bleed background-teal-darker text-light col-left">
+      <div class="col-lg-4 col-md-12 faq-bg-bleed  text-light col-left">
         <div class="content-inner padding-y-100">
           <?php the_sub_field('left_column_content'); ?>
         </div>
         <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/faq-geometric-pattern.webp"
           class="bleed-img d-none d-xl-block" alt="Pattern">
       </div>
-      <div class="col-lg-8 col-md-12 background-white  col-right">
+      <div class="col-lg-8 col-md-12   col-right">
         <div class="content-inner padding-y-100">
           <?php if (have_rows('faq_items')) : ?>
           <?php while (have_rows('faq_items')) : the_row(); 
@@ -27,6 +30,11 @@
           <?php else : ?>
           <!-- Fallback content if no FAQ items -->
 
+          <?php endif; ?>
+          <?php if (get_sub_field('after_faq_content')) : ?>
+          <div class="island background-white">
+            <?php the_sub_field('after_faq_content'); ?>
+          </div>
           <?php endif; ?>
         </div>
       </div>
