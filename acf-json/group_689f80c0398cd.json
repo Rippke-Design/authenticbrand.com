@@ -270,6 +270,217 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_68a885bcb0297": {
+                    "key": "layout_68a885bcb0297",
+                    "name": "testimonials-section",
+                    "label": "Testimonials Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68a885bcb0298",
+                            "label": "Testimonials Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68a885bcb0299",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68ac8447cd462",
+                            "label": "Background Images",
+                            "name": "background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68ac8447cd463",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68ac8447cd462"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_68a885bcb029a",
+                            "label": "Before Testimonials Content",
+                            "name": "before_testimonials_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68a885bcb029f",
+                            "label": "Testimonials",
+                            "name": "testimonials",
+                            "aria-label": "",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_689f80c0b67b0",
+                                        "operator": "!=empty"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "testimonial"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_68a885bcb02a2",
+                            "label": "After Testimonials Content",
+                            "name": "after_testimonials_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_689f91bb2f951": {
                     "key": "layout_689f91bb2f951",
                     "name": "cta-banner",
@@ -2722,147 +2933,6 @@
                     "min": "",
                     "max": ""
                 },
-                "layout_68a885bcb0297": {
-                    "key": "layout_68a885bcb0297",
-                    "name": "testimonials-section",
-                    "label": "Testimonials Section",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_68a885bcb0298",
-                            "label": "Testimonials Options",
-                            "name": "",
-                            "aria-label": "",
-                            "type": "message",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
-                            "new_lines": "wpautop",
-                            "esc_html": 0
-                        },
-                        {
-                            "key": "field_68a885bcb0299",
-                            "label": "Background Color",
-                            "name": "background_color",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "background-dark-blue": "Dark Blue",
-                                "background-teal": "Teal",
-                                "background-teal-darker": "Dark Teal",
-                                "background-yellow": "Yellow",
-                                "background-white": "White",
-                                "background-blue-light": "Light Blue",
-                                "background-yellow-lighter": "Light Yellow"
-                            },
-                            "default_value": false,
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "allow_in_bindings": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "create_options": 0,
-                            "save_options": 0
-                        },
-                        {
-                            "key": "field_68a885bcb029a",
-                            "label": "Before Testimonials Content",
-                            "name": "before_testimonials_content",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "allow_in_bindings": 0,
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        },
-                        {
-                            "key": "field_68a885bcb029f",
-                            "label": "Testimonials",
-                            "name": "testimonials",
-                            "aria-label": "",
-                            "type": "relationship",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_689f80c0b67b0",
-                                        "operator": "!=empty"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "testimonial"
-                            ],
-                            "post_status": "",
-                            "taxonomy": "",
-                            "filters": [
-                                "search"
-                            ],
-                            "return_format": "object",
-                            "min": "",
-                            "max": "",
-                            "allow_in_bindings": 0,
-                            "elements": "",
-                            "bidirectional": 0,
-                            "bidirectional_target": []
-                        },
-                        {
-                            "key": "field_68a885bcb02a2",
-                            "label": "After Testimonials Content",
-                            "name": "after_testimonials_content",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "allow_in_bindings": 0,
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "layout_68a4c0d36c9e4": {
                     "key": "layout_68a4c0d36c9e4",
                     "name": "form-section",
@@ -4831,5 +4901,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756134351
+    "modified": 1756136568
 }
