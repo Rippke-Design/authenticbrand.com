@@ -169,10 +169,76 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         <?php the_sub_field('stat_bottom_cta'); ?>
       </div>
     </div>
-    <?php endif; ?>
-    <?php endif; ?>
-
   </div>
+  <?php endif; ?>
+  <?php endif; ?>
+
+
+  <?php if (get_sub_field('stats_section_layout') == 'stats-right-2') : ?>
+  <div
+    class="stats-section-inner stats-right-2 <?php echo $background_color; ?> <?php echo $text_color; ?> padding-y-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-left">
+          <?php the_sub_field('left_column_content'); ?>
+        </div>
+        <div class="col-lg-8 col-right">
+          <div class="row">
+            <div class="col-lg-12">
+              <?php if (get_sub_field('right_column_headline')) { ?>
+              <div class="mb-5">
+                <?php the_sub_field('right_column_headline'); ?>
+              </div>
+              <?php } ?>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <?php the_sub_field('right_column_content'); ?>
+            </div>
+            <?php if (have_rows('stats')) : ?>
+
+            <?php while (have_rows('stats')) : the_row(); 
+            $stat_number = get_sub_field('stat_number');
+            $stat_unit = get_sub_field('stat_unit');
+            $stat_content = get_sub_field('stat_content');
+            $stat_text_color = get_sub_field('stat_text_color');
+          ?>
+            <div class="col-lg-4">
+              <div class="card stat-card w-100 h-100">
+                <div class="card-body d-flex flex-column">
+                  <h3 class="stat-card-title <?php echo $stat_text_color; ?>">
+                    <span class="number-flow">
+                      <number-flow class="number-flow" id="nf1" data-no-commas><?php echo $stat_number; ?>
+                      </number-flow>
+                    </span><span class="stat-card-unit"><?php echo $stat_unit; ?></span>
+                  </h3>
+                  <div class="stat-card-subtitle"><?php echo $stat_content; ?></div>
+                </div>
+              </div>
+            </div>
+            <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <?php if (get_sub_field('stat_bottom_cta')) : ?>
+  <div class="container padding-y-100">
+    <div class="row">
+      <div class="col-lg-12 mt-5">
+        <?php the_sub_field('stat_bottom_cta'); ?>
+      </div>
+    </div>
+  </div>
+  <?php endif; ?>
+  <?php endif; ?>
+
+
+
 </section>
+
+
 
 <!-- <script type="module" src="./assets/js/number-flow.js"></script> -->

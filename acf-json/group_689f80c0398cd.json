@@ -4429,7 +4429,8 @@
                             "choices": {
                                 "stats-bottom-5": "Stats Bottom (5 Stat columns)",
                                 "stats-bottom-3": "Stats Bottom (3 Stat Columns)",
-                                "stats-right": "Stats Right (3 Stat columns)"
+                                "stats-right": "Stats Right (3 Stat columns)",
+                                "stats-right-2": "Stats Right (2 Stat columns)"
                             },
                             "default_value": "stats-bottom-5",
                             "return_format": "value",
@@ -4463,6 +4464,13 @@
                                         "field": "field_68accfada0ddb",
                                         "operator": "==",
                                         "value": "stats-bottom-3"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_68accfada0ddb",
+                                        "operator": "==",
+                                        "value": "stats-right-2"
                                     }
                                 ]
                             ],
@@ -4596,6 +4604,35 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68acf2d4bee63",
+                            "label": "Right Column Headline",
+                            "name": "right_column_headline",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_68accfada0ddb",
+                                        "operator": "==",
+                                        "value": "stats-right-2"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         },
                         {
                             "key": "field_68a4b83ae967b",
@@ -5139,5 +5176,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756160873
+    "modified": 1756165722
 }
