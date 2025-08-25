@@ -61,6 +61,55 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
   </div>
   <?php endif; ?>
 
+  <?php if (get_sub_field('stats_section_layout') == 'stats-bottom-3') : ?>
+  <div class="container">
+
+    <div class="row gy-4 mb-4">
+      <div class="col-lg-8">
+        <?php the_sub_field('left_column_content'); ?>
+
+        <div class="row flex-column flex-lg-row justify-content-center align-items-stretch gap-3">
+          <?php if (have_rows('stats')) : ?>
+          <?php while (have_rows('stats')) : the_row(); 
+            $stat_number = get_sub_field('stat_number');
+            $stat_unit = get_sub_field('stat_unit');
+            $stat_content = get_sub_field('stat_content');
+            $stat_text_color = get_sub_field('stat_text_color');
+          ?>
+          <div class="col d-flex">
+            <div class="card stat-card w-100">
+              <div class="card-body d-flex flex-column">
+                <h3 class="stat-card-title <?php echo $stat_text_color; ?>">
+                  <span class="number-flow">
+                    <number-flow class="number-flow" id="nf1" data-no-commas><?php echo $stat_number; ?></number-flow>
+                  </span><span class="stat-card-unit"><?php echo $stat_unit; ?></span>
+                </h3>
+                <div class="stat-card-subtitle"><?php echo $stat_content; ?></div>
+              </div>
+            </div>
+          </div>
+          <?php endwhile; ?>
+          <?php endif; ?>
+
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+        <?php the_sub_field('right_column_content'); ?>
+
+      </div>
+    </div>
+
+    <?php if (get_sub_field('stat_bottom_cta')) : ?>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 mt-5">
+        <?php the_sub_field('stat_bottom_cta'); ?>
+      </div>
+    </div>
+    <?php endif; ?>
+  </div>
+  <?php endif; ?>
+
 
   <?php if (get_sub_field('stats_section_layout') == 'stats-right') : ?>
   <div class="stats-bottom-3-container">
