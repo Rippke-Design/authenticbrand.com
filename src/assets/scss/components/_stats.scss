@@ -57,8 +57,8 @@
 		background: linear-gradient(
 			to right,
 			var(--c-left) 0%,
-			var(--c-left) calc(100% * 2 / 3),
-			var(--c-right) calc(100% * 2 / 3),
+			var(--c-left) calc(100% * 2),
+			var(--c-right) calc(100% * 2),
 			var(--c-right) 100%
 		);
 		@include media-breakpoint-down(lg) {

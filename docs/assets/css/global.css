@@ -13515,7 +13515,7 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   --after-color: var(--c-red);
 }
 .stats-section .stats-section-right {
-  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 66.6666666667%, var(--c-right) 66.6666666667%, var(--c-right) 100%);
+  background: linear-gradient(to right, var(--c-left) 0%, var(--c-left) 200%, var(--c-right) 200%, var(--c-right) 100%);
 }
 @media (max-width: 991.98px) {
   .stats-section .stats-section-right {
