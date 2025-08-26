@@ -13253,6 +13253,16 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   }
 }
 
+.archive .card {
+  border: 1px solid var(--c-blue-light);
+}
+.archive .card-img-top {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  height: auto;
+}
+
 .card-horizontal {
   overflow-x: hidden;
 }

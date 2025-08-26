@@ -11,6 +11,18 @@
 	}
 }
 
+.archive {
+	.card {
+		border: 1px solid var(--c-blue-light);
+	}
+	.card-img-top {
+		width: auto !important;
+		height: auto !important;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
 .card-horizontal {
 	overflow-x: hidden;
 	.card-image-right {
