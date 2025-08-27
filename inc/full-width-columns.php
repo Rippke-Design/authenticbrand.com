@@ -29,15 +29,46 @@ if (get_sub_field('right_column_background_color') == "var(--c-white)" || get_su
       <?php if (get_sub_field("column_layout") == "full-bleed-50-50"): ?>
       <div class="col-lg-6 col-md-12 col-left <?php echo $left_column_text_color; ?>"
         style=" --col-left-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
-        <div class="col-inner padding-y-100 padding-end-50">
-          <?php the_sub_field('left_column_content'); ?>
+
+        <?php if( have_rows('left_column_background_images') ): ?>
+        <?php while( have_rows('left_column_background_images') ): the_row();  
+          $background_image = get_sub_field('background_image');
+        ?>
+        <div class="<?php echo $background_image; ?>">
+          <?php endwhile; ?>
+          <?php endif; ?>
+
+
+          <div class="col-inner padding-y-100 padding-end-50">
+            <?php the_sub_field('left_column_content'); ?>
+          </div>
+          <?php if( have_rows('left_column_background_images') ): ?>
+          <?php while( have_rows('left_column_background_images') ): the_row();  ?>
         </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+
       </div>
       <div class="col-lg-6 col-md-12 col-right <?php echo $right_column_text_color; ?>"
         style="--col-right-bg: url('http://localhost:3000/assets/img/circles-bg-pattern.svg');">
-        <div class="col-inner padding-y-100 padding-start-50">
-          <?php the_sub_field('right_column_content'); ?>
+
+        <?php if( have_rows('right_column_background_images') ): ?>
+        <?php while( have_rows('right_column_background_images') ): the_row();  
+          $background_image = get_sub_field('background_image');
+        ?>
+        <div class="<?php echo $background_image; ?>">
+          <?php endwhile; ?>
+          <?php endif; ?>
+
+
+          <div class="col-inner padding-y-100 padding-start-50">
+            <?php the_sub_field('right_column_content'); ?>
+          </div>
+          <?php if( have_rows('right_column_background_images') ): ?>
+          <?php while( have_rows('right_column_background_images') ): the_row();  ?>
         </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
       </div>
       <?php endif; ?>
 

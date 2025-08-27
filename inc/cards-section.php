@@ -5,7 +5,6 @@ $text_color = "text-dark";
 if ($background_color == "background-dark-blue" || $background_color == "background-teal" || $background_color == "background-teal-darker") {
   $text_color = "text-light";
 } 
-
 ?>
 
 <section id="cards-section-<?php echo get_row_index(); ?>"
@@ -105,7 +104,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
       $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
 
           <div class="col-lg-4 mb-5">
-            <div class="card success-story-card">
+            <div class="card suapccess-story-card">
               <?php if ($featured_image) : ?>
               <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr(get_the_title($post->ID)); ?>"
                 class="card-img-top">
@@ -137,49 +136,3 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
   <?php endwhile; ?>
   <?php endif; ?>
 </section>
-
-
-<!-- <section id="success-stories2"
-  class="success-stories background-dark-blue background-pattern-cubes-reverse background-pattern-left padding-y-100">
-
-
-  <span class="badge text-bg-danger">Success Stories2</span>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="text-white">Success Stories</h2>
-      </div>
-      <div class="col-lg-4">
-        <div class="card success-story-card">
-          <img src="https://placehold.co/300x150" alt="Image" class="card-img-top">
-          <div class="card-body">
-            <h3>Allure Aesthethics: Client Story</h3>
-
-            <a href="#" class="">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card success-story-card">
-          <img src="https://placehold.co/300x150" alt="Image" class="card-img-top">
-          <div class="card-body">
-            <h3>Financial Services Company: Client Story</h3>
-            <a href="#" class="">Read More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card success-story-card">
-          <img src="https://placehold.co/300x150" alt="Image" class="card-img-top">
-          <div class="card-body">
-            <h3>Plymold: Client Story</h3>
-
-            <a href="#" class="">Read More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
-</section> -->

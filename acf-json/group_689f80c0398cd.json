@@ -114,6 +114,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -600,6 +601,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -908,6 +910,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -1218,6 +1221,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -1381,6 +1385,7 @@
                                     "collapsed": "",
                                     "button_label": "Add Column",
                                     "rows_per_page": 20,
+                                    "parent_repeater": "field_68a9c01964895",
                                     "sub_fields": [
                                         {
                                             "key": "field_68a9c03664896",
@@ -1559,6 +1564,7 @@
                                             "collapsed": "",
                                             "button_label": "Add Row",
                                             "rows_per_page": 20,
+                                            "parent_repeater": "field_68a9bff164892",
                                             "sub_fields": [
                                                 {
                                                     "key": "field_68a9c61b25f76",
@@ -1580,6 +1586,7 @@
                                                     "collapsed": "",
                                                     "button_label": "Add Column",
                                                     "rows_per_page": 20,
+                                                    "parent_repeater": "field_68a9c5fa25f75",
                                                     "sub_fields": [
                                                         {
                                                             "key": "field_68a9c72483e72",
@@ -1635,14 +1642,11 @@
                                                             "delay": 0,
                                                             "parent_repeater": "field_68a9c61b25f76"
                                                         }
-                                                    ],
-                                                    "parent_repeater": "field_68a9c5fa25f75"
+                                                    ]
                                                 }
-                                            ],
-                                            "parent_repeater": "field_68a9bff164892"
+                                            ]
                                         }
-                                    ],
-                                    "parent_repeater": "field_68a9c01964895"
+                                    ]
                                 }
                             ]
                         },
@@ -1768,6 +1772,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -2183,6 +2188,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -2202,7 +2208,7 @@
                                         "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
                                     },
                                     "default_value": "no-background-image",
-                                    "return_format": "",
+                                    "return_format": "value",
                                     "multiple": 0,
                                     "allow_null": 0,
                                     "allow_in_bindings": 0,
@@ -2621,8 +2627,9 @@
                                 "var(--c-dark-blue)": "Dark Blue",
                                 "var(--c-teal)": "Teal",
                                 "var(--c-teal-darker)": "Dark Teal",
-                                "var(--c-teal-lighter": "Light Teal",
+                                "var(--c-teal-lighter)": "Light Teal",
                                 "var(--c-yellow)": "Yellow",
+                                "var(--c-yellow-lighter)": "Light Yellow",
                                 "var(--c-white)": "White"
                             },
                             "default_value": false,
@@ -2635,6 +2642,76 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68adfdab1aa95",
+                            "label": "Left Column Background Images",
+                            "name": "left_column_background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68adfdab1aa96",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68adfdab1aa95"
+                                }
+                            ]
                         },
                         {
                             "key": "field_68a2734ee6c00",
@@ -2677,6 +2754,7 @@
                                 "var(--c-teal-darker)": "Dark Teal",
                                 "var(--c-teal-lighter)": "Light Teal",
                                 "var(--c-yellow)": "Yellow",
+                                "var(--c-yellow-lighter)": "Light Yellow",
                                 "var(--c-white)": "White"
                             },
                             "default_value": false,
@@ -2689,6 +2767,76 @@
                             "placeholder": "",
                             "create_options": 0,
                             "save_options": 0
+                        },
+                        {
+                            "key": "field_68adfdf41aa97",
+                            "label": "Right Column Background Images",
+                            "name": "right_column_background_images",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 2,
+                            "collapsed": "",
+                            "button_label": "Add Background Image",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_68adfdf41aa98",
+                                    "label": "Background Image",
+                                    "name": "background_image",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "no-background-image": "No Background Image",
+                                        "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
+                                        "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
+                                        "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
+                                        "background-pattern-circle-row-bottom-2": "Circle Row Bottom (2 circle rows)",
+                                        "background-pattern-red-dots background-position-right-center-offscreen": "Red Dots",
+                                        "background-pattern-teal-dots background-position-right-center-offscreen": "Teal Dots",
+                                        "background-pattern-yellow-dots background-position-right-center-offscreen": "Yellow Dots",
+                                        "background-pattern-stripe-circle background-position-left-bottom-offscreen": "Stripe Circle Teal",
+                                        "background-pattern-stripe-circle-dark background-position-left-bottom-offscreen": "Stripe Circle Teal Dark",
+                                        "background-pattern-stripe-circle-red background-position-left-bottom-offscreen": "Stripe Circle Red",
+                                        "background-pattern-stripe-circle-yellow background-position-left-bottom-offscreen": "Stripe Circle Yellow",
+                                        "background-pattern-stripe-circle-white background-position-left-bottom-offscreen": "Stripe Circle White",
+                                        "background-pattern-dotted-circles-vertical": "Dotted Circles Vertical",
+                                        "background-pattern-overlapping-circles-vertical": "Teal Vertical Overlapping Circles",
+                                        "background-pattern-teal-circle background-position-left-top-offscreen-2": "Teal Circle",
+                                        "background-pattern-yellow-circle background-position-left-top-offscreen-2": "Yellow Circle",
+                                        "background-pattern-red-stripes-vertical": "Red Vertical Stripes"
+                                    },
+                                    "default_value": "no-background-image",
+                                    "return_format": "value",
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "allow_in_bindings": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "create_options": 0,
+                                    "save_options": 0,
+                                    "parent_repeater": "field_68adfdf41aa97"
+                                }
+                            ]
                         },
                         {
                             "key": "field_68a27365e6c02",
@@ -3328,6 +3476,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -3399,6 +3548,7 @@
                                 "background-dark-blue": "Dark Blue",
                                 "background-teal": "Teal",
                                 "background-teal-darker": "Dark Teal",
+                                "background-teal-lighter": "Light Teal",
                                 "background-yellow": "Yellow",
                                 "background-white": "White",
                                 "background-blue-light": "Light Blue",
@@ -3691,6 +3841,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -4258,6 +4409,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -4899,6 +5051,7 @@
                                     "choices": {
                                         "no-background-image": "No Background Image",
                                         "background-pattern-repeated-stars": "Repeated Stars",
+                                        "background-pattern-cubes": "Cubes Right",
                                         "background-pattern-circle-row-top": "Circle Row Top (3 circle rows)",
                                         "background-pattern-circle-row-bottom": "Circle Row Bottom (3 circle rows)",
                                         "background-pattern-circle-row-top-2": "Circle Row Top (2 circle rows)",
@@ -5176,5 +5329,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756165722
+    "modified": 1756314497
 }
