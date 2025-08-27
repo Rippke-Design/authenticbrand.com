@@ -76,6 +76,10 @@ header {
 		padding: 1rem !important;
 	}
 
+	.dropdown-toggle::after {
+		display: none;
+	}
+
 	// Ensure dropdown toggles don't hide the menu on mobile
 	.navbar-collapse.show .dropdown-toggle[aria-expanded="false"] {
 		pointer-events: none;

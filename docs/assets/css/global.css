@@ -12184,6 +12184,9 @@ header form {
     border: none;
     padding: 1rem !important;
   }
+  .dropdown-toggle::after {
+    display: none;
+  }
   .navbar-collapse.show .dropdown-toggle[aria-expanded=false] {
     pointer-events: none;
   }
