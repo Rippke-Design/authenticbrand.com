@@ -64,7 +64,7 @@ header {
 }
 
 // Mobile dropdown expansion
-@media (max-width: 991.98px) {
+@include media-breakpoint-down(xl) {
 	.navbar-collapse.show .dropdown-menu,
 	.navbar-collapse.collapsing .dropdown-menu {
 		display: block !important;

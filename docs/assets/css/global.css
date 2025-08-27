@@ -12173,7 +12173,7 @@ header form {
   margin-bottom: 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .navbar-collapse.show .dropdown-menu,
   .navbar-collapse.collapsing .dropdown-menu {
     display: block !important;
@@ -12218,6 +12218,11 @@ header form {
   .navbar .nav-item:hover .dropdown-menu {
     display: block;
   }
+}
+
+.navbar-toggler-icon {
+  width: 0.8em;
+  height: 0.8em;
 }
 
 .dropdown-menu {
