@@ -13006,6 +13006,20 @@ background-pattern-red-stripes-vertical : Red Vertical Stripes
   }
 }
 
+.background-pattern-cubes-horizontal {
+  background-image: url("../img/pattern-cubes-light-blue-horizontal.svg");
+  background-repeat: repeat-x;
+  background-position: bottom 0 right 0;
+  --background-width: 143px;
+  --background-height: 349px;
+  background-size: var(--background-width) var(--background-height);
+}
+@media (max-width: 767.98px) {
+  .background-pattern-cubes-horizontal {
+    background-image: none;
+  }
+}
+
 .background-pattern-red-dots {
   background-image: url("../img/red-dots-pattern.svg");
   background-repeat: no-repeat;

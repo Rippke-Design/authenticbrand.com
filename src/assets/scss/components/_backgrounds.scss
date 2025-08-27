@@ -198,6 +198,18 @@ background-pattern-red-stripes-vertical : Red Vertical Stripes
 	}
 }
 
+.background-pattern-cubes-horizontal {
+	background-image: url("../img/pattern-cubes-light-blue-horizontal.svg");
+	background-repeat: repeat-x;
+	background-position: bottom 0 right 0;
+	--background-width: 143px;
+	--background-height: 349px;
+	background-size: var(--background-width) var(--background-height);
+	@include media-breakpoint-down(md) {
+		background-image: none;
+	}
+}
+
 // .background-pattern-cubes-reverse {
 // 	background-image: url("../img/pattern-cubes-light-blue-reverse.svg");
 // 	background-size: 262px 840px;
