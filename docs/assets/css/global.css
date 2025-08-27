@@ -12174,6 +12174,9 @@ header form {
 }
 
 @media (max-width: 1199.98px) {
+  .multi-column-dropdown {
+    background-color: var(--c-blue-lighter);
+  }
   .navbar-collapse.show .dropdown-menu,
   .navbar-collapse.collapsing .dropdown-menu {
     display: block !important;
@@ -12197,6 +12200,8 @@ header form {
   .navbar-collapse.show .dropdown-item:last-child {
     border-bottom: none;
   }
+}
+@media (max-width: 767.98px) {
   .navbar-collapse.show .multi-column-dropdown .row {
     flex-direction: column;
   }

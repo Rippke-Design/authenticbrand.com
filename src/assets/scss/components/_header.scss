@@ -65,6 +65,10 @@ header {
 
 // Mobile dropdown expansion
 @include media-breakpoint-down(xl) {
+	.multi-column-dropdown {
+		background-color: var(--c-blue-lighter);
+	}
+
 	.navbar-collapse.show .dropdown-menu,
 	.navbar-collapse.collapsing .dropdown-menu {
 		display: block !important;
@@ -95,7 +99,22 @@ header {
 		}
 	}
 
-	// Adjust the multi-column layout for mobile
+	// // Adjust the multi-column layout for mobile
+	// .navbar-collapse.show .multi-column-dropdown .row {
+	// 	flex-direction: column;
+	// }
+
+	// .navbar-collapse.show .multi-column-dropdown .col {
+	// 	width: 100%;
+	// 	margin-bottom: 1rem;
+
+	// 	&:last-child {
+	// 		margin-bottom: 0;
+	// 	}
+	// }
+}
+
+@include media-breakpoint-down(md) {
 	.navbar-collapse.show .multi-column-dropdown .row {
 		flex-direction: column;
 	}
