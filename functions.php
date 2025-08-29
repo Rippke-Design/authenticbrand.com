@@ -15,7 +15,22 @@ function authenticbrand_enqueue_assets() {
     // Enqueue JS files from /docs/assets/js
     //wp_enqueue_script('authenticbrand-faq-js', get_template_directory_uri() . '/docs/assets/js/faq.js', array(), null, true);
     wp_enqueue_script('authenticbrand-nav-position-js', get_template_directory_uri() . '/docs/assets/js/nav-position.js', array(), null, true);
-    wp_enqueue_script('authenticbrand-number-flow-js', get_template_directory_uri() . '/docs/assets/js/number-flow.js', array('number-flow-lib'), null, true);
+    wp_enqueue_script(
+        'authenticbrand-number-flow-js',
+        get_template_directory_uri() . '/docs/assets/js/number-flow.js',
+        array('number-flow-lib'),
+        null,
+        true
+    );
+    
+    // Add type="module" to number-flow script
+    add_filter('script_loader_tag', function($tag, $handle, $src) {
+        if ($handle === 'authenticbrand-number-flow-js') {
+            return '<script type="module" src="' . $src . '" id="' . $handle . '-js"></script>' . "\n";
+        }
+        return $tag;
+    }, 10, 3);
+    
     wp_enqueue_script('authenticbrand-section-names-js', get_template_directory_uri() . '/docs/assets/js/section-names.js', array(), null, true);
     wp_enqueue_script('authenticbrand-timeline-js', get_template_directory_uri() . '/docs/assets/js/timeline.js', array(), null, true);
 
