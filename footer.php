@@ -89,7 +89,7 @@
 
       <div class="col-lg-12">
         <p class="copyright">
-          © <span id="year"></span> Authentic Brand LLC | <a href="#">Privacy Policy</a>
+          © <span id="year"></span> Authentic Brand LLC | <a href="/privacy">Privacy Policy</a>
         </p>
       </div>
 

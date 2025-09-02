@@ -7,11 +7,6 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-        <?php
-          if ( has_post_thumbnail() ) {
-              the_post_thumbnail('full', array('class' => 'img-fluid mb-5'));
-          }
-        ?>
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
       </div>

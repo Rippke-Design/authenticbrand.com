@@ -13,16 +13,16 @@
 
 <body <?php body_class(); ?>>
 
-  <div class="dev-mode" id="dev-mode">
+  <!--<div class="dev-mode" id="dev-mode">
     <input type="checkbox" class="dev-mode-toggle" id="dev-mode-toggle" />
     <label for="dev-mode-toggle">Hide Section Names</label>
-  </div>
+  </div>-->
 
   <header>
     <nav class="navbar navbar-expand-xl">
       <div class="container">
         <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/authentic-brand-logo.svg"
+          <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/ab-logo.png"
             alt="Authentic Brand Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
