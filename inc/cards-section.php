@@ -28,7 +28,6 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           </div>
           <?php endif; ?>
 
-
           <?php if (get_sub_field('card_source_selection_type') == 'manual'): ?>
           <!-- manual card selection -->
           <?php
@@ -37,8 +36,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
             foreach ($cards as $post) :
               setup_postdata($post);
               $featured_image = get_the_post_thumbnail_url($post->ID, 'large');
-              ?>
-
+          ?>
 
           <?php if (get_post_type($post->ID) == 'team-member' || get_post_type($post->ID) == 'consultant'): ?>
           <div class="col-lg-3 mb-5">
@@ -79,28 +77,24 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           </div>
           <?php endif; ?>
 
-
           <?php endforeach; wp_reset_postdata(); ?>
           <?php endif; ?>
-
-
-
           <?php endif; ?>
 
           <?php if (get_sub_field('card_source_selection_type') == 'automatic'): ?>
           <!-- automatic card selection -->
           <?php
-      $category_id = get_sub_field('card_source');
-      $posts = get_posts(array(
-        'category' => $category_id,
-        'numberposts' => get_sub_field('number_of_cards'),
-      ));
-      ?>
+            $category_id = get_sub_field('card_source');
+            $posts = get_posts(array(
+              'category' => $category_id,
+              'numberposts' => get_sub_field('number_of_cards'),
+            ));
+          ?>
 
           <?php if ($posts) : ?>
           <?php foreach ($posts as $post) : ?>
           <?php setup_postdata($post); 
-      $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
+            $featured_image = get_the_post_thumbnail_url($post->ID, 'large'); ?>
 
           <div class="col-lg-4 mb-5">
             <div class="card suapccess-story-card">
@@ -121,6 +115,21 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
           <?php endif; ?>
           <?php endif; ?>
 
+          <?php 
+          $button = get_sub_field('cta_button');
+            $button_color = get_sub_field('button_color');
+            if( $button ):
+              $button_url = $button['url'];
+              $button_title = $button['title'];
+              $button_target = $button['target'] ? $button['target'] : '_self';
+          ?>
+          <div class="col-lg-12 text-center">
+            <a href="<?php echo esc_url($button_url); ?>" class="btn <?php echo ($button_color); ?>"
+              target="<?php echo esc_attr($button_target); ?>">
+              <?php echo esc_html($button_title); ?>
+            </a>
+          </div>
+          <?php endif; ?>
         </div>
 
       </div>

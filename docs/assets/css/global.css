@@ -13463,7 +13463,7 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   transform: translateZ(0);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.success-story-card a {
+.success-story-card a:not(.btn) {
   color: var(--c-teal);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -13471,7 +13471,7 @@ background-position-left-bottom-offscreen : Left Bottom Offscreen
   transition: color 0.2s ease;
   text-transform: uppercase;
 }
-.success-story-card a:hover {
+.success-story-card a:not(.btn):hover {
   color: var(--c-teal-darker);
 }
 .success-story-card h3, .success-story-card .h3, .success-story-card p.intro, .success-story-card .hero h1 .eyebrow, .hero h1 .success-story-card .eyebrow, .success-story-card .hero .h1 .eyebrow, .hero .h1 .success-story-card .eyebrow, .success-story-card .hero.hero-homepage p.tagline, .hero.hero-homepage .success-story-card p.tagline {
