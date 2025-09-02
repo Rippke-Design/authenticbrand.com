@@ -5,8 +5,6 @@
     <div class="row">
       <div class="col-lg-7">
         <?php if ( ! get_sub_field('homepage_hero') ) { breadcrumbs(); } ?>
-
-
         <h1>
           <span class="eyebrow">
             <?php the_sub_field('hero_headline_eyebrow'); ?>

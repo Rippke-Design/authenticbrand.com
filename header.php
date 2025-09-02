@@ -22,8 +22,7 @@
     <nav class="navbar navbar-expand-xl">
       <div class="container">
         <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/ab-logo.png"
-            alt="Authentic Brand Logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/docs/assets/img/ab-logo.png" alt="Authentic Brand Logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -258,8 +257,9 @@
                 <div class="modal-dialog  modal-md">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                      <form class="d-flex" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                        <input class="form-control me-2" type="search" name="s" placeholder="Search..."
+                          aria-label="Search" value="<?php echo get_search_query(); ?>">
                         <button class="btn btn-primary" type="submit">Search</button>
                       </form>
                     </div>
