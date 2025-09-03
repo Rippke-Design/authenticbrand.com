@@ -174,6 +174,9 @@ add_filter('acf/prepare_field/type=message', function($field) {
 // add featured image
 add_theme_support('post-thumbnails');
 
+// add responsive embeds
+add_theme_support( 'responsive-embeds' );
+
 
 // ACF Site options page
 if( function_exists('acf_add_options_page') ) {
