@@ -719,7 +719,7 @@
                                 "taxonomy"
                             ],
                             "return_format": "object",
-                            "min": 3,
+                            "min": 1,
                             "max": "",
                             "allow_in_bindings": 0,
                             "elements": "",
@@ -749,23 +749,22 @@
                                 "id": ""
                             },
                             "choices": {
-                                "121": "aaaaatest",
-                                "34": "Article",
-                                "54": "Article|Event",
-                                "84": "Article|Event|News",
-                                "79": "Article|Guide",
-                                "66": "Article|Podcast",
-                                "99": "Article|Webinar",
-                                "71": "Client Story",
-                                "35": "Event",
-                                "38": "Event|News",
-                                "80": "Event|Podcast",
-                                "113": "Guide",
-                                "48": "News",
-                                "81": "Podcast",
+                                "74": "Article|Event",
+                                "104": "Article|Event|News",
+                                "99": "Article|Guide",
+                                "86": "Article|Podcast",
+                                "119": "Article|Webinar",
+                                "34": "Articles",
+                                "91": "Client Stories",
+                                "58": "Event|News",
+                                "100": "Event|Podcast",
+                                "45": "Events",
+                                "134": "Guides",
+                                "68": "News",
+                                "101": "Podcasts",
                                 "1": "Uncategorized",
-                                "112": "Video",
-                                "98": "Webinar"
+                                "132": "Videos",
+                                "118": "Webinars"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -808,54 +807,6 @@
                             "step": "",
                             "prepend": "",
                             "append": ""
-                        },
-                        {
-                            "key": "field_68b76f4ffc2ad",
-                            "label": "CTA Button",
-                            "name": "cta_button",
-                            "aria-label": "",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "allow_in_bindings": 0
-                        },
-                        {
-                            "key": "field_68b7704cfc2ae",
-                            "label": "Button Color",
-                            "name": "button_color",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "btn-yellow": "Yellow",
-                                "btn-outline": "White Outline",
-                                "btn-white": "White",
-                                "btn-blue": "Blue"
-                            },
-                            "default_value": "btn-yellow",
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "allow_in_bindings": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "create_options": 0,
-                            "save_options": 0
                         }
                     ],
                     "min": "",
@@ -2556,7 +2507,8 @@
                             },
                             "choices": {
                                 "1": "CTA Form",
-                                "2": "Newsletter Form"
+                                "2": "Newsletter Form",
+                                "3": "Signup Form"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3204,7 +3156,7 @@
                                         "btn-white": "White",
                                         "btn-blue": "Blue"
                                     },
-                                    "default_value": "btn-yellow",
+                                    "default_value": false,
                                     "return_format": "value",
                                     "multiple": 0,
                                     "allow_null": 0,
@@ -4296,23 +4248,22 @@
                                 "id": ""
                             },
                             "choices": {
-                                "121": "aaaaatest",
-                                "34": "Article",
-                                "54": "Article|Event",
-                                "84": "Article|Event|News",
-                                "79": "Article|Guide",
-                                "66": "Article|Podcast",
-                                "99": "Article|Webinar",
-                                "71": "Client Story",
-                                "35": "Event",
-                                "38": "Event|News",
-                                "80": "Event|Podcast",
-                                "113": "Guide",
-                                "48": "News",
-                                "81": "Podcast",
+                                "74": "Article|Event",
+                                "104": "Article|Event|News",
+                                "99": "Article|Guide",
+                                "86": "Article|Podcast",
+                                "119": "Article|Webinar",
+                                "34": "Articles",
+                                "91": "Client Stories",
+                                "58": "Event|News",
+                                "100": "Event|Podcast",
+                                "45": "Events",
+                                "134": "Guides",
+                                "68": "News",
+                                "101": "Podcasts",
                                 "1": "Uncategorized",
-                                "112": "Video",
-                                "98": "Webinar"
+                                "132": "Videos",
+                                "118": "Webinars"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -5377,5 +5328,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756852332
+    "modified": 1756920566
 }

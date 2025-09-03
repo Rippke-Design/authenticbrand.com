@@ -1,5 +1,6 @@
 <?php 
 
+$column_alignment = get_sub_field('column_alignment');
 $background_color = get_sub_field('background_color');
 $border_bottom = get_sub_field('border_bottom');
 
@@ -37,7 +38,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
         <?php if (have_rows('rows')): ?>
         <?php while (have_rows('rows')): the_row(); ?>
         <!-- repeater called rows -->
-        <div class="row g-5">
+        <div class="row g-5 justify-content-center <?php echo $column_alignment; ?>">
           <?php if (have_rows('columns')): ?>
           <?php while (have_rows('columns')): the_row(); ?>
           <?php if (get_sub_field('island_column')): ?>
@@ -56,7 +57,7 @@ if ($background_color == "background-dark-blue" || $background_color == "backgro
                 <?php if (have_rows('inner_rows')): ?>
                 <?php while (have_rows('inner_rows')): the_row(); ?>
                 <!-- inner rows -->
-                <div class="row g-5">
+                <div class="row g-5 justify-content-center <?php echo $column_alignment; ?>">
                   <?php if (have_rows('inner_columns')): ?>
                   <?php while (have_rows('inner_columns')): the_row(); ?>
                   <!-- inner columns -->
