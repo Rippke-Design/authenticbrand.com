@@ -9,6 +9,10 @@
         <div class="col-lg-10 offset-lg-1">
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
+		<?php if( get_field('registration_link') ): ?>
+    		<a href="<?php the_field('registration_link'); ?>" class="btn btn-yellow mt-3" target="_blank">
+        	<?php the_field('button_text'); ?></a>
+		<?php endif; ?>
       </div>
       </div>
     </div>
