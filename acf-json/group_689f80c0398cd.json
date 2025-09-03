@@ -719,7 +719,7 @@
                                 "taxonomy"
                             ],
                             "return_format": "object",
-                            "min": 1,
+                            "min": 3,
                             "max": "",
                             "allow_in_bindings": 0,
                             "elements": "",
@@ -749,22 +749,23 @@
                                 "id": ""
                             },
                             "choices": {
-                                "74": "Article|Event",
-                                "104": "Article|Event|News",
-                                "99": "Article|Guide",
-                                "86": "Article|Podcast",
-                                "119": "Article|Webinar",
-                                "34": "Articles",
-                                "91": "Client Stories",
-                                "58": "Event|News",
-                                "100": "Event|Podcast",
-                                "45": "Events",
-                                "134": "Guides",
-                                "68": "News",
-                                "101": "Podcasts",
+                                "121": "aaaaatest",
+                                "34": "Article",
+                                "54": "Article|Event",
+                                "84": "Article|Event|News",
+                                "79": "Article|Guide",
+                                "66": "Article|Podcast",
+                                "99": "Article|Webinar",
+                                "71": "Client Story",
+                                "35": "Event",
+                                "38": "Event|News",
+                                "80": "Event|Podcast",
+                                "113": "Guide",
+                                "48": "News",
+                                "81": "Podcast",
                                 "1": "Uncategorized",
-                                "132": "Videos",
-                                "118": "Webinars"
+                                "112": "Video",
+                                "98": "Webinar"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -807,6 +808,54 @@
                             "step": "",
                             "prepend": "",
                             "append": ""
+                        },
+                        {
+                            "key": "field_68b76f4ffc2ad",
+                            "label": "CTA Button",
+                            "name": "cta_button",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0
+                        },
+                        {
+                            "key": "field_68b7704cfc2ae",
+                            "label": "Button Color",
+                            "name": "button_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "btn-yellow": "Yellow",
+                                "btn-outline": "White Outline",
+                                "btn-white": "White",
+                                "btn-blue": "Blue"
+                            },
+                            "default_value": "btn-yellow",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
                         }
                     ],
                     "min": "",
@@ -1902,6 +1951,111 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_68b8a6362ef22": {
+                    "key": "layout_68b8a6362ef22",
+                    "name": "embed-code-section",
+                    "label": "Embed Code Section",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_68b8a6362ef23",
+                            "label": "Embed code Options",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "<h3>Colors<\/h3>\r\n<ul style=\"list-style: none; padding: 0; margin: 0;\">\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #003c71; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Blue\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #00b4ad; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Teal\r\n  <\/li>\r\n  <li style=\" margin-bottom: 8px;\">\r\n    <span style=\"width: 20px; height: 20px; background: #007481; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Dark Teal\r\n  <\/li>\r\n  <li style=\"\">\r\n    <span style=\"width: 20px; height: 20px; background: #faa400; margin-right: 8px;\">&nbsp; &nbsp; &nbsp;<\/span>Yellow\r\n  <\/li>\r\n<\/ul>",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_68b8a6362ef24",
+                            "label": "Background Color",
+                            "name": "background_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "background-dark-blue": "Dark Blue",
+                                "background-teal": "Teal",
+                                "background-teal-darker": "Dark Teal",
+                                "background-teal-lighter": "Light Teal",
+                                "background-yellow": "Yellow",
+                                "background-white": "White",
+                                "background-blue-light": "Light Blue",
+                                "background-yellow-lighter": "Light Yellow"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0
+                        },
+                        {
+                            "key": "field_68b8a728ad2f6",
+                            "label": "Before Embed Content",
+                            "name": "before_embed_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_68b8a6362ef26",
+                            "label": "Embed Code",
+                            "name": "embed_code",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Embed code. Example: Hubspot form code.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_68a4ad95193b8": {
                     "key": "layout_68a4ad95193b8",
                     "name": "faq-section",
@@ -2507,8 +2661,7 @@
                             },
                             "choices": {
                                 "1": "CTA Form",
-                                "2": "Newsletter Form",
-                                "3": "Signup Form"
+                                "2": "Newsletter Form"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -3156,7 +3309,7 @@
                                         "btn-white": "White",
                                         "btn-blue": "Blue"
                                     },
-                                    "default_value": false,
+                                    "default_value": "btn-yellow",
                                     "return_format": "value",
                                     "multiple": 0,
                                     "allow_null": 0,
@@ -4248,22 +4401,23 @@
                                 "id": ""
                             },
                             "choices": {
-                                "74": "Article|Event",
-                                "104": "Article|Event|News",
-                                "99": "Article|Guide",
-                                "86": "Article|Podcast",
-                                "119": "Article|Webinar",
-                                "34": "Articles",
-                                "91": "Client Stories",
-                                "58": "Event|News",
-                                "100": "Event|Podcast",
-                                "45": "Events",
-                                "134": "Guides",
-                                "68": "News",
-                                "101": "Podcasts",
+                                "121": "aaaaatest",
+                                "34": "Article",
+                                "54": "Article|Event",
+                                "84": "Article|Event|News",
+                                "79": "Article|Guide",
+                                "66": "Article|Podcast",
+                                "99": "Article|Webinar",
+                                "71": "Client Story",
+                                "35": "Event",
+                                "38": "Event|News",
+                                "80": "Event|Podcast",
+                                "113": "Guide",
+                                "48": "News",
+                                "81": "Podcast",
                                 "1": "Uncategorized",
-                                "132": "Videos",
-                                "118": "Webinars"
+                                "112": "Video",
+                                "98": "Webinar"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -5328,5 +5482,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1756920566
+    "modified": 1756931938
 }

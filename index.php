@@ -47,6 +47,8 @@ if( have_rows('components') ):
             get_template_part('inc/video-section');
         elseif( get_row_layout() == 'testimonials-section' ):
             get_template_part('inc/testimonials-section');
+        elseif( get_row_layout() == 'embed-code-section' ):
+            get_template_part('inc/embed-code-section');
         endif;
     endwhile;
 endif;
