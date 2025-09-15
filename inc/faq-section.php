@@ -1,5 +1,34 @@
 <?php 
 $background_color = get_sub_field('background_color');
+
+// Generate FAQ JSON-LD schema
+if (have_rows('faq_items')) {
+    $faq_schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'name' => 'Frequently Asked Questions',
+        'mainEntity' => array()
+    );
+    
+    while (have_rows('faq_items')) : the_row();
+        $faq_headline = get_sub_field('faq_headline');
+        $faq_content = get_sub_field('faq_content');
+        
+        if ($faq_headline && $faq_content) {
+            $faq_schema['mainEntity'][] = array(
+                '@type' => 'Question',
+                'name' => $faq_headline,
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text' => $faq_content
+                )
+            );
+        }
+    endwhile;
+    
+    // Output the JSON-LD schema
+    echo '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+}
 ?>
 <section id="faq-full-bleed-<?php echo get_row_index(); ?>" class="faq <?php echo $background_color; ?>">
   <span class="badge text-bg-danger">FAQ</span>

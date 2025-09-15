@@ -190,6 +190,15 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="row">
       <div class="col-lg-6 <?php the_sub_field('background_color'); ?> z-1">
         <?php the_sub_field('headline'); ?>
+
+        <?php 
+            $cta_button = get_sub_field('cta_button');
+            if ($cta_button && isset($cta_button['url']) && isset($cta_button['title'])): ?>
+        <div class="mt-5"><a href="<?php echo esc_url($cta_button['url']); ?>"
+            class="btn <?php echo esc_attr(get_sub_field('cta_button_style')); ?> mt-5 mt-lg-0"><?php echo esc_html($cta_button['title']); ?></a>
+        </div>
+        <?php endif; ?>
+
       </div>
       <div class="col-lg-6">
         <div class="splide" id="offscreen-right-card-slider-<?php echo get_row_index(); ?>"
